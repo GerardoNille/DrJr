@@ -18,14 +18,16 @@
         left             : 0;
         height           : 100%;
         width            : 100%;
-        -webkit-clip-path: polygon(0 70%, 0% 100%, 50% 100%);
-        clip-path        : polygon(0 70%, 0% 100%, 50% 100%);
+        -webkit-clip-path: polygon(0 65%, 0% 100%, 62% 100%);
+        clip-path        : polygon(0 65%, 0% 100%, 62% 100%);
         background       : url("../images/texturas/marmol.png");
         p {
-            bottom   : 5%;
-            left     : 10%;
-            position : absolute;
-            transform: translate(-50%,-50%);
+            bottom     : 1%;
+            left       : 3%;
+            margin     : 0;
+            position   : absolute;
+            font-family: Caslon;
+            font-size  : 45pt;
         }
     }
 }
