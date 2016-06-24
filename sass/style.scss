@@ -2,23 +2,6 @@
 /*
   HERO BANNER
 */
-<<<<<<< HEAD
-
-body {
-    margin: 0;
-}
-@import "hero";
-.header {
-    display : block;
-    overflow: auto;
-    .brain {
-        display         : block;
-        overflow        : auto;
-        width           : 40%;
-        min-height      : 200px;
-        background-color: #000000;
-    }
-=======
 body{
   margin: 0;
 }
@@ -55,29 +38,5 @@ body{
   clear: both;
   background-color: #FF125A;
 }
-<<<<<<< HEAD
-=======
-/*
-|------------------------------------------------
-|HERO BANNER
-|------------------------------------------------
-*/
-.hero{
-  width: 100%;
-  overflow: auto;
-  position: relative;
-  img{
-    width: 100%;
-  }
-  .title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  	width: 0;
-  	height: 0;
-  	border-bottom: 100px solid red;
-  	border-right: 100px solid transparent;
-  }
-
-}
->>>>>>> origin/master
+@import "var";
+@import "hero";
