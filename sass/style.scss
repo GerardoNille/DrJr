@@ -41,3 +41,37 @@ body{
   clear: both;
   background-color: #FF125A;
 }
+/*Button*/
+.btn{
+  padding: 10px 40px 10px 30px;
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  color: white;
+  text-transform: uppercase;
+  font-family: Aspira;
+  font-size: 12pt;
+  border-left: solid 5px $ocre;
+}
+span.arrow-r {
+  &::before,
+  &::after {
+    content   : '';
+    display   : block;
+    height    : 2px;
+    width     : 7px;
+    right     : 20px;
+    background: white;
+    position  : absolute;
+
+  }
+  &::before {
+    transform: rotate(45deg);
+    top      : 40%;
+  }
+  &::after {
+    top      : 50%;
+    transform: rotate(-45deg);
+  }
+}
