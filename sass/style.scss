@@ -3,13 +3,18 @@
 @import "var";
 @import "fonts";
 @import "hero";
-@import "svg";
 @import "info";
+@import "svg";
+
 /*
   HERO BANNER
 */
 body{
   margin: 0;
+  font-family: Aspira;
+}
+*{
+  box-sizing: border-box;
 }
 .header{
 	display: block;
@@ -90,12 +95,13 @@ span.arrow-r {
     float: right;
     background: $ocre;
     position: relative;
-    object{
+    .logo{
       width: 26.2px;
       position: absolute;
       top: 50%;
       left:50%;
       transform: translate(-50%,-50%);
+      fill:white;
     }
   }
 }

@@ -1,82 +1,123 @@
-.info{
-	overflow: hidden;
-	float: left;
-    position: absolute;
-    left: 18%;
-    height: 0;
+.info {
+    overflow      : hidden;
+    float         : left;
+    position      : absolute;
+    left          : 18%;
+    height        : 0;
     padding-bottom: 19%;
-    width: 82%;
-    img{
-    	width: 100%;
+    width         : 82%;
+    img {
+        width: 100%;
     }
-    .name{
-    	position: absolute;
-	    font-size: 3.3rem;
-	    left: 13%;
-	    font-family: Caslon;
-	    font-weight: 400;
-	    color: $gris;
+    .name {
+        position   : absolute;
+        font-size  : 3.3rem;
+        left       : 13%;
+        font-family: Caslon;
+        font-weight: 400;
+        color      : $gris;
     }
-    .title{
-    	position: absolute;
-	    display: flex;
-	    left: 18%;
-	    top: 48%;
-    	p{
-    		font-family: Aspira;
-    		font-weight: 100;
-    		font-size: .8rem;
-    		padding-right: 25px;
-    		letter-spacing: 1.5px;
-    		color: $gris;
-    	}
+    .title {
+        position: absolute;
+        display : flex;
+        left    : 18%;
+        top     : 48%;
+        p {
+            font-family   : Aspira;
+            font-weight   : 100;
+            font-size     : 0.8rem;
+            padding-right : 25px;
+            letter-spacing: 1.5px;
+            color         : $gris;
+        }
     }
 }
 #enfermedades,
 #experto {
-    float: left;
+    float     : left;
+    background: url('../images/texturas/grey.png');
     img {
         width: 100%;
     }
 }
 #enfermedades {
-    width       : 45%;
-    margin-right: 1%;
-    background  : url('../images/texturas/grey.png');
-    text-align  : right;
+    width         : 45%;
+    text-align    : right;
     padding-bottom: 20px;
     p {
-        margin-right: 10%;
-            text-transform: uppercase;
-            font-family   : Aspira;
-            color         : white;
-            font-size: 10pt;
+        margin-right  : 10%;
+        text-transform: uppercase;
+        font-family   : Aspira;
+        color         : white;
+        font-size     : 10pt;
     }
     p.title {
-      font-size: 20pt;
-      font-weight: 700;
-      font-style: italic;
-      position: relative;
-      &:hover::after{
-          width: 50%;
-
-      }
+        font-size  : $subtitle_size;
+        font-weight: 700;
+        font-style : italic;
+        position   : relative;
+        &:hover::after {
+            width: 50%;
+        }
         &::after {
-
-          -webkit-transition: width .5s; /* Safari */
-        transition: width .5s;
-            content   : '';
-            display   : block;
-            width     : 20%;
-            height    : 3px;
-            position  : absolute;
-            bottom    : -5px;
-            right     : 5px;
-            background: white;
-
+            -webkit-transition: width 0.5s;
+            /* Safari */
+            transition        : width 0.5s;
+            content           : '';
+            display           : block;
+            width             : 20%;
+            height            : 3px;
+            position          : absolute;
+            bottom            : -5px;
+            right             : 5px;
+            background        : white;
         }
     }
 }
 #experto {
-    width: 54%;
+    width      : 55%;
+    border-left: solid 10px $ocre;
+    .title {
+        text-align : center;
+        font-family: Caslon;
+        font-size  : $title_size;
+        color      : white;
+        position   : relative;
+        p {
+            display    : inline-block;
+            border-left: solid 5px $ocre;
+            padding    : 1px 10px;
+        }
+    }
+    .pruebas {
+        background: url("../images/texturas/marmol.png");
+        .subtitle {
+            font-family   : Aspira;
+            text-transform: uppercase;
+            width         : 80%;
+            margin        : auto;
+            font-size     : $subtitle_size;
+            letter-spacing: 5px;
+            font-style    : italic;
+        }
+        hr {
+            width     : 80%;
+            height    : 4px;
+            margin    : 10px 0 0;
+            border    : none;
+            background: $ocre;
+        }
+        p{
+          padding: 10%;
+          line-height: 30px;
+          text-transform: uppercase;
+        }
+        .logo{
+          width: 64px;
+          display: block;
+          margin: auto;
+          fill:$ocre;
+
+        }
+    }
 }

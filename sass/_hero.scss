@@ -28,7 +28,7 @@
             position   : absolute;
             font-family: Caslon;
             margin     : 0 10px;
-            font-size  : 45pt;
+            font-size  : $title_size;
             color: $gris;
             &::before {
                 content   : '';
