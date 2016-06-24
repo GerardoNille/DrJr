@@ -2,7 +2,7 @@
   HERO BANNER
 */
 body{
-  padding: 0;
+  margin: 0;
 }
 .header{
 	display: block;
@@ -35,4 +35,27 @@ body{
 #pie {
   clear: both;
   background-color: #FF125A;
+}
+/*
+|------------------------------------------------
+|HERO BANNER
+|------------------------------------------------
+*/
+.hero{
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  img{
+    width: 100%;
+  }
+  .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  	width: 0;
+  	height: 0;
+  	border-bottom: 100px solid red;
+  	border-right: 100px solid transparent;
+  }
+
 }
