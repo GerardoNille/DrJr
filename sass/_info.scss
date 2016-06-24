@@ -34,30 +34,47 @@
 }
 #enfermedades,
 #experto {
-  float: left;
-  img{
-    width: 100%;
-  }
+    float: left;
+    img {
+        width: 100%;
+    }
 }
 #enfermedades {
-    width: 45%;
+    width       : 45%;
     margin-right: 1%;
-    background: url('../images/texturas/grey.png');
-    p.title{
-      text-transform: uppercase;
-      font-family: Aspira;
-      color: white;
-      &::after
-      {
-        content: '';
-        display: block;
-        width: 20%;
-        height: 5px;
-        position: absolute;
-        bottom: 10px;
-        right: 5px;
-        background: white;
+    background  : url('../images/texturas/grey.png');
+    text-align  : right;
+    padding-bottom: 20px;
+    p {
+        margin-right: 10%;
+            text-transform: uppercase;
+            font-family   : Aspira;
+            color         : white;
+            font-size: 10pt;
+    }
+    p.title {
+      font-size: 20pt;
+      font-weight: 700;
+      font-style: italic;
+      position: relative;
+      &:hover::after{
+          width: 50%;
+
       }
+        &::after {
+
+          -webkit-transition: width .5s; /* Safari */
+        transition: width .5s;
+            content   : '';
+            display   : block;
+            width     : 20%;
+            height    : 3px;
+            position  : absolute;
+            bottom    : -5px;
+            right     : 5px;
+            background: white;
+
+        }
     }
 }
 #experto {
