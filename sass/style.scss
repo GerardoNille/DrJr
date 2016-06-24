@@ -1,61 +1,56 @@
 /*
   HERO BANNER
 */
-body{
-  margin: 0;
+body {
+    margin: 0;
 }
-.header{
-	display: block;
-	overflow: auto;
-	.brain{
-		display: block;
-		overflow: auto;
-		width    : 40%;
-	    min-height: 200px;
-		background-color: #000000;
-	}
+.header {
+    display : block;
+    overflow: auto;
+    .brain {
+        display         : block;
+        overflow        : auto;
+        width           : 40%;
+        min-height      : 200px;
+        background-color: #000000;
+    }
 }
 #contenedor {
-  width: 700px;
-  background-color: #0AA000;
+    width           : 700px;
+    background-color: #0AA000;
 }
 #cabecera {
-	background-color: #ACB456;
+    background-color: #ACB456;
 }
 #menu {
-  float: left;
-  width: 150px;
-  background-color: #15AFCA;
+    float           : left;
+    width           : 150px;
+    background-color: #15AFCA;
 }
 #contenido {
-  float: left;
-  width: 550px;
-  background-color: #00654A;
+    float           : left;
+    width           : 550px;
+    background-color: #00654A;
 }
 #pie {
-  clear: both;
-  background-color: #FF125A;
+    clear           : both;
+    background-color: #FF125A;
 }
 /*
 |------------------------------------------------
 |HERO BANNER
 |------------------------------------------------
 */
-.hero{
-  width: 100%;
-  overflow: auto;
-  position: relative;
-  img{
-    width: 100%;
-  }
-  .title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  	width: 0;
-  	height: 0;
-  	border-bottom: 100px solid red;
-  	border-right: 100px solid transparent;
-  }
-
+.hero {
+    width   : 100%;
+    overflow: auto;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .title {
+        -webkit-clip-path: polygon(0 70%, 0% 100%, 50% 100%);
+        clip-path        : polygon(0 70%, 0% 100%, 50% 100%);
+        background       :: url('images/Texturas/marmol.png');
+    }
 }
