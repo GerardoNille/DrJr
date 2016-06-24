@@ -49,8 +49,13 @@ body {
         width: 100%;
     }
     .title {
-        -webkit-clip-path: polygon(0 70%, 0% 100%, 50% 100%);
-        clip-path        : polygon(0 70%, 0% 100%, 50% 100%);
-        background       :: url('images/Texturas/marmol.png');
+        position    : absolute;
+        top         : 0;
+        left        : 0;
+        height      : 100%;
+        width       : 100%;
+-webkit-clip-path   : polygon(0 70%, 0% 100%, 50% 100%);
+        clip-path   : polygon(0 70%, 0% 100%, 50% 100%);
+        background  : url("../images/texturas/marmol.png");
     }
 }
