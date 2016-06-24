@@ -1,9 +1,11 @@
+
 .info {
     overflow      : hidden;
     float         : left;
     position      : absolute;
     left          : 18%;
     height        : 0;
+
     padding-bottom: 19%;
     width         : 82%;
     img {
@@ -17,6 +19,7 @@
         font-weight: 400;
         color      : $gris;
     }
+
     .title {
         position: absolute;
         display : flex;
@@ -30,6 +33,7 @@
             letter-spacing: 1.5px;
             color         : $gris;
         }
+
     }
 }
 #enfermedades,
