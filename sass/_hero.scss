@@ -5,7 +5,7 @@
 */
 .hero {
     width    : 100%;
-    max-width: $max_mediaquery;
+    // max-width: $max_mediaquery;
     margin   : auto;
     overflow : auto;
     position : relative;
@@ -27,7 +27,19 @@
             margin     : 0;
             position   : absolute;
             font-family: Caslon;
+            margin     : 0 10px;
             font-size  : 45pt;
+            color: $gris;
+            &::before {
+                content   : '';
+                display   : block;
+                background: $ocre;
+                width     : 5px;
+                height    : 100%;
+                position  : absolute;
+                top       : 0;
+                left      : -10px;
+            }
         }
     }
 }
