@@ -11,6 +11,19 @@
 body{
   margin: 0;
 }
+nav{
+    position: absolute;
+    left: 15%;
+    bottom: 13%;
+    word-spacing: 100px;
+  a{
+    color: #3e3d3f;
+    text-decoration: none;
+    FONT-FAMILY: Caslon;
+    font-size: .8rem;
+    letter-spacing: 2px;
+  }
+}
 .header{
 	display: block;
 	overflow: auto;
@@ -22,26 +35,35 @@ body{
     float: left;
 	}
 }
-#contenedor {
-  width: 700px;
-  background-color: #0AA000;
+.phone{
+    position: absolute;
+    left: 67%;
+    top: 18%;
+    padding-bottom: 2%;
+    width: 39%;
+    background-color: #9e8629;
+    p{
+      font-family: Caslon;
+      font-weight: 500;
+      font-size: .8rem;
+      padding-right: 25px;
+      letter-spacing: 1.5px;
+      color: #FFFFFF;
+      left: 10%;
+      padding-top: 20px;
+      position: relative;
+      }
+      p#english{
+        font-family: Caslon,Sans-serif;
+      }
 }
-#cabecera {
-	background-color: #ACB456;
-}
-#menu {
-  float: left;
-  width: 150px;
-  background-color: #15AFCA;
-}
-#contenido {
-  float: left;
-  width: 550px;
-  background-color: #00654A;
-}
-#pie {
-  clear: both;
-  background-color: #FF125A;
+.horizontal{
+    position: absolute;
+    left: 7%;
+    top: 67%;
+    padding-bottom: .5%;
+    width: 61%;
+    background-color: #9e8629;
 }
 /*Button*/
 .btn{
