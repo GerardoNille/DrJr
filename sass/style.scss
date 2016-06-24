@@ -1,9 +1,12 @@
+@charset "UTF-8";
 /*
   HERO BANNER
 */
+
 body {
     margin: 0;
 }
+@import "hero";
 .header {
     display : block;
     overflow: auto;
@@ -35,27 +38,4 @@ body {
 #pie {
     clear           : both;
     background-color: #FF125A;
-}
-/*
-|------------------------------------------------
-|HERO BANNER
-|------------------------------------------------
-*/
-.hero {
-    width   : 100%;
-    overflow: auto;
-    position: relative;
-    img {
-        width: 100%;
-    }
-    .title {
-        position    : absolute;
-        top         : 0;
-        left        : 0;
-        height      : 100%;
-        width       : 100%;
--webkit-clip-path   : polygon(0 70%, 0% 100%, 50% 100%);
-        clip-path   : polygon(0 70%, 0% 100%, 50% 100%);
-        background  : url("../images/texturas/marmol.png");
-    }
 }
