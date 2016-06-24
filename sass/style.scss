@@ -3,6 +3,7 @@
 @import "var";
 @import "fonts";
 @import "hero";
+@import "info";
 /*
   HERO BANNER
 */
@@ -13,11 +14,11 @@ body{
 	display: block;
 	overflow: auto;
 	.brain{
-		display: block;
-		overflow: auto;
-		width    : 19%;
-	    min-height: 100px;
+		height: 0;
+    padding-bottom: 19%;
+    width: 19%;
 		background-color: #58595A;
+    float: left;
 	}
 }
 #contenedor {
