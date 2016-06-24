@@ -3,6 +3,7 @@
 @import "var";
 @import "fonts";
 @import "hero";
+@import "svg";
 @import "info";
 /*
   HERO BANNER
@@ -41,4 +42,60 @@ body{
 #pie {
   clear: both;
   background-color: #FF125A;
+}
+/*Button*/
+.btn{
+  padding: 10px 40px 10px 30px;
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  color: white;
+  text-transform: uppercase;
+  font-family: Aspira;
+  font-size: 12pt;
+  border-left: solid 5px $ocre;
+}
+span.arrow-r {
+  &::before,
+  &::after {
+    content   : '';
+    display   : block;
+    height    : 2px;
+    width     : 7px;
+    right     : 20px;
+    background: white;
+    position  : absolute;
+
+  }
+  &::before {
+    transform: rotate(45deg);
+    top      : 40%;
+  }
+  &::after {
+    top      : 50%;
+    transform: rotate(-45deg);
+  }
+}
+.ribbon{
+  width: 100%;
+  height: 77px;
+  background: url('../images/pattern.png');
+  background-repeat: repeat;
+  margin: 0;
+  .logo_ocre{
+    width: 77px;
+    height: 77px;
+    margin: none;
+    float: right;
+    background: $ocre;
+    position: relative;
+    object{
+      width: 26.2px;
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+  }
 }

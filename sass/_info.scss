@@ -32,3 +32,34 @@
     	}
     }
 }
+#enfermedades,
+#experto {
+  float: left;
+  img{
+    width: 100%;
+  }
+}
+#enfermedades {
+    width: 45%;
+    margin-right: 1%;
+    background: url('../images/texturas/grey.png');
+    p.title{
+      text-transform: uppercase;
+      font-family: Aspira;
+      color: white;
+      &::after
+      {
+        content: '';
+        display: block;
+        width: 20%;
+        height: 5px;
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+        background: white;
+      }
+    }
+}
+#experto {
+    width: 54%;
+}
