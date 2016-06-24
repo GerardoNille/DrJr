@@ -4,21 +4,28 @@
 |------------------------------------------------
 */
 .hero {
-    width   : 100%;
+    width    : 100%;
     max-width: $max_mediaquery;
-    overflow: auto;
-    position: relative;
+    margin   : auto;
+    overflow : auto;
+    position : relative;
     img {
         width: 100%;
     }
     .title {
-        position    : absolute;
-        top         : 0;
-        left        : 0;
-        height      : 100%;
-        width       : 100%;
--webkit-clip-path   : polygon(0 70%, 0% 100%, 50% 100%);
-        clip-path   : polygon(0 70%, 0% 100%, 50% 100%);
-        background  : url("../images/texturas/marmol.png");
+        position         : absolute;
+        top              : 0;
+        left             : 0;
+        height           : 100%;
+        width            : 100%;
+        -webkit-clip-path: polygon(0 70%, 0% 100%, 50% 100%);
+        clip-path        : polygon(0 70%, 0% 100%, 50% 100%);
+        background       : url("../images/texturas/marmol.png");
+        p {
+            bottom   : 5%;
+            left     : 10%;
+            position : absolute;
+            transform: translate(-50%,-50%);
+        }
     }
 }
