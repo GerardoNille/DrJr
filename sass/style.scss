@@ -6,6 +6,7 @@
 @import "info";
 @import "svg";
 @import "centros";
+@import "contacto";
 /*
   HERO BANNER
 */
@@ -126,4 +127,8 @@ span.arrow-r {
       fill:white;
     }
   }
+}
+
+#prueba{
+  position: relative;
 }
