@@ -1,0 +1,56 @@
+#centros {
+    width      : 100%;
+    max-height: 500px;
+
+    clear: both;
+    img{
+            width: 100%;
+            position: absolute;
+            max-height: 319px;
+    }
+    .title {
+            left: 13%;
+            font-family: Big Caslon Medium;
+            color: white;
+            position: relative;
+        p {
+            /* display: inline-block; */
+            border-left: solid 5px #9e8629;
+            padding: 1px 10px;
+            font-size: 3rem;
+            position: absolute;
+            letter-spacing: 2px;
+        }
+    }
+    .pruebas {
+        background: url("../images/texturas/marmol.png");
+        .subtitle {
+            font-family   : Aspira;
+            text-transform: uppercase;
+            width         : 80%;
+            margin        : auto;
+            font-size     : $subtitle_size;
+            letter-spacing: 5px;
+            font-style    : italic;
+        }
+        hr {
+            width     : 80%;
+            height    : 4px;
+            margin    : 10px 0 0;
+            border    : none;
+            background: $ocre;
+        }
+        p{
+          padding: 10%;
+          line-height: 30px;
+          text-transform: uppercase;
+        }
+        .logo{
+          width: 64px;
+          display: block;
+          margin: auto;
+          fill:$ocre;
+
+        }
+    }
+}
