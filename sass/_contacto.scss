@@ -1,16 +1,15 @@
 #contacto {
     width      : 100%;
-    max-height: 500px;
     position: relative;
     clear: both;
     .banner{
             img{
                 width: 100%;
-                max-height: 319px;
             }
     
     p {
-            left: 13%;
+            left: 70px;
+            bottom: 10%;
             font-family: Big Caslon Medium;
             color: white;
             position: absolute;
@@ -22,7 +21,40 @@
         }
     }
 }
-
+.address{
+    float: right;
+    width: 40%;
+    text-align: right;
+    margin-right: 100px;
+    font-size: 1.5rem;
+    .banner_logo
+    {
+        height: 200px;
+        border-style: solid;
+        border-width: 0px 0px 3px 0px;
+    }
+    .banner_logo_ocre
+    {
+        height: 20px;
+        border-style: solid;
+        border-width: 0px 0px 3px 0px;
+        width: 13%;
+        display: inline-block;
+        border-color: $ocre;
+    }
+    .golden
+    {
+        color: #9e8629;
+        font-family: Big Caslon Medium;
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+    .golden_medium{
+        color: #9e8629;
+        font-family: Big Caslon Medium;
+        font-size: 2rem;
+    }
+}
 .ubicacion {
     width  : 100%;
     display: block;
@@ -42,16 +74,24 @@ p.italico{
     padding-bottom: 80px;
     font-family   : 'Aspira';
     display       : block;
-    max-width     : 550px;
     vertical-align: top;
     float: left;
+    margin-top: 30px;
     ul {
         list-style-type: none;
         padding        : 0;
     }
+    form{
+        float: left;
+        margin-left: 70px;
+    }
     input,
     textarea {
         background: $gris;
+        height: 50px;
+    }
+    textarea{
+        height: 230px;
     }
     .contact-dropdown-services dt a{
         text-transform: uppercase;
@@ -64,82 +104,25 @@ p.italico{
         margin    : 10px 0;
         border-left: solid 5px $ocre;
         box-sizing: border-box;
+        letter-spacing: 1px;
+        font-family: Aspira;
+        
     }
     input[type=date]{
         width: 25%;
         padding: 0px;
     }
-    .contact-dropdown-services {
-        dd,
-        dt {
-            margin : 0;
-            padding: 0;
-        }
-        ul {
-            margin: -1px 0 0;
-        }
-        dd {
-            position: relative;
-            ul {
-                
-                border          : 0;
-                color           : #fff;
-                display         : none;
-                left            : 0;
-                padding         : 2px 15px 2px 5px;
-                position        : absolute;
-                top             : -10px;
-                width           : 97%;
-                list-style      : none;
-                height          : 150px;
-                overflow        : auto;
-                li a {
-                    padding: 5px;
-                    display: block;
-                    &:hover {
-                        background-color: #fff;
-                    }
-                }
-            }
-            input {
-                width     : 10%;
-                box-sizing: border-box;
-            }
-        }
-        dt a {
-            
-            display         : block;
-            padding         : 8px 20px 5px 10px;
-            min-height      : 25px;
-            line-height     : 24px;
-            overflow        : hidden;            
-            .mutliSelect span,
-            span {
-                width: 95%;
-                text-align: center;
-                cursor : pointer;
-                display: inline-block;
-                padding: 0 3px 2px 0;
-            }
-            i{
-                cursor: pointer;
-                font-size: 2em;
-            }
-
-        }
-        a {
-            &,
-            &:visited {
-                color          : #fff;
-                text-decoration: none;
-                outline        : none;
-                font-size      : 12px;
-            }
-        }
-        span.value {
-            display: none;
-        }
+    input[type=number]{
+        width: 23%;
+        float: left;
+        margin-right: 10px;
     }
+    input[type=tel]{
+        width: 74%;
+        float: left;
+        border-style: hidden;
+    }
+    
     button {
         cursor: pointer;
         padding   : 10px 20px;
@@ -147,9 +130,8 @@ p.italico{
         border    : none;
         color     : white;
         text-align: center;
-        font-style: italic;
-        font-weight: bold;
         background: $ocre;
+        height: 50px;
     }
     .label{
         background-color: #FFFFFF
@@ -177,7 +159,14 @@ p.italico{
         color: white;
     }
     input[placeholder], [placeholder], *[placeholder] {
-        color: white;
+            color: white;
+            word-spacing: 6px;
+            font-weight: 100;
+            font-size: 1.2rem;
+            font-family: Aspira;
+            font-style: normal;
+            font-variant: normal;
+            padding: 20px;
     }
     [placeholder]:focus::-webkit-input-placeholder {
         transition: 0s; 
