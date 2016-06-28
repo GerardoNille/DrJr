@@ -1,0 +1,66 @@
+#enlaces {
+    background: white;
+
+    .row {
+        width   : 100%;
+        display : block;
+        overflow: auto;
+    }
+    .video {
+        width     : 80%;
+        background: white;
+        float     : left;
+        margin    : 0;
+    }
+    .memorias {
+        color: white;
+        img {
+            width : 100%;
+            margin: 0;
+        }
+    }
+    .title p{
+      padding    : 0 10px;
+      border-left: solid 5px $ocre;
+      font-family: 'Caslon';
+      margin:0;
+      font-size  : $title_size;
+    }
+    .memorias,
+    .video {
+        position: relative;
+        .title p {
+            position   : absolute;
+            top        : 50%;
+            left       : 50%;
+            transform  : translate(-50%,-50%);
+
+        }
+    }
+    .menciones {
+        position  : relative;
+        width     : 100%;
+        text-align: center;
+        border-left: solid 10px $ocre;
+        background: url('../images/texturas/marmol.png');
+        .title p{
+          display: inline-block;;
+        }
+    }
+    .h_ribbon {
+        background       : url('../images/pattern.png');
+        background-repeat: repeat;
+        margin           : 0;
+        width            : 20%;
+        float            : left;
+    }
+    @media screen and (min-width: 768px) {
+        .col2-md {
+            width         : 50%;
+            position      : relative;
+            float         : left;
+            display       : inline-block;
+            vertical-align: top;
+        }
+    }
+}

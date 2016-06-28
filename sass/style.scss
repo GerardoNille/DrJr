@@ -8,6 +8,7 @@
 @import "centros";
 @import "contacto";
 @import "mapa";
+@import "enlaces";
 /*
   HERO BANNER
 */
@@ -39,8 +40,13 @@ nav{
 		height: 0;
     padding-bottom: 19%;
     width: 19%;
-		background-color: #58595A;
+		background: url('../images/Texturas/grey.png');
     float: left;
+    object{
+      width: 50%;
+      display: block;
+      margin: auto;
+    }
 	}
 }
 .phone{
@@ -159,7 +165,7 @@ footer
     position: absolute;
     left: 20%;
     margin-top: 50px;
-  } 
+  }
 }
 .logo_footer{
     position: relative;
