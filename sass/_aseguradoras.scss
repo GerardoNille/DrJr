@@ -2,10 +2,14 @@
   width: 100%;
   max-width: 980px;
   margin: auto;
-  img{
-    width: 150px;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: middle;
+
+  .grid{
+    text-align: center;
+    img{
+      max-width: 100%;
+      margin: 10px;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }

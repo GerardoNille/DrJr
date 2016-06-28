@@ -184,3 +184,7 @@ footer
     top: 20%;
   }
 }
+.wrapper{
+  max-width: $max_mediaquery;
+  margin: auto;
+}

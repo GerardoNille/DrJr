@@ -1,77 +1,72 @@
 #contacto {
-    width      : 100%;
+    width   : 100%;
     position: relative;
-    clear: both;
-    .banner{
-            img{
-                width: 100%;
-            }
-    
-    p {
-            left: 70px;
-            bottom: 10%;
-            font-family: Big Caslon Medium;
-            color: white;
-            position: absolute;
+    clear   : both;
+    .banner {
+        img {
+            width: 100%;
+        }
+        p {
+            left          : 70px;
+            bottom        : 10%;
+            font-family   : Big Caslon Medium;
+            color         : white;
+            position      : absolute;
             /* display: inline-block; */
-            border-left: solid 5px #9e8629;
-            padding: 1px 10px;
-            font-size: 3rem;
+            border-left   : solid 5px #9e8629;
+            padding       : 1px 10px;
+            font-size     : 3rem;
             letter-spacing: 2px;
         }
     }
 }
-.address{
-    float: right;
-    width: 40%;
-    text-align: right;
+.address {
+    float       : right;
+    width       : 40%;
+    text-align  : right;
     margin-right: 100px;
-    font-size: 1.5rem;
-    margin-top: 40px;
-    .banner_logo
-    {
-        height: 200px;
+    font-size   : 1.5rem;
+    margin-top  : 40px;
+    .banner_logo {
+        height      : 200px;
         border-style: solid;
-        border-width: 0px 0px 3px 0px;
-        object{
-            width: 25%;
-            margin: auto;
+        border-width: 0 0 3px 0;
+        object {
+            width  : 25%;
+            margin : auto;
             display: block;
         }
     }
-    .banner_logo_ocre
-    {
-        height: 20px;
+    .banner_logo_ocre {
+        height      : 20px;
         border-style: solid;
-        border-width: 0px 0px 3px 0px;
-        width: 13%;
-        display: inline-block;
+        border-width: 0 0 3px 0;
+        width       : 13%;
+        display     : inline-block;
         border-color: $ocre;
     }
-    .golden
-    {
-        color: #9e8629;
-        font-family: Big Caslon Medium;
-        font-size: 2.5rem;
+    .golden {
+        color         : #9e8629;
+        font-family   : Big Caslon Medium;
+        font-size     : 2.5rem;
         letter-spacing: 4px;
     }
-    .golden_medium{
-        color: #9e8629;
+    .golden_medium {
+        color      : #9e8629;
         font-family: Big Caslon Medium;
-        font-size: 2rem;
+        font-size  : 2rem;
     }
 }
 .ubicacion {
-    width  : 100%;
-    display: block;
-    margin : 0;
-    margin-bottom: 70px;
+    width   : 100%;
+    display : block;
+    margin  : 0 0 70px;
     overflow: auto;
 }
-.msg-left{
+.msg-left {
     text-align: center;
 }
-p.italico{
+p.italico {
     font-style: italic;
 }
 .contacto {
@@ -81,123 +76,126 @@ p.italico{
     font-family   : 'Aspira';
     display       : block;
     vertical-align: top;
-    float: left;
-    margin-top: 30px;
+    float         : left;
+    margin-top    : 30px;
     ul {
         list-style-type: none;
         padding        : 0;
     }
-    form{
-        float: left;
+    form {
+        float      : left;
         margin-left: 70px;
     }
     input,
     textarea {
         background: $gris;
-        height: 50px;
+        height    : 50px;
     }
-    textarea{
+    textarea {
         height: 280px;
     }
-    .contact-dropdown-services dt a{
+    .contact-dropdown-services dt a {
         text-transform: uppercase;
     }
     .contact-dropdown-services dt a,
     input,
     textarea {
-        width     : 100%;
-        padding   : 10px;
-        margin    : 10px 0;
-        border-left: solid 5px $ocre;
-        box-sizing: border-box;
+        width         : 100%;
+        padding       : 10px;
+        margin        : 10px 0;
+        border-left   : solid 5px $ocre;
+        border-bottom : none;
+        border-Top    : none;
+        border-right  : none;
+        box-sizing    : border-box;
         letter-spacing: 1px;
-        font-family: Aspira;
-        
+        font-family   : Aspira;
     }
-    input[type=date]{
-        width: 25%;
-        padding: 0px;
+    input[type=date] {
+        width  : 25%;
+        padding: 0;
     }
-    input[type=number]{
-        width: 23%;
-        float: left;
+    input[type=number] {
+        width       : 23%;
+        float       : left;
         margin-right: 10px;
     }
-    input[type=tel]{
-        width: 74%;
-        float: left;
+    input[type=tel] {
+        width       : 74%;
+        float       : left;
         border-style: hidden;
     }
-    
     button {
-        cursor: pointer;
+        cursor    : pointer;
         padding   : 10px 20px;
-        float: right;
+        float     : right;
         border    : none;
         color     : white;
         text-align: center;
         background: $ocre;
-        height: 50px;
+        height    : 50px;
     }
-    .label{
-        background-color: #FFFFFF
-;        font-size: 0.8em;
+    .label {
+        background-color: #FFFFFF;
+        font-size       : 0.8em;
+        text-align      : center;
+    }
+    .sub-label {
         text-align: center;
+        font-size : 0.6em;
     }
-    .sub-label{
-        text-align: center;
-        font-size: 0.6em;
-    }
-    li > span{
+    li > span {
         font-size: 0.6em;
     }
     /*Estilo de placeholder*/
     ::-webkit-input-placeholder {
         color: white;
     }
-    :-moz-placeholder { /* Firefox 18- */
+    :-moz-placeholder {
+        /* Firefox 18- */
         color: white;
     }
-    ::-moz-placeholder {  /* Firefox 19+ */
+    ::-moz-placeholder {
+        /* Firefox 19+ */
         color: white;
     }
     :-ms-input-placeholder {
         color: white;
     }
-    input[placeholder], [placeholder], *[placeholder] {
-            color: white;
-            word-spacing: 6px;
-            font-weight: 100;
-            font-size: 1.2rem;
-            font-family: Aspira;
-            font-style: normal;
-            font-variant: normal;
-            padding: 20px;
+    *[placeholder],
+    [placeholder],
+    input[placeholder] {
+        color       : white;
+        word-spacing: 6px;
+        font-weight : 100;
+        font-size   : 1.2rem;
+        font-family : Aspira;
+        font-style  : normal;
+        font-variant: normal;
+        padding     : 20px;
     }
     [placeholder]:focus::-webkit-input-placeholder {
-        transition: 0s; 
-        opacity: 0;
+        transition: 0s;
+        opacity   : 0;
     }
 }
-.contacto-fuente{
+.contacto-fuente {
     font-family: 'Aspira';
-    font-size: 2rem;
+    font-size  : 2rem;
     font-weight: 600;
 }
-.direcciones{
-    
+.direcciones {
     margin     : auto;
     font-family: 'Aspira';
-    text-align: center;
-    font-size : 0.8rem;
-    color     : #2c3e50;
-    width     : 100%;
-    cursor    : pointer;
+    text-align : center;
+    font-size  : 0.8rem;
+    color      : #2c3e50;
+    width      : 100%;
+    cursor     : pointer;
     .something {
         text-transform: uppercase;
         padding       : 1px 10px;
         i {
-            
             font-size: 1.6rem;
         }
         .nombre {
