@@ -110,6 +110,7 @@
 #centro1{
     display: flex;
     width: 100%;
+    line-height: .9;
     img{
         width : 100%
     }
@@ -128,6 +129,7 @@
             border-style: solid;
             padding-left: 25px;
             color: #ffffff;
+            cursor: pointer;
         }
     }
     #cefaleas{
@@ -145,6 +147,57 @@
             border-style: solid;
             padding-left: 25px;
             color: $gris;
+            cursor: pointer;
+        }
+    }
+}
+#centro2{
+    display: flex;
+    width: 100%;
+    line-height: .9;
+    img{
+        background: url(../images/centros/Banner2.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 430px;
+        width: 100%
+    }
+    #neuropediatria{
+        
+        font-family: Caslon;
+        font-size: 40pt;
+        display: flex;
+        /* top: 10%; */
+        p{
+            position: absolute;
+            margin-left: 38%;
+            margin-top: 50px;
+            border-width: 0px 0px 0px 4px;
+            border-color: $ocre;
+            border-style: solid;
+            padding-left: 25px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+    #cefaleas{
+        
+        font-family: Caslon;
+        font-size: 40pt;
+        display: flex;
+        /* top: 10%; */
+        p{
+            position: absolute;
+            margin-left: 50%;
+            margin-top: 275px;
+            border-width: 0px 0px 0px 4px;
+            border-color: $ocre;
+            border-style: solid;
+            padding-left: 25px;
+            color: $gris;
+            cursor: pointer;
         }
     }
 }
