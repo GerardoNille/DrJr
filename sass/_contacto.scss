@@ -27,11 +27,17 @@
     text-align: right;
     margin-right: 100px;
     font-size: 1.5rem;
+    margin-top: 40px;
     .banner_logo
     {
         height: 200px;
         border-style: solid;
         border-width: 0px 0px 3px 0px;
+        object{
+            width: 25%;
+            margin: auto;
+            display: block;
+        }
     }
     .banner_logo_ocre
     {
@@ -91,7 +97,7 @@ p.italico{
         height: 50px;
     }
     textarea{
-        height: 230px;
+        height: 280px;
     }
     .contact-dropdown-services dt a{
         text-transform: uppercase;

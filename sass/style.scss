@@ -40,10 +40,12 @@ nav{
 		height: 0;
     padding-bottom: 19%;
     width: 19%;
-		background-color: #58595A;
+		background: url('../images/Texturas/grey.png');
     float: left;
     object{
       width: 50%;
+      display: block;
+      margin: auto;
     }
 	}
 }
