@@ -125,3 +125,25 @@
         }
     }
 }
+/*
+|------------------------------------------
+|DATOS IMPORTANTES
+|------------------------------------------
+*/
+#datos_importantes{
+  background: $ocre;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  color: white;
+  .title{
+    p{
+      float: left;
+      width: 50%;
+    }
+  }
+  .description{
+    padding: 40px 10%;
+    width: 100%;
+  }
+}
