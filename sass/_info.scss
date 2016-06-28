@@ -140,6 +140,17 @@
     text-transform: uppercase;
     overflow: auto;
     display: block;
+    position: relative;
+    &::after{
+      content: '';
+      display: block;
+      background: white;
+      bottom: 0;
+      left: 0;
+      width: 90%;
+      height: 2px;
+      position: absolute;
+    }
     p{
       float: left;
       width: 50%;
@@ -148,7 +159,7 @@
     }
     p.marker{
       background: white;
-      color: black;
+      color: $gris;
       width: 50%;
       float: left;
       p{
