@@ -138,10 +138,42 @@ span.arrow-r {
 
 .payments{
   text-align: center;
+  margin-right: 70px;
     img{
       max-width: 100px;
       max-height: 50px;
       float: right;
     }
 
+}
+footer
+{
+  display: inline-block;
+  width: 100%;
+  background-color: $ocre;
+  .copyright{
+    font-family: Caslon;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 100;
+    position: absolute;
+    left: 20%;
+    margin-top: 50px;
+  } 
+}
+.logo_footer{
+    position: relative;
+    background: url("../images/texturas/marmol.png");
+    width: 130px;
+    margin-left: 70px;
+    height: 130px;
+    text-align: center;
+  svg{
+    width: 77px;
+    height: 77px;
+    margin: auto;
+    fill: $ocre;
+    position: relative;
+    top: 20%;
+  }
 }
