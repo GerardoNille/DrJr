@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import "var";
 @import "fonts";
 @import "hero";
@@ -13,178 +12,174 @@
 /*
   HERO BANNER
 */
-body{
-  margin: 0;
-  font-family: Aspira;
-  color: $gris;
+body {
+    margin     : 0;
+    font-family: Aspira;
+    color      : $gris;
+    background : whitesmoke;
 }
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
-nav{
-    position: absolute;
-    left: 15%;
-    bottom: 13%;
+nav {
+    position    : absolute;
+    left        : 15%;
+    bottom      : 13%;
     word-spacing: 100px;
-  a{
-    color: #3e3d3f;
-    text-decoration: none;
-    FONT-FAMILY: Caslon;
-    font-size: .8rem;
-    letter-spacing: 2px;
-  }
-}
-.header{
-	display: block;
-	overflow: auto;
-	.brain{
-		height: 0;
-    padding-bottom: 19%;
-    width: 19%;
-		background: url('../images/Texturas/grey.png');
-    float: left;
-    object{
-      width: 50%;
-      display: block;
-      margin: auto;
+    a {
+        color          : #3e3d3f;
+        text-decoration: none;
+        font-family    : Caslon;
+        font-size      : 0.8rem;
+        letter-spacing : 2px;
     }
-	}
 }
-.phone{
-    position: absolute;
-    left: 67%;
-    top: 18%;
-    padding-bottom: 2%;
-    width: 39%;
+.header {
+    display : block;
+    overflow: auto;
+    .brain {
+        height        : 0;
+        padding-bottom: 19%;
+        width         : 19%;
+        background    : url('../images/Texturas/grey.png');
+        float         : left;
+        object {
+            width  : 50%;
+            display: block;
+            margin : auto;
+        }
+    }
+}
+.phone {
+    position        : absolute;
+    left            : 67%;
+    top             : 18%;
+    padding-bottom  : 2%;
+    width           : 39%;
     background-color: #9e8629;
-    p{
-      font-family: Caslon;
-      font-weight: 500;
-      font-size: .8rem;
-      padding-right: 25px;
-      letter-spacing: 1.5px;
-      color: #FFFFFF;
-      left: 10%;
-      padding-top: 20px;
-      position: relative;
-      }
-      p#english{
+    p {
+        font-family   : Caslon;
+        font-weight   : 500;
+        font-size     : 0.8rem;
+        padding-right : 25px;
+        letter-spacing: 1.5px;
+        color         : #FFFFFF;
+        left          : 10%;
+        padding-top   : 20px;
+        position      : relative;
+    }
+    p#english {
         font-family: Caslon,Sans-serif;
-      }
+    }
 }
-.horizontal{
-    position: absolute;
-    left: 7%;
-    top: 67%;
-    padding-bottom: .5%;
-    width: 61%;
+.horizontal {
+    position        : absolute;
+    left            : 7%;
+    top             : 67%;
+    padding-bottom  : 0.5%;
+    width           : 61%;
     background-color: #9e8629;
 }
 /*Button*/
-.btn{
-  padding: 10px 40px 10px 30px;
-  background: rgba(0, 0, 0, .5);
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
-  color: white;
-  text-transform: uppercase;
-  font-family: Aspira;
-  font-size: 12pt;
-  border-left: solid 5px $ocre;
+.btn {
+    padding       : 10px 40px 10px 30px;
+    background    : rgba(0, 0, 0, .5);
+    position      : absolute;
+    right         : 10%;
+    bottom        : 10%;
+    color         : white;
+    text-transform: uppercase;
+    font-family   : Aspira;
+    font-size     : 12pt;
+    border-left   : solid 5px $ocre;
 }
 span.arrow-r {
-  &::before,
-  &::after {
-    content   : '';
-    display   : block;
-    height    : 2px;
-    width     : 7px;
-    right     : 20px;
-    background: white;
-    position  : absolute;
-
-  }
-  &::before {
-    transform: rotate(45deg);
-    top      : 40%;
-  }
-  &::after {
-    top      : 50%;
-    transform: rotate(-45deg);
-  }
-}
-.ribbon{
-  width: 100%;
-  height: 77px;
-  background: url('../images/pattern.png');
-  background-repeat: repeat;
-  margin: 0;
-  .logo_ocre{
-    width: 77px;
-    height: 77px;
-    margin: none;
-    float: right;
-    background: $ocre;
-    position: relative;
-    .logo{
-      width: 26.2px;
-      position: absolute;
-      top: 50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-      fill:white;
+    &::after,
+    &::before {
+        content   : '';
+        display   : block;
+        height    : 2px;
+        width     : 7px;
+        right     : 20px;
+        background: white;
+        position  : absolute;
     }
-  }
-}
-
-#prueba{
-  position: relative;
-  clear: both;
-}
-
-.payments{
-  text-align: center;
-  margin-right: 70px;
-    img{
-      max-width: 100px;
-      max-height: 50px;
-      float: right;
+    &::before {
+        transform: rotate(45deg);
+        top      : 40%;
     }
-
+    &::after {
+        top      : 50%;
+        transform: rotate(-45deg);
+    }
 }
-footer
-{
-  display: inline-block;
-  width: 100%;
-  background-color: $ocre;
-  .copyright{
-    font-family: Caslon;
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 100;
-    position: absolute;
-    left: 20%;
-    margin-top: 50px;
-  }
+.ribbon {
+    width            : 100%;
+    height           : 77px;
+    background       : url('../images/pattern.png');
+    background-repeat: repeat;
+    margin           : 0;
+    .logo_ocre {
+        width     : 77px;
+        height    : 77px;
+        margin    : none;
+        float     : right;
+        background: $ocre;
+        position  : relative;
+        .logo {
+            width    : 26.2px;
+            position : absolute;
+            top      : 50%;
+            left     : 50%;
+            transform: translate(-50%,-50%);
+            fill     : white;
+        }
+    }
 }
-.logo_footer{
+#prueba {
     position: relative;
-    background: url("../images/texturas/marmol.png");
-    width: 130px;
+    clear   : both;
+}
+.payments {
+    text-align  : center;
+    margin-right: 70px;
+    img {
+        max-width : 100px;
+        max-height: 50px;
+        float     : right;
+    }
+}
+footer {
+    display         : inline-block;
+    width           : 100%;
+    background-color: $ocre;
+    .copyright {
+        font-family: Caslon;
+        color      : #ffffff;
+        font-size  : 1.5rem;
+        font-weight: 100;
+        position   : absolute;
+        left       : 20%;
+        margin-top : 50px;
+    }
+}
+.logo_footer {
+    position   : relative;
+    background : url("../images/texturas/marmol.png");
+    width      : 130px;
     margin-left: 70px;
-    height: 130px;
-    text-align: center;
-  svg{
-    width: 45px;
-    height: 77px;
-    margin: auto;
-    fill: $ocre;
-    position: relative;
-    top: 20%;
-  }
+    height     : 130px;
+    text-align : center;
+    svg {
+        width   : 45px;
+        height  : 77px;
+        margin  : auto;
+        fill    : $ocre;
+        position: relative;
+        top     : 20%;
+    }
 }
-.wrapper{
-  max-width: $max_mediaquery;
-  margin: auto;
+.wrapper {
+    max-width: $max_mediaquery;
+    margin   : auto;
 }
