@@ -34,7 +34,6 @@
             top        : 50%;
             left       : 50%;
             transform  : translate(-50%,-50%);
-
         }
     }
     .menciones {
@@ -43,9 +42,9 @@
         text-align: center;
         border-left: solid 10px $ocre;
         background: url('../images/texturas/marmol.png');
+
         .title p{
           display: inline-block;;
-        }
     }
     .h_ribbon {
         background       : url('../images/pattern.png');
