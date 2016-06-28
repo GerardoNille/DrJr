@@ -1,6 +1,5 @@
 #enlaces {
     background: white;
-
     .row {
         width   : 100%;
         display : block;
@@ -19,32 +18,41 @@
             margin: 0;
         }
     }
-    .title p{
-      padding    : 0 10px;
-      border-left: solid 5px $ocre;
-      font-family: 'Caslon';
-      margin:0;
-      font-size  : $title_size;
+    .title p {
+        padding    : 0 10px;
+        border-left: solid 5px $ocre;
+        font-family: 'Caslon';
+        margin     : 0;
+        font-size  : $title_size;
     }
     .memorias,
     .video {
         position: relative;
         .title p {
-            position   : absolute;
-            top        : 50%;
-            left       : 50%;
-            transform  : translate(-50%,-50%);
+            position : absolute;
+            top      : 50%;
+            left     : 50%;
+            transform: translate(-50%,-50%);
         }
     }
     .menciones {
-        position  : relative;
-        width     : 100%;
-        text-align: center;
+        position   : relative;
+        width      : 100%;
+        text-align : center;
         border-left: solid 10px $ocre;
-        background: url('../images/texturas/marmol.png');
-
-        .title p{
-          display: inline-block;;
+        background : url('../images/texturas/marmol.png');
+        padding: 10%;
+        .title p {
+          text-align: left;
+        }
+        .description{
+            position : absolute;
+            top      : 50%;
+            left     : 50%;
+            transform: translate(-50%,-50%);
+            width: 80%;
+            font-size: $subtitle_size;
+        }
     }
     .h_ribbon {
         background       : url('../images/pattern.png');
