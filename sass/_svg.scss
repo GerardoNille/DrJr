@@ -31,7 +31,7 @@
   }
 
   .st6 {
-      font-size: 13;
+      font-size: 11pt;
   }
 
   .st7 {
@@ -41,7 +41,7 @@
   }
 
   .st8 {
-      font-size: 15;
+      font-size: 12pt;
   }
 
   .st9 {
@@ -55,7 +55,7 @@
   }
 
   .st11 {
-      font-size: 20;
+      font-size: 18pt;
   }
 
   .st12 {
@@ -63,7 +63,7 @@
   }
 
   .st13 {
-      font-size: 12;
+      font-size: 10pt;
   }
 
   .st14 {
@@ -80,4 +80,9 @@
       font-family: 'Aspira';
       font-weight: 700;
   }
+}
+#cerebro{
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          fill: $ocre;
 }
