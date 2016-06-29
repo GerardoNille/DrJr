@@ -14,8 +14,8 @@ $(window).resize( function () {
 function slide_Centros(centro,caller) {
 	//$(caller).closest('#centro1').slideUp;
 	$(caller).parent().parent().slideToggle();
-    if ($('#' + centro).is(':visible')) {
-        $("#" + centro).slideUp(1500);
+	if ($('#' + centro).is(':visible')) {
+		$("#" + centro).slideUp(1500);
         //$(".banner_servicio").removeClass("imagen_animacion");
     } else {
         //$(".banner_servicio").addClass("imagen_animacion");
@@ -27,8 +27,8 @@ function slide_Centros(centro,caller) {
 
 function show_banner(banner,caller) {
 	//$(caller).closest('#centro1').slideUp;
-		$(caller).parent().parent().parent().slideToggle();
-        $("#" + banner).slideToggle();
+	$(caller).parent().parent().parent().slideToggle();
+	$("#" + banner).slideToggle();
         //$(".banner_servicio").removeClass("imagen_animacion");
-    
-}
+        
+    }

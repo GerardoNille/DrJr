@@ -3,11 +3,12 @@
     position: relative;
     clear: both;
     .banner{
-            img{
-                width: 100%;
-            }
-    
-    p {
+        display: flex;
+        img{
+            width: 100%;
+        }
+
+        p {
             left: 70px;
             font-family: Big Caslon Medium;
             color: white;
@@ -124,7 +125,7 @@
         width : 100%
     }
     #neuropediatria{
-        
+
         font-family: Caslon;
         font-size: 40pt;
         display: flex;
@@ -142,7 +143,7 @@
         }
     }
     #cefaleas{
-        
+
         font-family: Caslon;
         font-size: 40pt;
         display: flex;
@@ -174,7 +175,7 @@
         width: 100%
     }
     #neuropediatria{
-        
+
         font-family: Caslon;
         font-size: 40pt;
         display: flex;
@@ -192,7 +193,7 @@
         }
     }
     #cefaleas{
-        
+
         font-family: Caslon;
         font-size: 40pt;
         display: flex;
@@ -218,7 +219,7 @@
         width : 100%
     }
     #neuropediatria{
-        
+
         font-family: Caslon;
         font-size: 40pt;
         display: flex;
@@ -236,7 +237,7 @@
         }
     }
     #cefaleas{
-        
+
         font-family: Caslon;
         font-size: 40pt;
         display: flex;

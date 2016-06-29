@@ -1,0 +1,104 @@
+#testimonios{
+	display: inline-block;
+	font-family: Aspira;
+	font-size: 14pt;
+	.first,
+	.second{
+		display: flex;
+		color: $gris;
+	}
+	.primer_cuadrante{
+		background: url('../images/texturas/paper.png');
+		width: 46%;
+		max-width: 508px;
+		float : left;
+		border-width: 0px 15px 5px 0px;
+        border-color: $ocre;
+        border-style: solid;
+		.descripcion{
+			margin-left: 16%;
+			margin-right: 16%;
+			margin-top: 16%;
+			line-height: 1.4;
+		}
+		.firma{
+			margin-right: 16%;
+			float: right;
+			margin-bottom: 8%;
+		}
+	}
+	.segundo_cuadrante{
+		width: 53%;
+		float: left;
+		max-width: 592px;
+		.descripcion{
+			margin-left: 16%;
+			margin-right: 16%;
+			margin-top: 16%;
+			line-height: 1.4;
+		}
+		.firma{
+			margin-right: 16%;
+			float: right;
+			margin-bottom: 8%;
+		}
+	}
+	.tercer_cuadrante{
+		background: url('../images/texturas/paper.png');
+		float: left;
+		width: 46%;
+		max-width: 508px;
+		border-width: 0px 15px 0px 0px;
+        border-color: $ocre;
+        border-style: solid;
+		.descripcion{
+			margin-left: 16%;
+			margin-right: 16%;
+			margin-top: 16%;
+			line-height: 1.4;
+		}
+		.firma{
+			margin-right: 16%;
+			float: right;
+			margin-bottom: 8%;
+			text-align: right;
+		}
+
+	}
+	.cuarto_cuadrante{
+		width: 53%;
+		background: url('../images/texturas/grey.png');
+		float: left;
+		max-width: 592px;
+		color: #FFFFFF;
+		.descripcion{
+			margin-left: 16%;
+			margin-right: 16%;
+			margin-top: 16%;
+			line-height: 1.4;
+		}
+		.firma{
+			margin-right: 16%;
+			float: right;
+			margin-bottom: 8%;
+		}
+	}
+	.title{
+            font-family: Caslon;
+            font-size: 40pt;
+            margin-left: 6%;
+            border-width: 0px 0px 0px 4px;
+            border-color: $ocre;
+            border-style: solid;
+            padding-left: 25px;
+            .font_change{
+                font-family: Aspira;
+            }
+        }
+        img{
+                margin-top: 57px;
+                width: 1.7%;
+                position: absolute;
+                cursor: pointer;
+            }
+}
