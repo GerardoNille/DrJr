@@ -22,7 +22,7 @@
 }
 .address {
     float       : right;
-    width       : 40%;
+    width       : 44%;
     text-align  : right;
     margin-right: 100px;
     font-size   : 1.5rem;
@@ -31,6 +31,9 @@
         height      : 200px;
         border-style: solid;
         border-width: 0 0 3px 0;
+        width: 90%;
+        float: right;
+        margin-bottom: 30px;
         object {
             width  : 25%;
             margin : auto;
@@ -48,8 +51,8 @@
     .golden {
         color         : #9e8629;
         font-family   : Big Caslon Medium;
-        font-size     : 2.5rem;
-        letter-spacing: 4px;
+        font-size     : 2.1rem;
+        letter-spacing: 3px;
     }
     .golden_medium {
         color      : #9e8629;
@@ -85,6 +88,7 @@ p.italico {
     form {
         float      : left;
         margin-left: 70px;
+        width: 40%;
     }
     input,
     textarea {
@@ -92,7 +96,7 @@ p.italico {
         height    : 50px;
     }
     textarea {
-        height: 280px;
+        height: 250px;
     }
     .contact-dropdown-services dt a {
         text-transform: uppercase;
@@ -168,7 +172,7 @@ p.italico {
         color       : white;
         word-spacing: 6px;
         font-weight : 100;
-        font-size   : 1.2rem;
+        font-size   : 1rem;
         font-family : Aspira;
         font-style  : normal;
         font-variant: normal;
@@ -183,27 +187,4 @@ p.italico {
     font-family: 'Aspira';
     font-size  : 2rem;
     font-weight: 600;
-}
-.direcciones {
-    margin     : auto;
-    font-family: 'Aspira';
-    text-align : center;
-    font-size  : 0.8rem;
-    color      : #2c3e50;
-    width      : 100%;
-    cursor     : pointer;
-    .something {
-        text-transform: uppercase;
-        padding       : 1px 10px;
-        i {
-            font-size: 1.6rem;
-        }
-        .nombre {
-            font-weight: 700;
-        }
-        .direccion,
-        .telefono {
-            font-weight: 200;
-        }
-    }
 }
