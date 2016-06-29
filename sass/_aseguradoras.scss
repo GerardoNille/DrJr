@@ -2,7 +2,13 @@
   width: 100%;
   max-width: 980px;
   margin: auto;
-
+.title p{
+  font-size: $title_size;
+  display: inline-block;
+  border-left: solid 5px $ocre;
+  font-family: Caslon;
+  padding: 10px 20px;
+}
   .grid{
     text-align: center;
     img{
