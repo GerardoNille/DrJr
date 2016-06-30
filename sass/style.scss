@@ -36,12 +36,16 @@ nav {
         letter-spacing : 2px;
     }
 }
+.top{
+    background-color: $ocre;
+}
 .header {
     display : flex;
     overflow: hidden;
     max-width: 1100px;
     max-height: 206px;
     margin: auto;
+    background-color : $ocre;
     .brain {
         height        : 0;
         padding-bottom: 19%;
@@ -52,6 +56,7 @@ nav {
             width  : 50%;
             display: block;
             margin : auto;
+            margin-top: 18%;
         }
     }
 }
@@ -62,7 +67,7 @@ nav {
     background-color: #9e8629;
     max-width: 360px;
     max-height: 93px;
-    width: 33%;
+    width: 34%;
     p {
         font-family   : Caslon;
         font-weight   : 500;

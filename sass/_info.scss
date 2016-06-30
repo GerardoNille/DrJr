@@ -5,13 +5,11 @@
   position      : absolute;
   height        : 209px;
   max-width: 894px;
-  img {
-    width: 100%;
-  }
-  object{
+  img#titulo{
       position: absolute;
-      top: 25%;
-      left: 10%;
+      top: 24%;
+      left: 11%;
+      width: 47%;
   }
   .name {
     position   : absolute;
