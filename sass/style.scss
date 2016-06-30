@@ -25,9 +25,9 @@ body {
 }
 nav {
     position    : absolute;
-    left        : 15%;
+    left        : 10%;
     bottom      : 13%;
-    word-spacing: 100px;
+    word-spacing: 60px;
     a {
         color          : #3e3d3f;
         text-decoration: none;
@@ -40,12 +40,14 @@ nav {
     display : flex;
     overflow: hidden;
     max-width: 1100px;
+    max-height: 206px;
     margin: auto;
     .brain {
         height        : 0;
         padding-bottom: 19%;
         background    : url('../images/Texturas/grey.png');
         float         : left;
+        max-width: 206px;
         object {
             width  : 50%;
             display: block;
@@ -54,11 +56,13 @@ nav {
     }
 }
 .phone {
-    position        : absolute;
-    left            : 67%;
-    top             : 18%;
-    padding-right: 40px;
+    position: absolute;
+    left: 67%;
+    top: 25%;
     background-color: #9e8629;
+    max-width: 360px;
+    max-height: 93px;
+    width: 33%;
     p {
         font-family   : Caslon;
         font-weight   : 500;
