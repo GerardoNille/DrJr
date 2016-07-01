@@ -33,6 +33,7 @@
             top      : 50%;
             left     : 50%;
             transform: translate(-50%,-50%);
+            cursor   : pointer;
         }
     }
     .menciones {
@@ -41,16 +42,16 @@
         text-align : center;
         border-left: solid 10px $ocre;
         background : url('../images/texturas/marmol.png');
-        padding: 10%;
+        padding    : 10%;
         .title p {
-          text-align: left;
+            text-align: left;
         }
-        .description{
+        .description {
             position : absolute;
             top      : 50%;
             left     : 50%;
             transform: translate(-50%,-50%);
-            width: 80%;
+            width    : 80%;
             font-size: $subtitle_size;
         }
     }
@@ -68,6 +69,60 @@
             float         : left;
             display       : inline-block;
             vertical-align: top;
+        }
+    }
+    .memorias_container {
+        // display   : none;
+        .memoria {
+            width     : 31%;
+            margin    : 1%;
+            background: $ocre;
+            float     : left;
+            &:hover .texto .nombre::after{
+              width: 100%;
+            }
+            &:nth-child(odd) .texto {
+                background: url('../images/texturas/marmol.png');
+            }
+            &:nth-child(even) .texto {
+                background: url('../images/texturas/grey.png');
+                color    : white;
+                .nombre::after{
+                  background: white;
+                }
+            }
+            .texto {
+                padding    : 10px;
+                margin-left: 2%;
+                width      : 98%;
+                display    : block;
+                .nombre {
+                  font-style: italic;
+                  letter-spacing: 0.2em;
+                  font-size: 15pt;
+                  position: relative;
+                  padding: 3px 0;
+                  display: inline-block;
+                  &::after{
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 20%;
+                    height: 3px;
+                    background: black;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    transition: ease .5s;
+                  }
+
+                }
+            }
+            img {
+              display: block;
+                width     : 100%;
+                margin-top: 10px;
+            }
         }
     }
 }
