@@ -53,12 +53,13 @@
         }
         .title{
             font-family: Caslon;
-            font-size: 40pt;
+            font-size: 30pt;
             margin-left: 15%;
             border-width: 0px 0px 0px 4px;
             border-color: $ocre;
             border-style: solid;
             padding-left: 25px;
+            line-height: 1;
             .font_change{
                 font-family: Aspira;
             }
