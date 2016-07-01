@@ -9,7 +9,8 @@
         }
 
         p {
-            left: 70px;
+            left: 193px;
+            top: 93px;
             font-family: Big Caslon Medium;
             color: white;
             position: absolute;
@@ -21,7 +22,12 @@
         }
     }
 }
-
+.font_change{
+                font-family: Aspira Light;
+            }
+            .flecha{
+                cursor: pointer;
+            }
 .centro_expandido{
     display: flex;
     .izquierda,
@@ -60,9 +66,7 @@
             border-style: solid;
             padding-left: 25px;
             line-height: 1;
-            .font_change{
-                font-family: Aspira;
-            }
+            
         }
         .descripcion{
             font-family: Aspira Regular;
@@ -122,9 +126,6 @@
     display: flex;
     width: 100%;
     line-height: .9;
-    img{
-        width : 100%
-    }
     #neuropediatria{
 
         font-family: Caslon;
@@ -142,6 +143,11 @@
             color: #ffffff;
             cursor: pointer;
         }
+        .flecha{
+            position: absolute;
+            margin-left: 329px;
+            margin-top: 45px;
+        }
     }
     #cefaleas{
 
@@ -151,7 +157,7 @@
         /* top: 10%; */
         p{
             position: absolute;
-            margin-left: 450px;
+            margin-left: 433px;
             margin-top: 230px;
             border-width: 0px 0px 0px 4px;
             border-color: $ocre;
@@ -160,13 +166,18 @@
             color: $gris;
             cursor: pointer;
         }
+        .flecha{
+            position: absolute;
+            margin-left: 662px;
+            margin-top: 260px;
+        }
     }
 }
 #centro2{
     display: flex;
     width: 100%;
     line-height: .9;
-    img{
+    img#banner{
         background: url(../images/centros/Banner2.png) no-repeat center center; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -192,6 +203,12 @@
             color: #ffffff;
             cursor: pointer;
         }
+        .flecha{
+            position: absolute;
+            margin-left: 397px;
+            margin-top: 88px;
+        }
+
     }
     #cefaleas{
 
@@ -210,15 +227,18 @@
             color: $gris;
             cursor: pointer;
         }
+        .flecha{
+            position: absolute;
+            margin-left: 768px;
+            margin-top: 260px;
+        }
+
     }
 }
 #centro3{
     display: flex;
     width: 100%;
     line-height: .9;
-    img{
-        width : 100%
-    }
     #neuropediatria{
 
         font-family: Caslon;
@@ -236,6 +256,12 @@
             color: #ffffff;
             cursor: pointer;
         }
+        .flecha{
+            position: absolute;
+            margin-left: 378px;
+            margin-top: 57px;
+        }
+
     }
     #cefaleas{
 
@@ -254,5 +280,11 @@
             color: #FFFFFF;
             cursor: pointer;
         }
+        .flecha{
+            position: absolute;
+            margin-left: 709px;
+            margin-top: 235px;
+        }
+
     }
 }
