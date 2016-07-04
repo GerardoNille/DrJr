@@ -72,7 +72,7 @@
         }
     }
     .memorias_container {
-        // display   : none;
+         display   : none;
         .memoria {
             width     : 31%;
             margin    : 1%;
@@ -92,9 +92,11 @@
                 }
             }
             .texto {
+                  min-height: 400px;
                 padding    : 10px;
                 margin-left: 2%;
                 width      : 98%;
+                float: right;
                 display    : block;
                 .nombre {
                   font-style: italic;
