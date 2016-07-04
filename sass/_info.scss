@@ -1,180 +1,178 @@
-
 .info {
-  overflow      : hidden;
-  float         : left;
-  position      : absolute;
-  height        : 209px;
-  max-width: 894px;
-  img#titulo{
-      position: absolute;
-      top: 24%;
-      left: 11%;
-      width: 47%;
-  }
-  .name {
-    position   : absolute;
-    font-size  : 3.3rem;
-    left       : 13%;
-    font-family: Caslon;
-    font-weight: 400;
-    color      : $gris;
-  }
-
-  .title {
-    position: absolute;
-    display : flex;
-    left    : 18%;
-    top     : 48%;
-    p {
-      font-family   : Aspira;
-      font-weight   : 100;
-      font-size     : 0.8rem;
-      padding-right : 25px;
-      letter-spacing: 1.5px;
-      color         : $gris;
+    overflow : hidden;
+    float    : left;
+    position : absolute;
+    height   : 209px;
+    max-width: 894px;
+    img#titulo {
+        position: absolute;
+        top     : 24%;
+        left    : 11%;
+        width   : 47%;
     }
-
-  }
+    .name {
+        position   : absolute;
+        font-size  : 3.3rem;
+        left       : 13%;
+        font-family: Caslon;
+        font-weight: 400;
+        color      : $gris;
+    }
+    .title {
+        position: absolute;
+        display : flex;
+        left    : 18%;
+        top     : 48%;
+        p {
+            font-family   : Aspira;
+            font-weight   : 100;
+            font-size     : 0.8rem;
+            padding-right : 25px;
+            letter-spacing: 1.5px;
+            color         : $gris;
+        }
+    }
 }
 #enfermedades,
 #experto {
-  float     : left;
-  background: url('../images/texturas/grey.png');
-  img {
-    width: 100%;
-  }
+    float     : left;
+    position  : relative;
+    height    : 1080px;
+    background: url('../images/texturas/grey.png');
+    img {
+        width: 100%;
+    }
 }
 #enfermedades {
-  width         : 45%;
-  text-align    : right;
-  padding-bottom: 20px;
-  p {
-    margin-right  : 10%;
-    text-transform: uppercase;
-    font-family   : Aspira;
-    color         : white;
-    font-size     : 10pt;
-  }
-  p.title {
-    font-size  : $subtitle_size;
-    font-weight: 700;
-    font-style : italic;
-    position   : relative;
-    &:hover::after {
-      width: 50%;
+    width         : 45%;
+    text-align    : right;
+    padding-bottom: 20px;
+    p {
+        margin-right  : 10%;
+        text-transform: uppercase;
+        font-family   : Aspira;
+        color         : white;
+        font-size     : 10pt;
     }
-    &::after {
-      -webkit-transition: width 0.5s;
-      /* Safari */
-      transition        : width 0.5s;
-      content           : '';
-      display           : block;
-      width             : 20%;
-      height            : 3px;
-      position          : absolute;
-      bottom            : -5px;
-      right             : 5px;
-      background        : white;
+    p.title {
+        font-size  : $subtitle_size;
+        font-weight: 700;
+        font-style : italic;
+        position   : relative;
+        &:hover::after {
+            width: 50%;
+        }
+        &::after {
+            -webkit-transition: width 0.5s;
+            /* Safari */
+            transition        : width 0.5s;
+            content           : '';
+            display           : block;
+            width             : 20%;
+            height            : 3px;
+            position          : absolute;
+            bottom            : -5px;
+            right             : 5px;
+            background        : white;
+        }
     }
-  }
 }
 #experto {
-  width      : 55%;
-  border-left: solid 10px $ocre;
-  .title {
-    text-align : center;
-    font-family: Caslon;
-    font-size  : $title_size;
-    color      : white;
-    position   : relative;
-    p {
-      display    : inline-block;
-      border-left: solid 5px $ocre;
-      padding    : 1px 10px;
+    width      : 55%;
+    border-left: solid 10px $ocre;
+    .title {
+        text-align : center;
+        font-family: Caslon;
+        font-size  : $title_size;
+        color      : white;
+        position   : relative;
+        p {
+            display    : inline-block;
+            border-left: solid 5px $ocre;
+            padding    : 1px 10px;
+        }
     }
-  }
-  .pruebas {
-    background: url("../images/texturas/marmol.png");
-    .subtitle {
-      font-family   : Aspira;
-      text-transform: uppercase;
-      width         : 80%;
-      margin        : auto;
-      font-size     : $subtitle_size;
-      letter-spacing: 5px;
-      font-style    : italic;
+    .pruebas {
+        background: url("../images/texturas/marmol.png");
+        height    : 890px;
+        .subtitle {
+            font-family   : Aspira;
+            text-transform: uppercase;
+            width         : 80%;
+            margin        : auto;
+            font-size     : $subtitle_size;
+            letter-spacing: 5px;
+            font-style    : italic;
+        }
+        hr {
+            width     : 80%;
+            height    : 4px;
+            margin    : 10px 0 0;
+            border    : none;
+            background: $ocre;
+        }
+        p {
+            padding       : 10% 10% 10px;
+            line-height   : 30px;
+            text-transform: uppercase;
+        }
+        .logo {
+            width  : 64px;
+            display: block;
+            margin : auto;
+            fill   : $ocre;
+        }
     }
-    hr {
-      width     : 80%;
-      height    : 4px;
-      margin    : 10px 0 0;
-      border    : none;
-      background: $ocre;
-    }
-    p{
-      padding: 10%;
-      line-height: 30px;
-      text-transform: uppercase;
-    }
-    .logo{
-      width: 64px;
-      display: block;
-      margin: auto;
-      fill:$ocre;
-
-    }
-  }
 }
 /*
 |------------------------------------------
 |DATOS IMPORTANTES
 |------------------------------------------
 */
-#datos_importantes{
-  background: $ocre;
-  width: 100%;
-  position: relative;
-  overflow: auto;
-  color: white;
-  .title{
-    text-transform: uppercase;
-    overflow: auto;
-    display: block;
-    position: relative;
-    &::after{
-      content: '';
-      display: block;
-      background: white;
-      bottom: 0;
-      left: 0;
-      width: 90%;
-      height: 2px;
-      position: absolute;
+#datos_importantes {
+    background: $ocre;
+    width     : 100%;
+    position  : relative;
+    overflow  : auto;
+    color     : white;
+    .title {
+        text-transform: uppercase;
+        overflow      : auto;
+        display       : block;
+        position      : relative;
+        &::after {
+            content   : '';
+            display   : block;
+            background: white;
+            bottom    : 0;
+            left      : 0;
+            width     : 90%;
+            height    : 2px;
+            position  : absolute;
+        }
+        p {
+            float  : left;
+            width  : 50%;
+            padding: 5% 10%;
+            margin : 0;
+        }
+        p.marker {
+            background: white;
+            color     : $gris;
+            width     : 50%;
+            float     : left;
+            p {
+                width: 100%;
+            }
+        }
     }
-    p{
-      float: left;
-      width: 50%;
-      padding: 5% 10%;
-      margin: 0;
+    .description {
+        padding: 40px 10%;
+        width  : 100%;
+        float  : none;
     }
-    p.marker{
-      background: white;
-      color: $gris;
-      width: 50%;
-      float: left;
-      p{
-        width: 100%;
-      }
-    }
-  }
-  .description{
-    padding: 40px 10%;
-    width: 100%;
-    float: none;
-  }
 }
-
 /*Trayectoria */
-#trayectoria{
-  background: url('../images/texturas/paper.png');
+#trayectoria {
+    background: url('../images/texturas/paper.png');
 }
