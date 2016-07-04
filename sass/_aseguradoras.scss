@@ -1,21 +1,26 @@
-#aseguradoras{
-  width: 100%;
-  max-width: 980px;
-  margin: auto;
-.title p{
-  font-size: $title_size;
-  display: inline-block;
-  border-left: solid 5px $ocre;
-  font-family: Caslon;
-  padding: 10px 20px;
-}
-  .grid{
-    text-align: center;
-    img{
-      max-width: 100%;
-      margin: 10px;
-      display: inline-block;
-      vertical-align: middle;
+#aseguradoras {
+    width    : 100%;
+    max-width: 980px;
+    margin   : auto;
+    .title p {
+        font-size  : $title_size;
+        display    : inline-block;
+        border-left: solid 5px $ocre;
+        font-family: Caslon;
+        padding    : 10px 20px;
     }
-  }
+    .grid {
+        text-align: center;
+        img {
+            max-width     : 100%;
+            margin        : 10px;
+            display       : inline-block;
+            vertical-align: middle;
+            -webkit-filter: grayscale(100%);
+            transition: ease 1s;
+            &:hover{
+              -webkit-filter: grayscale(0);
+            }
+        }
+    }
 }
