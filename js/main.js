@@ -43,6 +43,9 @@ function show_banner(banner, caller) {
     //$(".banner_servicio").removeClass("imagen_animacion");
 }
 
+function slide_section(section){
+    $("#" + section).slideToggle();
+}
 /*Variables*/
 $(document).ready(function() {
     init_map();
