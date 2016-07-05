@@ -72,56 +72,109 @@
         }
     }
     .memorias_container {
-         display   : none;
+        // display: none;
+        .memorias_header {
+            width     : 100%;
+            border-top: solid 5px $ocre;
+            display   : block;
+            .ribbon {
+                float: left;
+                width: 40%;
+                  height: 143px;
+            }
+        }
+        .title {
+            margin  : 10px 0;
+            width   : 60%;
+            float   : left;
+            position: relative;
+            &:hover {
+                &::after {
+                    bottom: 20%;
+                }
+                &::before {
+                    top: 20%;
+                }
+            }
+            &::after,
+            &::before {
+                content      : '';
+                display      : block;
+                position     : absolute;
+                background   : $gris;
+                width        : 4px;
+                height       : 60%;
+                border-radius: 3px;
+                left         : 30px;
+                transition   : ease 0.5s;
+            }
+            &::after {
+                bottom   : 0;
+                transform: rotate(-45deg);
+            }
+            &::before {
+                top      : 0;
+                transform: rotate(45deg);
+            }
+            p {
+                font-family : Caslon;
+                font-size   : 40pt;
+                margin-left : 30px;
+                border-width: 0 0 0 4px;
+                border-color: #9e8629;
+                border-style: solid;
+                padding-left: 25px;
+                position    : relative;
+            }
+        }
         .memoria {
             width     : 31%;
             margin    : 1%;
             background: $ocre;
             float     : left;
-            &:hover .texto .nombre::after{
-              width: 100%;
+            &:hover .texto .nombre::after {
+                width: 100%;
             }
             &:nth-child(odd) .texto {
                 background: url('../images/texturas/marmol.png');
             }
             &:nth-child(even) .texto {
                 background: url('../images/texturas/grey.png');
-                color    : white;
-                .nombre::after{
-                  background: white;
+                color     : white;
+                .nombre::after {
+                    background: white;
                 }
             }
             .texto {
-                  min-height: 460px;
+                min-height : 460px;
                 padding    : 10px;
                 margin-left: 2%;
                 width      : 98%;
-                float: right;
+                float      : right;
                 display    : block;
                 .nombre {
-                  font-style: italic;
-                  letter-spacing: 0.2em;
-                  font-size: 15pt;
-                  position: relative;
-                  padding: 3px 0;
-                  display: inline-block;
-                  &::after{
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    width: 20%;
-                    height: 3px;
-                    background: black;
-                    content: '';
-                    bottom: 0;
-                    left: 0;
-                    transition: ease .5s;
-                  }
-
+                    font-style    : italic;
+                    letter-spacing: 0.2em;
+                    font-size     : 15pt;
+                    position      : relative;
+                    padding       : 3px 0;
+                    display       : inline-block;
+                    &::after {
+                        content   : '';
+                        position  : absolute;
+                        display   : block;
+                        width     : 20%;
+                        height    : 3px;
+                        background: black;
+                        content   : '';
+                        bottom    : 0;
+                        left      : 0;
+                        transition: ease 0.5s;
+                    }
                 }
             }
             img {
-              display: block;
+                display   : block;
                 width     : 100%;
                 margin-top: 10px;
             }
