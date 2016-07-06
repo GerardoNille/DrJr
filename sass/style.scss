@@ -76,11 +76,28 @@ nav {
         letter-spacing: 1.5px;
         color         : #FFFFFF;
         left          : 10%;
-        padding-top   : 12px;
+        padding-top   : 3px;
         position      : relative;
+    }
+    p#number{
+        &::after{
+            content: '';
+            display: block;
+            height: 2px;
+            width: 13%;
+            background: #FFFFFF;
+            margin-top: 15px;
+    }
     }
     p#english {
         font-family: Caslon,Sans-serif;
+        .bandera{
+            width: 8%;
+            margin-left: 10px;
+        }
+        i#fb_logo{
+            margin-left: 40px;
+        }
     }
 }
 .horizontal {
