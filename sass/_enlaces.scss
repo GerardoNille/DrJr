@@ -5,7 +5,7 @@
         display : block;
         overflow: auto;
     }
-    .video {
+    .videos {
         width     : 80%;
         background: white;
         float     : left;
@@ -26,7 +26,7 @@
         font-size  : $title_size;
     }
     .memorias,
-    .video {
+    .videos {
         position: relative;
         .title p {
             position : absolute;
@@ -43,6 +43,8 @@
         border-left: solid 10px $ocre;
         background : url('../images/texturas/marmol.png');
         padding    : 10%;
+        height: 100%;
+        box-sizing: border-box;
         .title p {
             text-align: left;
         }
@@ -72,15 +74,42 @@
         }
     }
     .memorias_container {
-        // display: none;
+        display: none;
         .memorias_header {
             width     : 100%;
             border-top: solid 5px $ocre;
             display   : block;
+            position: relative;
             .ribbon {
-                float: left;
-                width: 40%;
-                  height: 143px;
+              float: left;
+              width: 40%;
+              height: 143px;
+            }
+            .subtitle,.logo{
+              height: 250px;
+            }
+            .subtitle{
+              width: 60%;
+              float: left;
+              padding: 30px;
+              border-right: solid 10px $ocre;
+              background: $gris;
+              color: white;
+            }
+            .logo{
+              background: url('../images/texturas/marmol.png');
+              display: block;
+              float: left;
+              width: 40%;
+              position: relative;
+              svg{
+                width: 60px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                fill: $ocre;
+              }
             }
         }
         .title {
@@ -119,7 +148,7 @@
             p {
                 font-family : Caslon;
                 font-size   : 40pt;
-                margin-left : 30px;
+                margin-left : 60px;
                 border-width: 0 0 0 4px;
                 border-color: #9e8629;
                 border-style: solid;
@@ -179,5 +208,28 @@
                 margin-top: 10px;
             }
         }
+    }
+    .videos_container{
+      width: 100%;
+      display: none;
+      position: relative;
+      .youtube_video{
+          width: 48%;
+          margin: 1%;
+          float: left;
+          display: block;
+          iframe{
+            width: 100%;
+            vertical-align: bottom;
+            display: block;
+          }
+          .texto{
+            background: $gris;
+            color: white;
+            height: 200px;
+            border-left: solid 10px $ocre;
+            padding: 10px;
+          }
+      }
     }
 }

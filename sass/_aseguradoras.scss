@@ -2,6 +2,7 @@
     width    : 100%;
     max-width: 980px;
     margin   : auto;
+    display: block;
     .title p {
         font-size  : $title_size;
         display    : inline-block;
