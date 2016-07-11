@@ -1,3 +1,6 @@
+
+var $window = $(window);
+
 function slide_Centros(centro, caller) {
     //$(caller).closest('#centro1').slideUp;
     $(caller).parent().parent().toggleClass("faa-horizontal animated faa-fast");

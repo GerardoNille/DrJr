@@ -3,14 +3,14 @@ svg.trayectoria {
     g.fadeIzquierda{
         opacity: 0;
         animation-name: fadeHorizontal;
-        animation-duration: 2s;
+        animation-duration: 8s;
         animation-delay: .4s;
         animation-fill-mode: forwards;
     }
     g.fadeDerecha{
         opacity: 0;
         animation-name: fadeHorizontalInv;
-        animation-duration: 2s;
+        animation-duration: 8s;
         animation-delay: .4s;
         animation-fill-mode: forwards;
     }
