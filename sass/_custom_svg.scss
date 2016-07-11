@@ -1,0 +1,135 @@
+svg.trayectoria {
+    
+    g.fadeIzquierda{
+        opacity: 0;
+        animation-name: fadeHorizontal;
+        animation-duration: 2s;
+        animation-delay: .4s;
+        animation-fill-mode: forwards;
+    }
+    g.fadeDerecha{
+        opacity: 0;
+        animation-name: fadeHorizontalInv;
+        animation-duration: 2s;
+        animation-delay: .4s;
+        animation-fill-mode: forwards;
+    }
+        
+    
+    /*aca iban las clases*/
+   /*.st0 {
+        opacity            : 0;
+        animation-name     : fadeHorizontal;
+        animation-duration : 1s;
+        animation-delay    : 0.0s;
+        animation-fill-mode: forwards;
+    }
+    .st0_1 {
+        opacity            : 0;
+        animation-name     : fadeHorizontal;
+        animation-duration : 1s;
+        animation-delay    : 0.1s;
+        animation-fill-mode: forwards;
+    }
+    .st0_2 {
+        opacity            : 0;
+        animation-name     : fadeHorizontal;
+        animation-duration : 1s;
+        animation-delay    : 0.2s;
+        animation-fill-mode: forwards;
+    }
+    .st0_3 {
+        opacity            : 0;
+        animation-name     : fadeHorizontalInv;
+        animation-duration : 1s;
+        animation-delay    : 1.5s;
+        animation-fill-mode: forwards;
+    }
+    .st1,
+    .st1_2,
+    .st1_3,
+    .st1_4 {
+        fill             : none;
+        stroke           : #1C4499;
+        stroke-width     : 5;
+        stroke-linecap   : round;
+        stroke-linejoin  : round;
+        stroke-miterlimit: 10;
+    }
+    .st1 {
+        opacity            : 0;
+        animation-name     : fadeVertical;
+        animation-duration : 1s;
+        animation-delay    : 0.4s;
+        animation-fill-mode: forwards;
+    }
+    .st1_2 {
+        opacity            : 0;
+        animation-name     : fadeVertical;
+        animation-duration : 1s;
+        animation-delay    : 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .st1_3 {
+        opacity            : 0;
+        animation-name     : fadeVertical;
+        animation-duration : 1s;
+        animation-delay    : 0.6s;
+        animation-fill-mode: forwards;
+    }
+    .st1_4 {
+        opacity            : 0;
+        animation-name     : fadeVertical;
+        animation-duration : 1s;
+        animation-delay    : 0.7s;
+        animation-fill-mode: forwards;
+    }
+    .st2_0 {
+        animation-name     : fade;
+        animation-duration : $interval_time;
+        animation-delay    : $initial_time + ($aditional_time);
+        animation-fill-mode: forwards;
+    }
+    .st2_1 {
+        animation-name     : fade;
+        animation-duration : $interval_time;
+        animation-delay    : $initial_time + ($aditional_time*2);
+        animation-fill-mode: forwards;
+    }
+    .st2_2 {
+        animation-name     : fade;
+        animation-duration : $interval_time;
+        animation-delay    : $initial_time + ($aditional_time*3);
+        animation-fill-mode: forwards;
+    }
+    .st2_3 {
+        animation-name     : fade;
+        animation-duration : $interval_time;
+        animation-delay    : $initial_time + ($aditional_time*4);
+        animation-fill-mode: forwards;
+    }
+    .st2_4 {
+        animation-name     : fade;
+        animation-duration : $interval_time;
+        animation-delay    : $initial_time + ($aditional_time*5);
+        animation-fill-mode: forwards;
+    }
+    .st2_5 {
+        animation-name     : fade;
+        animation-duration : $interval_time;
+        animation-delay    : $initial_time + ($aditional_time*6);
+        animation-fill-mode: forwards;
+    }
+    .st2_6 {
+        animation-name     : fade;
+        animation-duration : $interval_time;
+        animation-delay    : $initial_time + ($aditional_time*7);
+        animation-fill-mode: forwards;
+    }
+    .st2_7 {
+        animation-name     : fade;
+        animation-duration : $interval_time;
+        animation-delay    : $initial_time + ($aditional_time*8);
+        animation-fill-mode: forwards;
+    }*/
+}
