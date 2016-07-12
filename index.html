@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Dr Juan Riestra</title>
-    
+
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9YJqQkJ4-FPQB9T7pfc90Hfe6JwQLRo'></script>
@@ -75,7 +75,7 @@
     <div class="hero">
         <img src="images/inicio.png" alt="hero_inicio" />
         <div class="title">
-            <p>
+            <p onclick="slide_section('biografia');">
                 Biografia
             </p>
         </div>
@@ -85,7 +85,7 @@
             </div>
         </a>
     </div>
-    <div class="biografia">
+    <div class="biografia" id="biografia">
         <div class="logo_dr">
             <img class="imagen" src="iconos/logo_biografia.png" />
         </div>
@@ -100,7 +100,7 @@
                     
                 </div>
                 <div class="ribbon">
-                    
+
                 </div>
             </div>
             <div class="bio_content">
@@ -110,10 +110,10 @@
                     Ha representado una de las ciencias médicas del siglo XX. En 1991 recibió el reconocimiento al buen desempeño realizado en el departamento de neurología y neurocirugía pediátrica del Hospital de Especialidades Centro Médico de Occidente &#60;&#60;por su contribución sobresaliente y pionera a la neurocirugía moderna&#62;&#62;.<br><br>
                     <img class="imagen" id="udg" src="images/biografia/logo_udg.png" />
                     <br>Creó el Servicio Social en el Centro de Educación Especial y Rehabilitación Infantil (CEERI) que, hasta hoy, continúa vigente. Cursó estudios de postgrado en Cirugía General en el Hospital General – IMSS – y de Neurocirugía en el Centro Médico Nacional de Occidente, enfocando su aprendizaje (del que se vuelve precursor) en Neurocirugía en Encefalitis Traumatoso causado por Ballamuthia, realizando su tesis de postgrado y terminando en 1992. Actualmente es un neurocirujano que cuenta con 19 años de experiencia y es reconocido en el argot de Cirugía Neurológica a nivel nacional.<br><br>
-                    
+
                     Como profesor y estudiante ha participado en distintos programas especiales en el extranjero, particularmente en Austria y Alemania, así como en cursos e investigaciones en algunas universidades prestigiosas de la Unión Europea.  Contribuyó en el concurso, realizado por la American Association of Neurological Surgeons, Premio de Neurocirujanos Jóvenes a nivel mundial, con el tema de Anatomía Microquirúrgica del Seno Cavernoso, postulando así, por primera vez, la Estructura Hexaédrica de dicha configuración, la cual fue revisada por la revista de Neurocirugía. <br><br>
                     <img class="imagen" src="images/biografia/aans.png" />
-                    
+
                     <div class="conclusion">
                         En 1993 concurrió de manera activa en el estudio inédito, presentado en el Congreso Mundial de Neurocirugía en el décimo International Congress of Neurological Surgery sobre "combine lesions in severe trauma head". Esto le permitió realizar varios artículos de interés mundial como: Graunalomatous Amebic Encephalitis due to Balamuthis Mandrillaris.<br><br>
 
@@ -145,6 +145,7 @@
                             <img class="imagen" src="images/biografia/hospital_civil.png" />
                         </div>
                     </div>
+                </div>
                 </div>
                 <div class="ribbon">
                     <div class="logo_ocre">
@@ -310,7 +311,7 @@
                         <object class="trayectoria_objeto" type="image/svg+xml" data="iconos/trayectoria.svg">imagen de trayectoria</object>
                     </div>
                     <div id="trayectoria">
-                        
+
                     </div>
                     <div id="centros">
                         <div class="banner">
