@@ -1,0 +1,130 @@
+.biografia{
+	.logo_dr{
+	padding: 9%;
+    margin: auto;
+    display: block;
+}
+
+	.imagen{
+		display: block;
+    margin-left: auto;
+    margin-right: auto;	
+	}
+	.banner_titulo{
+		display: flex;
+		max-height: 143px;
+	.titulo_profesional{
+		max-width: 715px;
+    	float: left;
+		color : #FFFFFF;
+		background    : url('../images/Texturas/grey.png');
+		.title{
+			margin-left: 15%;
+		    border-width: 0px 0px 0px 4px;
+		    border-color: $ocre;
+		    border-style: solid;
+		    padding-left: 25px;
+		    padding-top: 10px;
+		    line-height: 1;
+		    font-family: Aspira;
+		    font-size: 18pt;
+		}
+	}
+	.arrow{
+            img{
+                margin-top: 11px;
+                margin-left: 36px;
+                width: 2%;
+                position: absolute;
+                cursor: pointer;
+            }
+        }
+	.ribbon{
+		    max-width: 385px;
+		    height: 143px;
+    		float: right;
+	}
+}
+img#udg
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+&::after{
+	content: '';
+            display: block;
+            height: 2px;
+            width: 13%;
+            background: #FFFFFF;
+            margin-top: 15px;
+}
+}
+.bio_content{
+	display: flex;
+.bio_main{
+	
+    padding-right: 44px;
+    padding-left: 70px;
+    max-width: 715px;
+    padding-top: 70px;
+    border-width: 0px 13px 0px 0px;
+    border-color: #9e8629;
+    border-style: solid;
+    float: left;
+}
+img.imagen{
+	margin-top: 30px;
+	margin-bottom: 55px;
+}
+.conclusion{
+	background-color: $ocre;
+	color: #FFFFFF;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.bio_right{
+	max-width: 385px;
+.bio_right_first{
+	padding-right: 70px;
+	padding-left: 70px;
+	float: right;
+	max-width: 385px;
+	border-width: 0px 0px 35px 0px;
+    border-color: #9e8629;
+    border-style: solid;
+	.logo_bio{
+		    margin-left: 101px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+		svg{width: 58px;
+    height: 77px;
+    margin: auto;
+    fill: #9e8629;
+    position: relative;
+    top: 20%;}
+	}
+}
+.bio_right_second{
+	padding-right: 70px;
+	padding-left: 70px;
+	padding-top: 50px;
+	float: right;
+	max-width: 385px;
+}
+.bio_right_third{
+	padding-right: 70px;
+	padding-left: 70px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	float: right;
+	max-width: 385px;
+	background-color: $gris;
+	color: #FFFFFF;
+}
+.bio_right_fourth{
+	float: right;
+	max-width: 385px;
+	width: 385px;
+}
+}
+}
+}
