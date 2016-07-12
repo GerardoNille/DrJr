@@ -59,6 +59,10 @@ $(document).ready(function() {
         $('.videos_container').toggle();
             $('.iframe_video').height($('.iframe_video').width() * .5625)
     });
+       
+    $window.on('scroll', check_if_in_view);
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
 });
 $(window).resize(function() {
     $('.iframe_video').height($('.iframe_video').width() * .5625)
