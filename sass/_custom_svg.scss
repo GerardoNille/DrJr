@@ -3,14 +3,14 @@ svg.trayectoria {
     g.fadeIzquierda{
         opacity: 0;
         animation-name: fadeHorizontal;
-        animation-duration: 8s;
+        animation-duration: 4s;
         animation-delay: .4s;
         animation-fill-mode: forwards;
     }
     g.fadeDerecha{
         opacity: 0;
         animation-name: fadeHorizontalInv;
-        animation-duration: 8s;
+        animation-duration: 4s;
         animation-delay: .4s;
         animation-fill-mode: forwards;
     }
@@ -132,4 +132,22 @@ svg.trayectoria {
         animation-delay    : $initial_time + ($aditional_time*8);
         animation-fill-mode: forwards;
     }*/
+}
+
+svg.check{
+
+    .fadeIzquierda{
+        opacity: 0;
+        animation-name: fadeHorizontal;
+        animation-duration: 4s;
+        animation-delay: .4s;
+        animation-fill-mode: forwards;
+    }
+    .fadeDerecha{
+        opacity: 0;
+        animation-name: fadeHorizontalInv;
+        animation-duration: 4s;
+        animation-delay: .4s;
+        animation-fill-mode: forwards;
+    }
 }
