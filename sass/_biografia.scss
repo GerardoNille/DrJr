@@ -80,6 +80,12 @@
 			color: #FFFFFF;
 			padding-bottom: 50px;
 			padding-top: 50px;
+			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+ 				background-color : #000000;
+ 			}
+ 			@media screen and (max-width: $ipad_mediaquery - 1) {
+ 				background-color : #FFFFFF;
+ 			}
 		}
 		.bio_right{
 			max-width: 385px;
