@@ -27,6 +27,10 @@
     margin-right: 100px;
     font-size   : 1.5rem;
     margin-top  : 40px;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     margin-right : 0px;
+                     font-size: 1.2rem;
+            }
     .banner_logo {
         height      : 200px;
         border-style: solid;
@@ -34,6 +38,9 @@
         width: 90%;
         float: right;
         margin-bottom: 30px;
+         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     height : 150px;
+            }
         object {
             width  : 25%;
             margin : auto;
@@ -53,11 +60,17 @@
         font-family   : Big Caslon Medium;
         font-size     : 2.1rem;
         letter-spacing: 3px;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 1.1rem;
+            }
     }
     .golden_medium {
         color      : #9e8629;
         font-family: Big Caslon Medium;
         font-size  : 2rem;
+         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 1.5rem;
+            }
     }
 }
 .ubicacion {
@@ -94,9 +107,15 @@ p.italico {
     textarea {
         background: $gris;
         height    : 50px;
+         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     height : 40px;
+            }
     }
     textarea {
         height: 250px;
+         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     height : 137px;
+            }
     }
     .contact-dropdown-services dt a {
         text-transform: uppercase;
@@ -128,6 +147,9 @@ p.italico {
         width       : 74%;
         float       : left;
         border-style: hidden;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     width : 73%;
+            }
     }
     button {
         cursor    : pointer;
@@ -177,6 +199,9 @@ p.italico {
         font-style  : normal;
         font-variant: normal;
         padding     : 20px;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : .6rem;
+            }
     }
     [placeholder]:focus::-webkit-input-placeholder {
         transition: 0s;
