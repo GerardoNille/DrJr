@@ -71,7 +71,10 @@
         .descripcion{
             font-family: Aspira Regular;
             font-size: 14pt;
-            margin: 60px;
+            margin: 40px;
+            @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 11pt;   
+            }
         }
         .subtema{
             font-family: Aspira;
@@ -84,6 +87,9 @@
             line-height: 1.4;
             font-size: 14pt;
             font-family: Aspira Regular;
+            @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 11pt;   
+            }
         }
     }
     .derecha
@@ -106,6 +112,9 @@
             font-family: Aspira Regular;
             font-size: 14pt;
             margin: 35px;
+            @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 11pt;   
+            }
         }
         .subtema{
             font-family: Aspira;
@@ -119,13 +128,24 @@
             line-height: 1.4;
             font-size: 14pt;
             font-family: Aspira Regular;
+            @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 11pt;   
+            }
         }
     }
+}
+#centro1,#centro2,#centro3
+{@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     height : 250px; 
+            }
 }
 #centro1{
     display: flex;
     width: 100%;
     line-height: .9;
+    img.centro_banner{
+        width: 100%;
+    }
     #neuropediatria{
 
         font-family: Caslon;
@@ -184,7 +204,10 @@
         -o-background-size: cover;
         background-size: cover;
         height: 355px;
-        width: 100%
+        width: 100%;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     height : 250px; 
+            }
     }
     #neuropediatria{
 
@@ -239,6 +262,9 @@
     display: flex;
     width: 100%;
     line-height: .9;
+    img.centro_banner{
+        width: 100%;
+    }
     #neuropediatria{
 
         font-family: Caslon;

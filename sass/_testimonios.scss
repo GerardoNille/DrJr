@@ -20,11 +20,17 @@
 			margin-right: 16%;
 			margin-top: 16%;
 			line-height: 1.4;
+			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 12pt;   
+            }
 		}
 		.firma{
 			margin-right: 16%;
 			float: right;
 			margin-bottom: 8%;
+			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                       font-size : 10pt; 
+            }
 		}
 	}
 	.segundo_cuadrante{
@@ -36,12 +42,19 @@
 			margin-right: 16%;
 			margin-top: 16%;
 			line-height: 1.4;
+		@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 12pt;   
+            }
 		}
 		.firma{
 			margin-right: 16%;
 			float: right;
 			margin-bottom: 8%;
+			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                       font-size : 10pt; 
+            }
 		}
+
 	}
 	.tercer_cuadrante{
 		background: url('../images/texturas/paper.png');
@@ -56,13 +69,20 @@
 			margin-right: 16%;
 			margin-top: 16%;
 			line-height: 1.4;
+		@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 12pt;   
+            }
 		}
 		.firma{
 			margin-right: 16%;
 			float: right;
 			margin-bottom: 8%;
 			text-align: right;
+			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                       font-size : 10pt; 
+            }
 		}
+
 
 	}
 	.cuarto_cuadrante{
@@ -76,12 +96,19 @@
 			margin-right: 16%;
 			margin-top: 16%;
 			line-height: 1.4;
+		@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     font-size : 12pt;   
+            }
 		}
 		.firma{
 			margin-right: 16%;
 			float: right;
 			margin-bottom: 8%;
+			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                       font-size : 10pt; 
+            }
 		}
+
 	}
 	.title{
             font-family: Caslon;

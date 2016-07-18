@@ -213,4 +213,10 @@ footer {
 .wrapper {
     max-width: $max_mediaquery;
     margin   : auto;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                max-width : $ipad_mediaquery;
+            }
+            @media screen and (max-width: $ipad_mediaquery - 1) {
+                max-width : $mobile_mediaquery;
+            }
 }
