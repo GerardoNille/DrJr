@@ -5,6 +5,9 @@
     padding-top: 45px;
     display    : flex;
     font-family: 'Aspira';
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     width: 88%;
+            }
     #gmap_canvas,
     .mapas_desc {
         margin: 0 0 20px;
