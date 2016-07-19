@@ -35,7 +35,7 @@ nav {
         color          : #3e3d3f;
         text-decoration: none;
         font-family    : Caslon;
-        font-size      : 0.8rem;
+        font-size      : .8rem;
         letter-spacing : 2px;
     }
 }
@@ -50,11 +50,15 @@ nav {
     margin: auto;
     background-color : $ocre;
     .brain {
-        height        : 0;
+        
         padding-bottom: 19%;
         background    : url('../images/Texturas/grey.png');
         float         : left;
         max-width: 206px;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+         max-width: 150px;
+        max-height: 150px;
+       }
         object {
             width  : 50%;
             display: block;
@@ -71,6 +75,10 @@ nav {
     max-width: 360px;
     max-height: 93px;
     width: 34%;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+        top: 0%;
+        max-height: 104px;
+       }
     p {
         font-family   : Caslon;
         font-weight   : 500;
@@ -81,6 +89,9 @@ nav {
         left          : 10%;
         padding-top   : 3px;
         position      : relative;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+         padding-top : 0px;
+       }
     }
     p#number{
         &::after{
@@ -90,6 +101,9 @@ nav {
             width: 13%;
             background: #FFFFFF;
             margin-top: 15px;
+            @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+         width : 29%;
+       }
         }
     }
     p#english {
@@ -97,10 +111,22 @@ nav {
         .bandera{
             width: 8%;
             margin-left: 10px;
+            @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+         width: 15%;
+       }
         }
         i#fb_logo{
             margin-left: 40px;
+            @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+            vertical-align: 6%;
+            margin-left: 6px;
+       }
         }
+    }
+    .english_text{
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+         display: none;
+       }
     }
 }
 .horizontal {
@@ -174,18 +200,19 @@ span.arrow-r {
 .payments {
     text-align  : center;
     margin-right: 70px;
-     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     font-size : 10pt;  
-            }
-    img {
-        max-width : 100px;
-        max-height: 50px;
-        float     : right;
-         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     max-width : 60px;
-                     
-            }
-    }
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+       font-size : 10pt;  
+       font-family: Aspira Regular;
+   }
+   img {
+    max-width : 100px;
+    max-height: 50px;
+    float     : right;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+       max-width : 60px;
+
+   }
+}
 }
 footer {
     display         : inline-block;
@@ -199,7 +226,24 @@ footer {
         position   : absolute;
         left       : 20%;
         margin-top : 50px;
-    }
+        letter-spacing: .7px;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+          
+           margin-left: 30px;
+           font-size: 14pt;
+           font-weight: 100;
+           position: absolute;
+           left: 26%;
+           margin-top: 33px; 
+       }
+       .font_change{
+         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+           font-family : 'Aspira';
+           font-size: 10pt;
+           font-weight: lighter;
+       } 
+   }
+}
 }
 .logo_footer {
     position   : relative;
@@ -208,22 +252,27 @@ footer {
     margin-left: 70px;
     height     : 130px;
     text-align : center;
-    svg {
-        width   : 45px;
-        height  : 77px;
-        margin  : auto;
-        fill    : $ocre;
-        position: relative;
-        top     : 20%;
-    }
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+       width: 112px;
+       margin-left: 70px;
+       height: 105px; 
+   }
+   svg {
+    width   : 45px;
+    height  : 77px;
+    margin  : auto;
+    fill    : $ocre;
+    position: relative;
+    top     : 20%;
+}
 }
 .wrapper {
     max-width: $max_mediaquery;
     margin   : auto;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                max-width : $ipad_mediaquery;
-            }
-            @media screen and (max-width: $ipad_mediaquery - 1) {
-                max-width : $mobile_mediaquery;
-            }
+        max-width : $ipad_mediaquery;
+    }
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        max-width : $mobile_mediaquery;
+    }
 }

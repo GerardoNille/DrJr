@@ -4,6 +4,11 @@
     position : absolute;
     height   : 209px;
     max-width: 894px;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+          height: 150px;
+        max-width: 618px;
+       }
+
     img#titulo {
         position: absolute;
         top     : 24%;
