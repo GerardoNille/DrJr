@@ -13,24 +13,24 @@
 		max-width: 508px;
 		float : left;
 		border-width: 0px 15px 5px 0px;
-        border-color: $ocre;
-        border-style: solid;
+		border-color: $ocre;
+		border-style: solid;
 		.descripcion{
 			margin-left: 16%;
 			margin-right: 16%;
 			margin-top: 16%;
 			line-height: 1.4;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     font-size : 12pt;   
-            }
+				font-size : 12pt;   
+			}
 		}
 		.firma{
 			margin-right: 16%;
 			float: right;
 			margin-bottom: 8%;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                       font-size : 10pt; 
-            }
+				font-size : 10pt; 
+			}
 		}
 	}
 	.segundo_cuadrante{
@@ -42,17 +42,17 @@
 			margin-right: 16%;
 			margin-top: 16%;
 			line-height: 1.4;
-		@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     font-size : 12pt;   
-            }
+			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+				font-size : 12pt;   
+			}
 		}
 		.firma{
 			margin-right: 16%;
 			float: right;
 			margin-bottom: 8%;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                       font-size : 10pt; 
-            }
+				font-size : 10pt; 
+			}
 		}
 
 	}
@@ -62,16 +62,16 @@
 		width: 46%;
 		max-width: 508px;
 		border-width: 0px 15px 0px 0px;
-        border-color: $ocre;
-        border-style: solid;
+		border-color: $ocre;
+		border-style: solid;
 		.descripcion{
 			margin-left: 16%;
 			margin-right: 16%;
 			margin-top: 16%;
 			line-height: 1.4;
-		@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     font-size : 12pt;   
-            }
+			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+				font-size : 12pt;   
+			}
 		}
 		.firma{
 			margin-right: 16%;
@@ -79,8 +79,8 @@
 			margin-bottom: 8%;
 			text-align: right;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                       font-size : 10pt; 
-            }
+				font-size : 10pt; 
+			}
 		}
 
 
@@ -96,36 +96,36 @@
 			margin-right: 16%;
 			margin-top: 16%;
 			line-height: 1.4;
-		@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     font-size : 12pt;   
-            }
+			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+				font-size : 12pt;   
+			}
 		}
 		.firma{
 			margin-right: 16%;
 			float: right;
 			margin-bottom: 8%;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                       font-size : 10pt; 
-            }
+				font-size : 10pt; 
+			}
 		}
 
 	}
 	.title{
-            font-family: Caslon;
-            font-size: 40pt;
-            margin-left: 6%;
-            border-width: 0px 0px 0px 4px;
-            border-color: $ocre;
-            border-style: solid;
-            padding-left: 25px;
-            .font_change{
-                font-family: Aspira;
-            }
-        }
-        img{
-                margin-top: 57px;
-                width: 1.7%;
-                position: absolute;
-                cursor: pointer;
-            }
+		font-family: Caslon;
+		font-size: 40pt;
+		margin-left: 6%;
+		border-width: 0px 0px 0px 4px;
+		border-color: $ocre;
+		border-style: solid;
+		padding-left: 25px;
+		.font_change{
+			font-family: Aspira;
+		}
+	}
+	img{
+		margin-top: 57px;
+		width: 1.7%;
+		position: absolute;
+		cursor: pointer;
+	}
 }
