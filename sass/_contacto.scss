@@ -94,6 +94,9 @@ p.italico {
     vertical-align: top;
     float         : left;
     margin-top    : 30px;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                     padding-bottom : 30px;
+            }
     ul {
         list-style-type: none;
         padding        : 0;
