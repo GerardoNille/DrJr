@@ -12,7 +12,6 @@
 	}
 	.banner_titulo{
 		display: flex;
-		max-height: 143px;
 		@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
 			max-height : 100px;
 		}
@@ -60,7 +59,7 @@
 		}
 		.ribbon{
 			max-width: 385px;
-			height: 143px;
+			height: inherit;
 			float: right;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
 				max-height : 100px;
