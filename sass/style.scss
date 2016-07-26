@@ -219,14 +219,14 @@ footer {
     width           : 100%;
     background-color: $ocre;
     .copyright {
-        font-family: Caslon;
+        font-family: Big Caslon Medium;
         color      : #ffffff;
         font-size  : 1.5rem;
         font-weight: 100;
         position   : absolute;
         left       : 20%;
         margin-top : 50px;
-        letter-spacing: .7px;
+        letter-spacing: 1.7px;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
           
            margin-left: 30px;
@@ -237,6 +237,9 @@ footer {
            margin-top: 33px; 
        }
        .font_change{
+        font-family: 'Aspira Light';
+    font-size: 12pt;
+    letter-spacing: 2px;
          @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
            font-family : 'Aspira';
            font-size: 10pt;
