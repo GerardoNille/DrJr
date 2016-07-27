@@ -276,6 +276,6 @@ footer {
         max-width : $ipad_mediaquery;
     }
     @media screen and (max-width: $ipad_mediaquery - 1) {
-        max-width : $mobile_mediaquery;
+        max-width : 100%;
     }
 }
