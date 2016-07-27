@@ -223,6 +223,7 @@
 }
 }
 }
+
 #centro2{
     display: flex;
     width: 100%;
@@ -379,4 +380,9 @@
 }
 
 }
+}
+#neuropediatria,#cefaleas{
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        display: none !important;
+    }
 }

@@ -1,4 +1,8 @@
 .biografia{
+	@media screen and (max-width: $ipad_mediaquery - 1) {
+        width : 100%;
+    }
+
 	.logo_dr{
 		padding: 9%;
 		margin: auto;
@@ -20,6 +24,9 @@
 			float: left;
 			color : #FFFFFF;
 			background    : url('../images/Texturas/grey.png');
+			@media screen and (max-width: $ipad_mediaquery - 1) {
+        		max-width : 100%;
+    }
 			.title{
 				margin-left: 15%;
 				margin-top: 25px;
@@ -65,6 +72,9 @@
 				max-height : 100px;
 				max-width: 268px;
 			}
+			@media screen and (max-width: $ipad_mediaquery - 1) {
+        	display : none;
+    }
 		}
 	}
 	img#udg
