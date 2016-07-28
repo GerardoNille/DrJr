@@ -24,7 +24,7 @@
     float       : right;
     width       : 44%;
     text-align  : right;
-    margin-right: 100px;
+    margin-right: 60px;
     font-size   : 1.5rem;
     margin-top  : 40px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
@@ -66,8 +66,8 @@
     }
     .golden_medium {
         color      : #9e8629;
-        font-family: Big Caslon Medium;
-        font-size  : 2rem;
+        font-family: Aspira;
+    font-size: 20pt;
          @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
                      font-size : 1.5rem;
             }
