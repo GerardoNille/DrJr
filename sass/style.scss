@@ -20,7 +20,7 @@ body {
     margin     : 0;
     font-family: Aspira;
     color      : $gris;
-    // resolver aseguradoras primero 
+    // resolver aseguradoras primero
     // background : whitesmoke;
 }
 * {
@@ -53,7 +53,7 @@ nav {
     margin: auto;
     background-color : $ocre;
     .brain {
-        
+
         padding-bottom: 19%;
         background    : url('../images/Texturas/grey_small.png');
         float         : left;
@@ -154,7 +154,7 @@ nav {
     background    : rgba(0, 0, 0, .5);
     position      : absolute;
     right         : 10%;
-    bottom        : 10%;
+    bottom        : 5%;
     color         : white;
     text-transform: uppercase;
     font-family   : Aspira;
@@ -207,12 +207,19 @@ span.arrow-r {
 #prueba {
     position: relative;
     clear   : both;
+    overflow: auto;
+    .btn{
+      bottom: 0.5%;
+      @media screen and (min-width: 620px){
+        bottom: 5%;
+      }
+    }
 }
 .payments {
     text-align  : center;
     margin-right: 70px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-       font-size : 10pt;  
+       font-size : 10pt;
        font-family: Aspira Regular;
    }
    img {
@@ -239,13 +246,13 @@ footer {
         margin-top : 50px;
         letter-spacing: 1.7px;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-          
+
            margin-left: 30px;
            font-size: 14pt;
            font-weight: 100;
            position: absolute;
            left: 26%;
-           margin-top: 33px; 
+           margin-top: 33px;
        }
        .font_change{
         font-family: 'Aspira Light';
@@ -255,7 +262,7 @@ footer {
            font-family : 'Aspira';
            font-size: 10pt;
            font-weight: lighter;
-       } 
+       }
    }
 }
 }
@@ -269,7 +276,7 @@ footer {
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
        width: 112px;
        margin-left: 70px;
-       height: 105px; 
+       height: 105px;
    }
    svg {
     width   : 45px;

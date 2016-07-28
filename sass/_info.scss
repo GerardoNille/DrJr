@@ -5,10 +5,9 @@
     height   : 209px;
     max-width: 894px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-          height: 150px;
+        height   : 150px;
         max-width: 618px;
-       }
-
+    }
     img#titulo {
         position: absolute;
         top     : 16%;
@@ -40,18 +39,29 @@
 }
 #enfermedades,
 #experto {
-    float     : left;
+    float     : none;
     position  : relative;
     height    : 1080px;
     background: url('../images/texturas/grey.png');
-    img {
-        width: 100%;
+    @media screen and (min-width: 425px) {
+        float: right;
     }
+
 }
 #enfermedades {
-    width         : 45%;
+    width         : 100%;
     text-align    : right;
     padding-bottom: 20px;
+    @media screen and (min-width: 620px) {
+        width: 45%;
+    }
+    img {
+        width: 100%;
+        display: none;
+        @media screen and (min-width: 620px){
+          display: block;
+        }
+    }
     p {
         margin-right  : 10%;
         text-transform: uppercase;
@@ -83,18 +93,40 @@
     }
 }
 #experto {
-    width      : 55%;
+    width      : 100%;
     border-left: solid 10px $ocre;
+    @media screen and (min-width: 620px) {
+        width: 55%;
+    }
     .title {
-        text-align : center;
+        text-align: right;
         font-family: Caslon;
         font-size  : $title_size;
         color      : white;
         position   : relative;
+        display: inline-block;
+        @media screen and (min-width: 620px){
+          text-align : center;
+          display: block;
+        }
+        img {
+          width: 30%;
+          margin: 0;
+          border-right: solid 5px $ocre;
+          vertical-align: middle;
+          @media screen and (min-width: 620px){
+            display: none;
+          }
+        }
         p {
             display    : inline-block;
             border-left: solid 5px $ocre;
+            vertical-align: middle;
+            font-size: 10vw;
             padding    : 1px 10px;
+            @media screen and (min-width: 620px){
+              font-size: 50pt;
+            }
         }
     }
     .pruebas {
@@ -105,9 +137,12 @@
             text-transform: uppercase;
             width         : 80%;
             margin        : auto;
-            font-size     : $subtitle_size;
+            font-size     : 3.5vw;
             letter-spacing: 5px;
             font-style    : italic;
+            @media screen and (min-width: 880px) {
+                font-size: $subtitle_size;
+            }
         }
         hr {
             width     : 80%;
@@ -172,10 +207,10 @@
         }
     }
     .description {
-        padding: 80px 10%;
-        width  : 100%;
-        float  : none;
-        font-size: 10pt;
+        padding    : 80px 10%;
+        width      : 100%;
+        float      : none;
+        font-size  : 10pt;
         line-height: 32px;
     }
 }
