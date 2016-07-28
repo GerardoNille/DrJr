@@ -3,12 +3,7 @@
         display: none;
     }
     .tablet {
-        display: none;
-    }
-    @media screen and (min-width: 769px) {
-        .tablet {
-            display: block;
-        }
+        display: block;
     }
     @media screen and (min-width: 1100px) {
         object.trayectoria_objeto {
@@ -20,6 +15,17 @@
     }
     img.trayectoria_tablet_fondo {
         width: 100%;
+        display: none;
+        @media screen and (min-width: 550px){
+          display: block;
+        }
+    }
+    img.trayectoria_movil_fondo{
+      width: 100%;
+      display: block;
+      @media screen and (min-width: 550px){
+        display: none;
+      }
     }
     .tablet {
         position: relative;
