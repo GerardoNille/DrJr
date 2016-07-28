@@ -43,7 +43,7 @@
     position  : relative;
 
     background: url('../images/texturas/grey.png');
-    @media screen and (min-width: 425px) {
+    @media screen and (min-width: 620px) {
         float: right;
         height    : 1080px;
     }
@@ -108,6 +108,7 @@
         color      : white;
         position   : relative;
         display: inline-block;
+
         @media screen and (min-width: 620px){
           text-align : center;
           display: block;
@@ -183,6 +184,10 @@
         overflow      : auto;
         display       : block;
         position      : relative;
+        margin: 35px 0;
+        @media screen and (min-width: 759px){
+              margin: 0;
+        }
         &::after {
             content   : '';
             display   : none;

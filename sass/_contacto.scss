@@ -25,7 +25,7 @@
     margin: 0;
         text-align: right;
     font-size   : 1.5rem;
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 768px) {
         margin: 40px 60px 0 0;
         float     : right;
         width     : 44%;
@@ -112,7 +112,7 @@ p.italico {
         float : left;
         width : 94%;
         margin: 0 3%;
-        @media screen and (min-width: 850px) {
+        @media screen and (min-width: 768px) {
             margin: 0 0 0 70px;
             width      : 40%;
         }
