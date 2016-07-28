@@ -178,12 +178,15 @@
                 }
             }
             .texto {
-                min-height : 460px;
+                min-height: 500px;
                 padding    : 10px;
                 margin-left: 2%;
                 width      : 98%;
                 float      : right;
                 display    : block;
+                @media screen and (min-width: 880px){
+                  min-height: 460px;
+                }
                 .nombre {
                     font-style    : italic;
                     letter-spacing: 0.2em;
