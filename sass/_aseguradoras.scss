@@ -2,19 +2,23 @@
     width    : 100%;
     max-width: 980px;
     margin   : auto;
-    display: block;
-    .title {margin-left: 40px;
-      @media screen and (min-width: 1100px){
-        margin: 0;
-      }
-      p {
-        font-size  : $title_size;
-        display    : inline-block;
-        border-left: solid 5px $ocre;
-        font-family: Caslon;
-        padding    : 10px 20px;
+    display  : block;
+    .title {
+        margin-left: 40px;
+        @media screen and (min-width: 1100px) {
+            margin: 0;
+        }
+        p {
+            font-size: 25pt;
+            display    : inline-block;
+            border-left: solid 5px $ocre;
+            font-family: Caslon;
+            padding    : 10px 20px;
+            @media screen and (min-width: 720px){
+              font-size  : $title_size;
+            }
+        }
     }
-  }
     .grid {
         text-align: center;
         img {
@@ -23,9 +27,9 @@
             display       : inline-block;
             vertical-align: middle;
             -webkit-filter: grayscale(100%);
-            transition: ease 1s;
-            &:hover{
-              -webkit-filter: grayscale(0);
+            transition    : ease 1s;
+            &:hover {
+                -webkit-filter: grayscale(0);
             }
         }
     }

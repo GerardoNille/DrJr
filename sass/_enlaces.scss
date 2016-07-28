@@ -43,8 +43,8 @@
         border-left: solid 10px $ocre;
         background : url('../images/texturas/marmol.png');
         padding    : 10%;
-        height: 100%;
-        box-sizing: border-box;
+        height     : 100%;
+        box-sizing : border-box;
         .title p {
             text-align: left;
         }
@@ -55,8 +55,8 @@
             transform: translate(-50%,-50%);
             width    : 80%;
             font-size: 3vw;
-            @media screen and (min-width: 1063px){
-              font-size: 24pt;
+            @media screen and (min-width: 1063px) {
+                font-size: 24pt;
             }
         }
     }
@@ -78,41 +78,53 @@
     }
     .memorias_container {
         display: none;
+        .logo,
+        .ribbon,
+        .title {
+            display: none;
+            @media screen and (min-width: 760px) {
+                display: block;
+            }
+        }
         .memorias_header {
             width     : 100%;
             border-top: solid 5px $ocre;
             display   : block;
-            position: relative;
+            position  : relative;
             .ribbon {
-              float: left;
-              width: 40%;
-              height: 143px;
+                float : left;
+                width : 40%;
+                height: 143px;
             }
-            .subtitle,.logo{
-              height: 250px;
+            .logo,
+            .subtitle {
+                height: 250px;
             }
-            .subtitle{
-              width: 60%;
-              float: left;
-              padding: 30px;
-              border-right: solid 10px $ocre;
-              background: $gris;
-              color: white;
+            .subtitle {
+                width     : 100%;
+                float     : left;
+                padding   : 30px;
+                border    : none;
+                background: url('../images/texturas/grey_small.png');
+                color     : white;
+                @media screen and (min-width: 760px) {
+                    width       : 60%;
+                    border-right: solid 10px $ocre;
+                }
             }
-            .logo{
-              background: url('../images/texturas/marmol.png');
-              display: block;
-              float: left;
-              width: 40%;
-              position: relative;
-              svg{
-                width: 60px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                fill: $ocre;
-              }
+            .logo {
+                background: url('../images/texturas/marmol.png');
+                float     : left;
+                width     : 40%;
+                position  : relative;
+                svg {
+                    width    : 60px;
+                    position : absolute;
+                    top      : 50%;
+                    left     : 50%;
+                    transform: translate(-50%, -50%);
+                    fill     : $ocre;
+                }
             }
         }
         .title {
@@ -160,10 +172,14 @@
             }
         }
         .memoria {
-            width     : 31%;
-            margin    : 1%;
+            width     : 90%;
+            margin    : 10px 5%;
             background: $ocre;
             float     : left;
+            @media screen and (min-width: 760px) {
+                width : 31%;
+                margin: 1%;
+            }
             &:hover .texto .nombre::after {
                 width: 100%;
             }
@@ -178,14 +194,16 @@
                 }
             }
             .texto {
-                min-height: 530px;
                 padding    : 10px;
                 margin-left: 2%;
                 width      : 98%;
                 float      : right;
                 display    : block;
-                @media screen and (min-width: 880px){
-                  min-height: 460px;
+                @media screen and (min-width: 760px) {
+                    min-height: 530px;
+                }
+                @media screen and (min-width: 880px) {
+                    min-height: 460px;
                 }
                 .nombre {
                     font-style    : italic;
@@ -215,27 +233,31 @@
             }
         }
     }
-    .videos_container{
-      width: 100%;
-      display: none;
-      position: relative;
-      .youtube_video{
-          width: 48%;
-          margin: 1%;
-          float: left;
-          display: block;
-          iframe{
-            width: 100%;
-            vertical-align: bottom;
+    .videos_container {
+        width   : 100%;
+        display : none;
+        position: relative;
+        .youtube_video {
+            width: 90%;
+            margin: 10px 5%;
+            float  : left;
             display: block;
-          }
-          .texto{
-            background: $gris;
-            color: white;
-            height: 200px;
-            border-left: solid 10px $ocre;
-            padding: 10px;
-          }
-      }
+            @media screen and (min-width: 760px){
+              width  : 48%;
+              margin : 1%;
+            }
+            iframe {
+                width         : 100%;
+                vertical-align: bottom;
+                display       : block;
+            }
+            .texto {
+                background : $gris;
+                color      : white;
+                height     : 200px;
+                border-left: solid 10px $ocre;
+                padding    : 10px;
+            }
+        }
     }
 }

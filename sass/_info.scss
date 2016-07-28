@@ -110,7 +110,7 @@
           display: block;
         }
         img {
-          width: 30%;
+          width: 40%;
           margin: 0;
           border-right: solid 5px $ocre;
           vertical-align: middle;
@@ -182,19 +182,28 @@
         position      : relative;
         &::after {
             content   : '';
-            display   : block;
+            display   : none;
             background: white;
             bottom    : 0;
             left      : 0;
             width     : 90%;
             height    : 2px;
             position  : absolute;
+            @media screen and (min-width: 760px){
+              display: block;
+            }
         }
         p {
             float  : left;
             width  : 50%;
             padding: 5% 10%;
             margin : 0;
+            &:nth-child(2){
+              display: none;
+              @media screen and (min-width: 760px){
+                display: block;
+              }
+            }
         }
         p.marker {
             background: white;
