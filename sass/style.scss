@@ -55,7 +55,7 @@ nav {
     .brain {
         
         padding-bottom: 19%;
-        background    : url('../images/Texturas/grey.png');
+        background    : url('../images/Texturas/grey_small.png');
         float         : left;
         max-width: 206px;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
@@ -72,18 +72,19 @@ nav {
 }
 .phone {
     position: absolute;
-    left: 67%;
-    top: 25%;
+    left: 63%;
+    top: 16%;
     background-color: #9e8629;
     max-width: 360px;
-    max-height: 93px;
-    width: 34%;
+    max-height: 103;
+    width: 37%;
+    padding-top: 1%;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         top: 0%;
         max-height: 104px;
        }
     p {
-        font-family   : Caslon;
+        font-family   : Big Caslon Medium;
         font-weight   : 500;
         font-size     : 0.8rem;
         padding-right : 25px;
@@ -97,6 +98,10 @@ nav {
        }
     }
     p#number{
+        .font_change{
+            font-family: Aspira;
+            font-weight: 100;
+        }
         &::after{
             content: '';
             display: block;
@@ -110,15 +115,18 @@ nav {
         }
     }
     p#english {
-        font-family: Caslon,Sans-serif;
+        font-family: Aspira;
+        font-weight: 200;
         .bandera{
             width: 8%;
             margin-left: 10px;
+            vertical-align: -10%;
             @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
          width: 15%;
        }
         }
         i#fb_logo{
+            vertical-align: -6%;
             margin-left: 40px;
             @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
             vertical-align: 6%;
@@ -135,7 +143,7 @@ nav {
 .horizontal {
     position        : absolute;
     left            : 7%;
-    top             : 67%;
+    top             : 63%;
     padding-bottom  : 0.5%;
     width           : 61%;
     background-color: #9e8629;
