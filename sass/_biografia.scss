@@ -364,35 +364,35 @@
 			.bio_right_first{
 				padding-right: 70px;
 				padding-left: 70px;
-				max-width: 385px;
+				padding-top: 7%;
 				border-width: 5px 0 0 0;
 				border-color: $ocre;
 				border-style: solid;
 
 				.estudios::before{
-					    content: '';
+					content: '';
 				    display: block;
-				    margin-top: 40px;
+				    height: 4px;
+				    width: 29%;
+				    margin-bottom: 6%;
+				    margin-top: 3%;
+				    background: #000000;
 				}
 				}
 				.bio_right_second{
 					padding-right: 70px;
 					padding-left: 70px;
 					padding-top: 50px;
-					float: right;
-					max-width: 385px;
 				}
 				.bio_right_third{
 					padding-right: 70px;
 					padding-left: 70px;
 					padding-top: 50px;
 					padding-bottom: 50px;
-					max-width: 385px;
 					background-color: $gris;
 					color: #FFFFFF;
 				}
 				.bio_right_fourth{
-					max-width: 385px;
 					width: 385px;
 				}
 			
