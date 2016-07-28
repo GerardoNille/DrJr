@@ -37,6 +37,66 @@
             width   : 50%;
             .tira{
                   margin: 7% 0;
+                  position: relative;
+
+
+            }
+            .linea_anterior{
+              &:first-child::before{
+                width: 31%;
+              }
+              &:nth-child(2)::before{
+                width: 32%;
+              }
+              &:nth-child(3)::before{
+                width: 26%;
+              }
+              &:nth-child(4)::before{
+                width: 15%;
+              }
+              &:nth-child(5)::before{
+                width: 19%;
+              }
+              &:nth-child(6)::before{
+                width: 14%;
+              }
+              &:nth-child(7)::before{
+                width: 23%;
+              }
+              &:nth-child(8)::before{
+                width: 42%;
+              }
+              &:nth-child(9)::before{
+                width: 39%;
+              }
+              &:nth-child(10)::before{
+                width: 52%;
+              }
+              &:nth-child(11)::before{
+                width: 39%;
+              }
+              &:nth-child(12)::before{
+                width: 35%;
+              }
+              &:nth-child(13)::before{
+                width: 42%;
+              }
+              &:nth-child(14)::before{
+                width: 50%;
+              }
+              &:last-child::before{
+                width: 30%;
+              }
+              &::before{
+                content: '';
+                display: block;
+                height: 3px;
+                background: #9e8629;
+                position: absolute;
+                bottom: 0;
+                right: 100%;
+
+              }
             }
             .fecha_title {
                 border-left: solid 7px $ocre;

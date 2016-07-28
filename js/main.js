@@ -36,6 +36,7 @@ $(document).ready(function() {
     $(".tira").each(function() {
         $(this).on("click", function() {
             $(this).find('.descripcion').toggle();
+            $(".tira").toggleClass("linea_anterior");
         });
     });
     $('.videos').height($('.memorias img').height() * .7);
