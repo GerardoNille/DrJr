@@ -54,7 +54,10 @@
             left     : 50%;
             transform: translate(-50%,-50%);
             width    : 80%;
-            font-size: $subtitle_size;
+            font-size: 3vw;
+            @media screen and (min-width: 1063px){
+              font-size: 24pt;
+            }
         }
     }
     .h_ribbon {
