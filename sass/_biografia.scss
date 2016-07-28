@@ -17,7 +17,7 @@
 	.banner_titulo{
 		display: flex;
 		@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-			max-height : 100px;
+			max-height : none;
 		}
 		.titulo_profesional{
 			max-width: 715px;
@@ -71,7 +71,7 @@
 			height: inherit;
 			float: right;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				max-height : 100px;
+				max-height : none;
 				max-width: 268px;
 			}
 			@media screen and (max-width: $ipad_mediaquery - 1) {
