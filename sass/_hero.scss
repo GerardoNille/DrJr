@@ -4,13 +4,30 @@
 |------------------------------------------------
 */
 .hero {
-    width    : 100%;
+    width   : 100%;
     // max-width: $max_mediaquery;
-    margin   : auto;
-    overflow : auto;
-    position : relative;
+    margin  : auto;
+    overflow: auto;
+    position: relative;
     img {
         width: 100%;
+    }
+    img.inicio_movil {
+        display: block;
+        @media screen and (min-width: 550px) {
+            display: none;
+        }
+    }
+    img.inicio_desktop {
+        display: none;
+        @media screen and (min-width: 550px) {
+            display: block;
+        }
+    }
+    .btn {
+        @media screen and (max-width: 550px) {
+            bottom: 15%;
+        }
     }
     .title {
         position         : absolute;
@@ -18,9 +35,13 @@
         left             : 0;
         height           : 100%;
         width            : 100%;
-        -webkit-clip-path: polygon(0 65%, 0% 100%, 62% 100%);
-        clip-path        : polygon(0 65%, 0% 100%, 62% 100%);
+        -webkit-clip-path: polygon(0 80%, 0% 100%, 100% 100%);
+        clip-path        : polygon(0 80%, 0% 100%, 100% 100%);
         background       : url("../images/texturas/marmol.png");
+        @media screen and (min-width: 700px) {
+            -webkit-clip-path: polygon(0 65%, 0% 100%, 62% 100%);
+            clip-path        : polygon(0 65%, 0% 100%, 62% 100%);
+        }
         p {
             bottom     : 1%;
             left       : 3%;
@@ -28,8 +49,11 @@
             position   : absolute;
             font-family: Caslon;
             margin     : 0 10px;
-            font-size  : $title_size;
-            color: $gris;
+            font-size  : 10vw;
+            color      : $gris;
+            @media screen and (min-width: 700px) {
+                font-size: $title_size;
+            }
             &::before {
                 content   : '';
                 display   : block;
