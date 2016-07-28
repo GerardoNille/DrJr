@@ -246,7 +246,7 @@
 	***** Bigorafia movil
 	***
 	****/
-	
+
 	.biografia_movil{
 		display: none;
 		  @media screen and (max-width: $ipad_mediaquery - 1) {
@@ -264,18 +264,12 @@
 		margin-right: auto;	
 	}
 	.banner_titulo{
-		display: flex;
-		@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-			max-height : none;
-		}
 		.titulo_profesional{
-			max-width: 715px;
-			float: left;
+			max-width: 100%;
+			padding-top: 2%;
+    		padding-bottom: 2%;
 			color : #FFFFFF;
 			background    : url('../images/Texturas/grey.png');
-			@media screen and (max-width: $ipad_mediaquery - 1) {
-        		max-width : 100%;
-    }
 			.title{
 				    margin-left: 15%;
 				    margin-top: 25px;
@@ -286,46 +280,20 @@
 				    padding-right: 54px;
 				    line-height: 1.1;
 				    font-family: Aspira;
-				    font-size: 16pt;
+				    font-size: 13pt;
 				    word-spacing: 3px;
 				    letter-spacing: .7px;
-				@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-					padding-left: 16px;
-					padding-top: 0px;
-					line-height: 1.3;
-					letter-spacing: 1px;
-					font-family: Aspira;
-					font-size: 9pt;
-					font-weight: 100;
-					margin-top: 25px;
-					@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-						font-size: 12pt;
-					}
-				}
-				@media screen and (max-width: $ipad_mediaquery - 1) {
-				}
 			}
 		}
 		.arrow{
 			img{
-				margin-top: 4px;
-    			margin-left: 50px;
-				width: 2%;
+				margin-top: 1%;
+			    margin-left: 7%;
+			    width: 3%;
 				position: absolute;
 				cursor: pointer;
 			}
 		}
-		.ribbon{
-			max-width: 385px;
-			height: inherit;
-			float: right;
-			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				max-height : none;
-				max-width: 268px;
-			}
-			@media screen and (max-width: $ipad_mediaquery - 1) {
-        	display : none;
-    }
 		}
 	}
 	img#udg
@@ -342,22 +310,26 @@
 		}
 	}
 	.bio_content{
-		display: flex;
+
+				.logo_bio{
+					margin-left: 48%;
+			    margin-top: 6%;
+			    margin-bottom: 6%;
+					svg{width: 58px;
+						height: 77px;
+						margin: auto;
+						fill: #9e8629;
+						position: relative;
+						top: 20%;}
+					}
 		.bio_main{
 			
 			padding-right: 44px;
 			padding-left: 70px;
-			max-width: 715px;
 			padding-top: 70px;
-			border-width: 0px 10px 0px 0px;
+    		border-width: 0 0 5px 0;
 			border-color: #9e8629;
 			border-style: solid;
-			float: left;
-			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				padding-right: 40px;
-				padding-left: 40px;
-				font-size: 10pt;
-			}
 
 			.estudios::before{
 				content: '';
@@ -388,62 +360,20 @@
 			margin-right: -44px;
 			margin-bottom: 0px;
 			margin-top: 116px;
-			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				padding-right: 30px;
-				margin-top: 50px;
-			}
-			@media screen and (max-width: $ipad_mediaquery - 1) {
-			}
 		}
-		.bio_right{
-			max-width: 385px;
-			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				max-height : 268px;
-			}
 			.bio_right_first{
 				padding-right: 70px;
 				padding-left: 70px;
-				float: right;
 				max-width: 385px;
-				border-width: 0px 0px 45px 0px;
-				border-color: #9e8629;
+				border-width: 5px 0 0 0;
+				border-color: $ocre;
 				border-style: solid;
-				@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-					padding-right: 30px;
-					padding-left: 30px;
-					max-width: 268px;
-					font-size: 10pt;
-					font-weight: 100;
-					border-width: 0px 0px 35px 0px;
-				}
+
 				.estudios::before{
-					content: '';
-					display: block;
-					height: 4px;
-					width: 315px;
-					margin-bottom: 40px;
-					margin-top: 40px;
-					margin-left: -70px;
-					background: $ocre;
-					@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-						margin-left : -30px;
-						width: 234px;
-					}
+					    content: '';
+				    display: block;
+				    margin-top: 40px;
 				}
-				.logo_bio{
-					margin-left: 101px;
-					margin-top: 60px;
-					margin-bottom: 60px;
-					@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-						margin-left: 72px;
-					}
-					svg{width: 58px;
-						height: 77px;
-						margin: auto;
-						fill: #9e8629;
-						position: relative;
-						top: 20%;}
-					}
 				}
 				.bio_right_second{
 					padding-right: 70px;
@@ -451,43 +381,20 @@
 					padding-top: 50px;
 					float: right;
 					max-width: 385px;
-					@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-						padding-right: 30px;
-						padding-left: 30px;
-						padding-top: 30px;
-						max-width: 268px;
-						font-size: 10pt;
-						font-weight: 100;
-					}
 				}
 				.bio_right_third{
 					padding-right: 70px;
 					padding-left: 70px;
 					padding-top: 50px;
 					padding-bottom: 50px;
-					float: right;
 					max-width: 385px;
 					background-color: $gris;
 					color: #FFFFFF;
-					@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-						padding-right: 30px;
-						padding-left: 30px;
-						padding-top: 50px;
-						padding-bottom: 50px;
-						font-size: 10pt;
-						max-width: 268px;
-						font-weight: 100;
-					}
 				}
 				.bio_right_fourth{
-					float: right;
 					max-width: 385px;
 					width: 385px;
-					@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-						max-width: 268px;
-						width: 268px;
-					}
 				}
-			}
+			
 		}
-	}
+	
