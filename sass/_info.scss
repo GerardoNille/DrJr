@@ -41,17 +41,20 @@
 #experto {
     float     : none;
     position  : relative;
-    height    : 1080px;
+
     background: url('../images/texturas/grey.png');
     @media screen and (min-width: 425px) {
         float: right;
+        height    : 1080px;
     }
 
 }
 #enfermedades {
     width         : 100%;
     text-align    : right;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
+    font-weight: 200;
+    line-height: 2;
     @media screen and (min-width: 620px) {
         width: 45%;
     }

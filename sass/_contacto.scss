@@ -21,26 +21,30 @@
     }
 }
 .address {
-    float       : right;
-    width       : 44%;
-    text-align  : right;
-    margin-right: 60px;
+    width       : 94%;
+    margin      : 0 3%;
+    text-align  : center;
     font-size   : 1.5rem;
-    margin-top  : 40px;
+    @media screen and (min-width: 850px) {
+        text-align: right;
+        margin: 40px 60px 0 0;
+        float     : right;
+        width     : 44%;
+    }
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     margin-right : 0px;
-                     font-size: 1.2rem;
-            }
+        margin-right: 0;
+        font-size   : 1.2rem;
+    }
     .banner_logo {
-        height      : 200px;
-        border-style: solid;
-        border-width: 0 0 3px 0;
-        width: 90%;
-        float: right;
+        height       : 200px;
+        border-style : solid;
+        border-width : 0 0 3px 0;
+        width        : 90%;
+        float        : right;
         margin-bottom: 30px;
-         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     height : 150px;
-            }
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+            height: 150px;
+        }
         object {
             width  : 25%;
             margin : auto;
@@ -61,16 +65,16 @@
         font-size     : 2.1rem;
         letter-spacing: 3px;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     font-size : 1.1rem;
-            }
+            font-size: 1.1rem;
+        }
     }
     .golden_medium {
         color      : #9e8629;
         font-family: Aspira;
-    font-size: 20pt;
-         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     font-size : 1.5rem;
-            }
+        font-size  : 20pt;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+            font-size: 1.5rem;
+        }
     }
 }
 .ubicacion {
@@ -95,30 +99,34 @@ p.italico {
     float         : left;
     margin-top    : 30px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     padding-bottom : 30px;
-            }
+        padding-bottom: 30px;
+    }
     ul {
         list-style-type: none;
         padding        : 0;
     }
     form {
-        float      : left;
-        margin-left: 70px;
-        width: 40%;
+        float : left;
+        width : 94%;
+        margin: 0 3%;
+        @media screen and (min-width: 850px) {
+            margin: 0 0 0 70px;
+            width      : 40%;
+        }
     }
     input,
     textarea {
         background: $gris;
         height    : 50px;
-         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     height : 40px;
-            }
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+            height: 40px;
+        }
     }
     textarea {
         height: 250px;
-         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     height : 137px;
-            }
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+            height: 137px;
+        }
     }
     .contact-dropdown-services dt a {
         text-transform: uppercase;
@@ -151,8 +159,8 @@ p.italico {
         float       : left;
         border-style: hidden;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     width : 73%;
-            }
+            width: 73%;
+        }
     }
     button {
         cursor    : pointer;
@@ -203,8 +211,8 @@ p.italico {
         font-variant: normal;
         padding     : 20px;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-                     font-size : .6rem;
-            }
+            font-size: 0.6rem;
+        }
     }
     [placeholder]:focus::-webkit-input-placeholder {
         transition: 0s;
