@@ -1,5 +1,29 @@
+
+#trayectoria{
+  object.trayectoria_objeto{
+    display: none;
+  }
+  .tablet{
+    display: none;
+  }
+  @media screen and (min-width: 769px){
+    .tablet{
+      display: block;
+    }
+  }
+  @media screen and (min-width: 1100px){
+    object.trayectoria_objeto{
+      display: block;
+    }
+    .tablet{
+      display: none;
+    }
+  }
+  img.trayectoria_tablet_fondo{
+    width: 100%;
+  }
+}
 svg.trayectoria {
-    
     g.fadeIzquierda{
         opacity: 0;
         animation-name: fadeHorizontal;
@@ -14,8 +38,8 @@ svg.trayectoria {
         animation-delay: .4s;
         animation-fill-mode: forwards;
     }
-        
-    
+
+
     /*aca iban las clases*/
    /*.st0 {
         opacity            : 0;
