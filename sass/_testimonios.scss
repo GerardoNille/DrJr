@@ -1,25 +1,29 @@
 #testimonios{
 	display: inline-block;
 	font-family: Aspira;
-	font-size: 14pt;
+	font-size: 12pt;
 	.first,
 	.second{
 		display: flex;
 		color: $gris;
 	}
 	.primer_cuadrante{
-		background: url('../images/texturas/paper.png');
-		width: 46%;
-		max-width: 508px;
-		float : left;
-		border-width: 0px 15px 5px 0px;
-		border-color: $ocre;
-		border-style: solid;
+		      background: url("../images/texturas/comillas_abrir.png") left top no-repeat,
+		       url("../images/texturas/comillas_cerrar.png") right bottom no-repeat,
+		       url("../images/texturas/paper.png");
+    background-position: 3% 13%, 91% 76%,0px 0px;
+    width: 46%;
+    max-width: 508px;
+    float: left;
+    border-width: 0px 18px 5px 0px;
+    border-color: $ocre;
+    border-style: solid;
 		.descripcion{
 			margin-left: 16%;
 			margin-right: 16%;
 			margin-top: 16%;
-			line-height: 1.4;
+			margin-bottom: 8%;
+			line-height: 1.8;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
 				font-size : 12pt;   
 			}
@@ -34,6 +38,9 @@
 		}
 	}
 	.segundo_cuadrante{
+		background: url("../images/texturas/comillas_abrir.png") left top no-repeat,
+		       url("../images/texturas/comillas_cerrar.png") right bottom no-repeat;
+		       background-position: 6% 16%, 89% 72%;
 		width: 53%;
 		float: left;
 		max-width: 592px;
@@ -41,7 +48,8 @@
 			margin-left: 16%;
 			margin-right: 16%;
 			margin-top: 16%;
-			line-height: 1.4;
+			margin-bottom: 8%;
+			line-height: 1.8;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
 				font-size : 12pt;   
 			}
@@ -57,18 +65,24 @@
 
 	}
 	.tercer_cuadrante{
-		background: url('../images/texturas/paper.png');
+		background: url("../images/texturas/comillas_abrir.png") left top no-repeat,
+		       url("../images/texturas/comillas_cerrar.png") right bottom no-repeat,
+		       url("../images/texturas/paper.png");
+    background-position: 6% 9%, 88% 72%,0px 0px;
 		float: left;
 		width: 46%;
 		max-width: 508px;
-		border-width: 0px 15px 0px 0px;
+		border-width: 0px 18px 0px 0px;
 		border-color: $ocre;
 		border-style: solid;
+		    padding-right: 20px;
+    padding-left: 17px;
 		.descripcion{
 			margin-left: 16%;
 			margin-right: 16%;
 			margin-top: 16%;
-			line-height: 1.4;
+			margin-bottom: 8%;
+			line-height: 1.8;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
 				font-size : 12pt;   
 			}
@@ -87,7 +101,10 @@
 	}
 	.cuarto_cuadrante{
 		width: 54%;
-		background: url('../images/texturas/grey.png');
+		background: url("../images/texturas/comillas_abrir.png") left top no-repeat,
+		       url("../images/texturas/comillas_cerrar.png") right bottom no-repeat,
+		       url("../images/texturas/grey_small.png");
+    	background-position: 3% 13%, 91% 76%,0px 0px;
 		float: left;
 		max-width: 592px;
 		color: #FFFFFF;
@@ -95,7 +112,8 @@
 			margin-left: 16%;
 			margin-right: 16%;
 			margin-top: 16%;
-			line-height: 1.4;
+			margin-bottom: 8%;
+			line-height: 1.8;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
 				font-size : 12pt;   
 			}
