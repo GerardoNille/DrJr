@@ -1,23 +1,74 @@
+#trayectoria {
+    object.trayectoria_objeto {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    @media screen and (min-width: 769px) {
+        .tablet {
+            display: block;
+        }
+    }
+    @media screen and (min-width: 1100px) {
+        object.trayectoria_objeto {
+            display: block;
+        }
+        .tablet {
+            display: none;
+        }
+    }
+    img.trayectoria_tablet_fondo {
+        width: 100%;
+    }
+    .tablet {
+        position: relative;
+        .tiras {
+            margin  : 10% 0;
+            position: absolute;
+            top     : 0;
+            right   : 0;
+            width   : 50%;
+            .tira{
+                  margin: 7% 0;
+            }
+            .fecha_title {
+                border-left: solid 7px $ocre;
+                padding    : 15px;
+                font-weight: 300;
+                font-style : italic;
+                background : #5F5F5F;
+                color      : white;
+            }
+            .descripcion {
+                display: none;
+                margin: 10px 0 0;
+                text-align: left;
+                .bold-ocre {
+                    color      : $ocre;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
 svg.trayectoria {
-    
-    g.fadeIzquierda{
-        opacity: 0;
-        animation-name: fadeHorizontal;
-        animation-duration: 4s;
-        animation-delay: .4s;
+    g.fadeIzquierda {
+        opacity            : 0;
+        animation-name     : fadeHorizontal;
+        animation-duration : 4s;
+        animation-delay    : 0.4s;
         animation-fill-mode: forwards;
     }
-    g.fadeDerecha{
-        opacity: 0;
-        animation-name: fadeHorizontalInv;
-        animation-duration: 4s;
-        animation-delay: .4s;
+    g.fadeDerecha {
+        opacity            : 0;
+        animation-name     : fadeHorizontalInv;
+        animation-duration : 4s;
+        animation-delay    : 0.4s;
         animation-fill-mode: forwards;
     }
-        
-    
     /*aca iban las clases*/
-   /*.st0 {
+    /*.st0 {
         opacity            : 0;
         animation-name     : fadeHorizontal;
         animation-duration : 1s;
@@ -133,21 +184,19 @@ svg.trayectoria {
         animation-fill-mode: forwards;
     }*/
 }
-
-svg.check{
-
-    .fadeIzquierda{
-        opacity: 0;
-        animation-name: fadeHorizontal;
-        animation-duration: 4s;
-        animation-delay: .4s;
+svg.check {
+    .fadeIzquierda {
+        opacity            : 0;
+        animation-name     : fadeHorizontal;
+        animation-duration : 4s;
+        animation-delay    : 0.4s;
         animation-fill-mode: forwards;
     }
-    .fadeDerecha{
-        opacity: 0;
-        animation-name: fadeHorizontalInv;
-        animation-duration: 4s;
-        animation-delay: .4s;
+    .fadeDerecha {
+        opacity            : 0;
+        animation-name     : fadeHorizontalInv;
+        animation-duration : 4s;
+        animation-delay    : 0.4s;
         animation-fill-mode: forwards;
     }
 }
