@@ -14,18 +14,18 @@
         }
     }
     img.trayectoria_tablet_fondo {
-        width: 100%;
+        width  : 100%;
         display: none;
-        @media screen and (min-width: 550px){
-          display: block;
+        @media screen and (min-width: 550px) {
+            display: block;
         }
     }
-    img.trayectoria_movil_fondo{
-      width: 100%;
-      display: block;
-      @media screen and (min-width: 550px){
-        display: none;
-      }
+    img.trayectoria_movil_fondo {
+        width  : 100%;
+        display: block;
+        @media screen and (min-width: 550px) {
+            display: none;
+        }
     }
     .tablet {
         position: relative;
@@ -34,81 +34,122 @@
             position: absolute;
             top     : 0;
             right   : 0;
-            width   : 50%;
-            .tira{
-                  margin: 7% 0;
-                  position: relative;
-
-
+            width   : 100%;
+            .tira {
+                margin  : 2% 0;
+                position: relative;
+                width   : 50%;
+                float   : right;
+                clear   : both;
+                &:first-child {
+                    @media screen and (max-width: 550px) {
+                        margin-top: 170px;
+                    }
+                }
+                &:last-child,
+                &:nth-child(10),
+                &:nth-child(11),
+                &:nth-child(12),
+                &:nth-child(13),
+                &:nth-child(14),
+                &:nth-child(8),
+                &:nth-child(9) {
+                    @media screen and (max-width: 550px) {
+                        float: left;
+                        .fecha_title {
+                            border-left : none;
+                            border-right: solid 7px $ocre;
+                            text-align: right;
+                        }
+                    }
+                }
+                &:nth-child(8) {
+                    @media screen and (max-width: 550px) {
+                        margin-top: 680px;
+                    }
+                }
             }
-            .linea_anterior{
-              &:first-child::before{
-                width: 31%;
-              }
-              &:nth-child(2)::before{
-                width: 32%;
-              }
-              &:nth-child(3)::before{
-                width: 26%;
-              }
-              &:nth-child(4)::before{
-                width: 15%;
-              }
-              &:nth-child(5)::before{
-                width: 19%;
-              }
-              &:nth-child(6)::before{
-                width: 14%;
-              }
-              &:nth-child(7)::before{
-                width: 23%;
-              }
-              &:nth-child(8)::before{
-                width: 42%;
-              }
-              &:nth-child(9)::before{
-                width: 39%;
-              }
-              &:nth-child(10)::before{
-                width: 52%;
-              }
-              &:nth-child(11)::before{
-                width: 39%;
-              }
-              &:nth-child(12)::before{
-                width: 35%;
-              }
-              &:nth-child(13)::before{
-                width: 42%;
-              }
-              &:nth-child(14)::before{
-                width: 50%;
-              }
-              &:last-child::before{
-                width: 30%;
-              }
-              &::before{
-                content: '';
-                display: block;
-                height: 3px;
-                background: #9e8629;
-                position: absolute;
-                bottom: 0;
-                right: 100%;
-
-              }
+            .linea_anterior {
+                &:first-child::before {
+                    width: 31%;
+                }
+                &:nth-child(2)::before {
+                    width: 32%;
+                }
+                &:nth-child(3)::before {
+                    width: 26%;
+                }
+                &:nth-child(4)::before {
+                    width: 15%;
+                }
+                &:nth-child(5)::before {
+                    width: 19%;
+                }
+                &:nth-child(6)::before {
+                    width: 14%;
+                }
+                &:nth-child(7)::before {
+                    width: 23%;
+                }
+                &:nth-child(8)::before {
+                    width: 42%;
+                }
+                &:nth-child(9)::before {
+                    width: 39%;
+                }
+                &:nth-child(10)::before {
+                    width: 52%;
+                }
+                &:nth-child(11)::before {
+                    width: 39%;
+                }
+                &:nth-child(12)::before {
+                    width: 35%;
+                }
+                &:nth-child(13)::before {
+                    width: 42%;
+                }
+                &:nth-child(14)::before {
+                    width: 50%;
+                }
+                &:last-child::before {
+                    width: 30%;
+                }
+                @media screen and (max-width: 550px){
+                  &:last-child,
+                  &:nth-child(10),
+                  &:nth-child(11),
+                  &:nth-child(12),
+                  &:nth-child(13),
+                  &:nth-child(14),
+                  &:nth-child(8),
+                  &:nth-child(9){
+                    &:before{
+                      left: 100%;
+                    }
+                  }
+                }
+                &::before {
+                    content   : '';
+                    display   : block;
+                    height    : 3px;
+                    background: #9e8629;
+                    position  : absolute;
+                    bottom    : 0;
+                    right     : 100%;
+                }
             }
             .fecha_title {
                 border-left: solid 7px $ocre;
-                padding    : 15px;
+                padding    : 10px;
                 font-weight: 300;
                 font-style : italic;
                 background : #5F5F5F;
                 color      : white;
             }
             .descripcion {
-                display: none;
-                margin: 10px 0 0;
+                display   : none;
+                margin    : 10px 0 0;
                 text-align: left;
                 .bold-ocre {
                     color      : $ocre;
