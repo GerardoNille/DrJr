@@ -11,14 +11,12 @@ function check_if_in_view() {
         var element_bottom_position = (element_top_position + element_height);
         var resta = Math.abs((element_top_position - window_bottom_position));
         var resta2 = Math.abs((element_bottom_position - window_top_position));
-        console.log(resta , "  ",resta2);
         if ((element_bottom_position >= window_top_position) &&
             (element_top_position <= window_bottom_position)) {
-            console.log("HOLOOOOOO");
             $element.display = "inline";
 
         } else if (Math.abs((element_top_position - window_bottom_position)) <= 40 || Math.abs((element_bottom_position - window_top_position)) <= 40) {
-            console.log("HOLIII");
+            
             el = $(this);
             newone = el.clone(true),
                 el.before(newone);
