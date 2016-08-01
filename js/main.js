@@ -49,9 +49,7 @@ $(document).ready(function() {
         $('.videos_container').toggle();
         $('.iframe_video').height($('.iframe_video').width() * .5625)
     });
-    $window.on('scroll', check_if_in_view);
-    $window.on('scroll resize', check_if_in_view);
-    $window.trigger('scroll');
+    
 });
 $(window).resize(function() {
     $('.iframe_video').height($('.iframe_video').width() * .5625)
@@ -59,3 +57,10 @@ $(window).resize(function() {
     $('.h_ribbon').height($('.memorias img').height() * .7);
     $('.col2-md').height($('.memorias').height() + $('.videos').height() + 6);
 });
+
+window.onload = function() {
+    $animation_elements = $("*[class^='prueba']");
+    $window.on('scroll', check_if_in_view);
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+};
