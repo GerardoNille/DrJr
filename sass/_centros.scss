@@ -9,16 +9,18 @@
         }
 
         p {
-            left: 193px;
-            top: 93px;
-            font-family: Big Caslon Medium;
+            left: 158px;
+            top: 30px;
+            font-family: Big Caslon;
+            font-weight: 300;
             color: white;
             position: absolute;
             /* display: inline-block; */
             border-left: solid 5px #9e8629;
-            padding: 1px 10px;
-            font-size: 3rem;
+            padding: 1px 30px;
+            font-size: 50pt;
             letter-spacing: 2px;
+            line-height: .9;
         }
     }
 }
@@ -229,6 +231,11 @@
     display: flex;
     width: 100%;
     line-height: .9;
+    .vascular{
+        position: absolute;
+    margin-top: -5.5%;
+    width: 24%;
+    }
     img#banner{
         background: url(../images/centros/Banner2.png) no-repeat center center; 
         -webkit-background-size: cover;

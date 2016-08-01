@@ -21,8 +21,6 @@ function slide_Centros(centro, caller) {
 function show_banner(banner, caller) {
     //$(caller).closest('#centro1').slideUp;
     $(caller).parent().parent().parent().slideToggle();
-    $(caller).parent().parent().parent().toggleClass("faa-passing animated faa-fast");
-    $(caller).parent().parent().parent().toggleClass("faa-passing-reverse animated faa-fast");
     $("#" + banner).slideToggle();
     //$(".banner_servicio").removeClass("imagen_animacion");
 }
