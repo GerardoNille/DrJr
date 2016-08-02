@@ -301,9 +301,9 @@ footer {
 .logo_footer {
     position   : relative;
     background : url("../images/texturas/marmol_small.png");
-width:42px;
-height: 42px;
+ width      : 130px;
     margin-left: 70px;
+    height     : 130px;
     text-align : center;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
        width: 112px;
