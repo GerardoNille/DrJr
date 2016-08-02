@@ -21,8 +21,8 @@
     }
 }
 	.primer_cuadrante{
-		      background: url("../images/texturas/comillas_abrir.png") left top no-repeat,
-		       url("../images/texturas/comillas_cerrar.png") right bottom no-repeat,
+		      background: url("../images/Texturas/comillas_abrir.png") left top no-repeat,
+		       url("../images/Texturas/comillas_cerrar.png") right bottom no-repeat,
 		       url("../images/texturas/paper.png");
     background-position: 3% 13%, 91% 76%,0px 0px;
     width: 46%;
@@ -44,7 +44,7 @@
 			margin-bottom: 8%;
 			line-height: 1.8;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				font-size : 12pt;   
+				font-size : 12pt;
 			}
 		}
 		.firma{
@@ -52,13 +52,13 @@
 			float: right;
 			margin-bottom: 8%;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				font-size : 10pt; 
+				font-size : 10pt;
 			}
 		}
 	}
 	.segundo_cuadrante{
-		background: url("../images/texturas/comillas_abrir.png") left top no-repeat,
-		       url("../images/texturas/comillas_cerrar.png") right bottom no-repeat;
+		background: url("../images/Texturas/comillas_abrir.png") left top no-repeat,
+		       url("../images/Texturas/comillas_cerrar.png") right bottom no-repeat;
 		       background-position: 6% 16%, 89% 72%;
 		width: 53%;
 		float: left;
@@ -67,8 +67,8 @@
         float : left;
         max-width: 100%;
         width: 100%;
-        background: url("../images/texturas/comillas_abrir.png") left top no-repeat,
-		       url("../images/texturas/comillas_cerrar.png") right bottom no-repeat,#FFFFFF;
+        background: url("../images/Texturas/comillas_abrir.png") left top no-repeat,
+		       url("../images/Texturas/comillas_cerrar.png") right bottom no-repeat,#FFFFFF;
     }
 		.descripcion{
 			margin-left: 16%;
@@ -77,7 +77,7 @@
 			margin-bottom: 8%;
 			line-height: 1.8;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				font-size : 12pt;   
+				font-size : 12pt;
 			}
 		}
 		.firma{
@@ -85,14 +85,14 @@
 			float: right;
 			margin-bottom: 8%;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				font-size : 10pt; 
+				font-size : 10pt;
 			}
 		}
 
 	}
 	.tercer_cuadrante{
-		background: url("../images/texturas/comillas_abrir.png") left top no-repeat,
-		       url("../images/texturas/comillas_cerrar.png") right bottom no-repeat,
+		background: url("../images/Texturas/comillas_abrir.png") left top no-repeat,
+		       url("../images/Texturas/comillas_cerrar.png") right bottom no-repeat,
 		       url("../images/texturas/paper.png");
     background-position: 6% 9%, 88% 72%,0px 0px;
 		float: left;
@@ -117,7 +117,7 @@
 			margin-bottom: 8%;
 			line-height: 1.8;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				font-size : 12pt;   
+				font-size : 12pt;
 			}
 		}
 		.firma{
@@ -126,7 +126,7 @@
 			margin-bottom: 8%;
 			text-align: right;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				font-size : 10pt; 
+				font-size : 10pt;
 			}
 		}
 
@@ -134,9 +134,9 @@
 	}
 	.cuarto_cuadrante{
 		width: 54%;
-		background: url("../images/texturas/comillas_abrir2.png") left top no-repeat,
-		       url("../images/texturas/comillas_cerrar2.png") right bottom no-repeat,
-		       url("../images/texturas/grey_small.png");
+		background: url("../images/Texturas/comillas_abrir2.png") left top no-repeat,
+		       url("../images/Texturas/comillas_cerrar2.png") right bottom no-repeat,
+		       url("../images/Texturas/grey_small.png");
     	background-position: 3% 13%, 91% 76%,0px 0px;
 		float: left;
 		max-width: 592px;
@@ -153,7 +153,7 @@
 			margin-bottom: 8%;
 			line-height: 1.8;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				font-size : 12pt;   
+				font-size : 12pt;
 			}
 		}
 		.firma{
@@ -161,7 +161,7 @@
 			float: right;
 			margin-bottom: 8%;
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-				font-size : 10pt; 
+				font-size : 10pt;
 			}
 		}
 
