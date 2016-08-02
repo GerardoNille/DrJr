@@ -172,6 +172,13 @@
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
          height : 250px; 
      }
+     @media screen and (max-width: $ipad_mediaquery - 1) {
+        background: url(../images/centros/banner1_movil.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+    }
  }
     #neuropediatria{
 
@@ -262,6 +269,13 @@
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
          height : 250px; 
      }
+     @media screen and (max-width: $ipad_mediaquery - 1) {
+        background: url(../images/centros/banner2_movil.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+    }
  }
  #neuropediatria{
 
@@ -345,6 +359,13 @@
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
          height : 250px; 
      }
+     @media screen and (max-width: $ipad_mediaquery - 1) {
+        background: url(../images/centros/banner3_movil.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+    }
  }
     #neuropediatria{
 
