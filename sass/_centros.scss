@@ -21,6 +21,9 @@
             font-size: 50pt;
             letter-spacing: 2px;
             line-height: .9;
+            @media screen and (max-width: $ipad_mediaquery - 1) {
+            font-size : 5vw;
+    }
         }
     }
 }
@@ -158,9 +161,18 @@
     display: flex;
     width: 100%;
     line-height: .9;
-    img.centro_banner{
+    img#banner{
+        background: url(../images/centros/Banner1.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 355px;
         width: 100%;
-    }
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+         height : 250px; 
+     }
+ }
     #neuropediatria{
 
         font-family: Caslon;
@@ -322,9 +334,18 @@
     display: flex;
     width: 100%;
     line-height: .9;
-    img.centro_banner{
+    img#banner{
+        background: url(../images/centros/Banner3.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 355px;
         width: 100%;
-    }
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+         height : 250px; 
+     }
+ }
     #neuropediatria{
 
         font-family: Caslon;
