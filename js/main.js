@@ -41,7 +41,7 @@ $(document).ready(function() {
     });
     $('.videos').height($('.memorias img').height() * .7);
     $('.h_ribbon').height($('.memorias img').height() * .7);
-    $('.col2-md').height($('.memorias').height() + $('.videos').height() + 6);
+    $('.col2-md').height($('.memorias').height() + $('.videos').height());
     $('.memorias .title').click(function() {
         $('.memorias_container').toggle();
     });
@@ -49,13 +49,16 @@ $(document).ready(function() {
         $('.videos_container').toggle();
         $('.iframe_video').height($('.iframe_video').width() * .5625)
     });
-    
+    /*procedimientos*/
+    $('#experto .proced').height($('#procedimientos').height()*0.805)
 });
 $(window).resize(function() {
     $('.iframe_video').height($('.iframe_video').width() * .5625)
-    $('.video').height($('.memorias img').height() * .7);
+    $('.videos').height($('.memorias img').height() * .7);
     $('.h_ribbon').height($('.memorias img').height() * .7);
-    $('.col2-md').height($('.memorias').height() + $('.videos').height() + 6);
+    $('.col2-md').height($('.memorias').height() + $('.videos').height());
+    /*procedimientos*/
+    $('#experto .proced').height($('#procedimientos').height()*0.805)
 });
 
 window.onload = function() {

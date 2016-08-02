@@ -54,7 +54,7 @@
     text-align    : right;
     padding-bottom: 70px;
     font-weight: 200;
-    line-height: 2;
+    line-height: 1.6;
     @media screen and (min-width: 620px) {
         width: 45%;
     }
@@ -66,13 +66,14 @@
         }
     }
     p {
-        margin-right  : 10%;
+        margin: 0 10% 0 0;
         text-transform: uppercase;
         font-family   : Aspira;
         color         : white;
         font-size     : 10pt;
     }
     p.title {
+      margin: 0 10% 12px 0;
         font-size  : $subtitle_size;
         font-weight: 700;
         font-style : italic;
@@ -133,7 +134,7 @@
             }
         }
     }
-    .pruebas {
+    .proced {
         background: url("../images/texturas/marmol.png");
         height    : 890px;
         .subtitle {
