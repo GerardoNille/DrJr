@@ -273,6 +273,9 @@ footer {
            left: 26%;
            margin-top: 33px;
        }
+       @media screen and (max-width: $ipad_mediaquery - 1) {
+        margin-top : 22px;
+    }
        .font_change{
         font-family: 'Aspira Light';
     font-size: 12pt;
@@ -282,6 +285,16 @@ footer {
            font-size: 10pt;
            font-weight: lighter;
        }
+       @media screen and (max-width: $ipad_mediaquery - 1) {
+        font-size: 3vw;
+        margin-left: 11%;
+    }
+   }
+   .firma{
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        font-size: 3.1vw;
+        margin-left: 11%;
+    }
    }
 }
 }
@@ -297,10 +310,10 @@ height: 42px;
        margin-left: 70px;
        height: 105px;
    }
-   @media screen and (min-width: $ipad_mediaquery){
-     width      : 130px;
-     height     : 130px;
-   }
+   @media screen and (max-width: $ipad_mediaquery - 1) {
+        height : 110px;
+        width : 15%;
+    }
    svg {
     width   : 40%;
     height  : auto;
