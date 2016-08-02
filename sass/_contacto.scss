@@ -33,7 +33,9 @@
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         margin-right: 0;
         font-size   : 1.2rem;
-    }
+    }@media screen and (max-width: $ipad_mediaquery - 1) {
+            line-height: 1.7;   
+        }
     p,i{
     margin: 10px 3%;
     }
@@ -47,10 +49,19 @@
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
             height: 150px;
         }
+         @media screen and (max-width: $ipad_mediaquery - 1) {
+            margin-top : 50px;
+        }
         object {
             width  : 25%;
             margin : auto;
             display: block;
+            @media screen and (max-width: $ipad_mediaquery - 1) {
+            width : 40%;
+        }
+        }
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+            height : 390px;
         }
     }
     .banner_logo_ocre {
@@ -61,6 +72,10 @@
         display     : inline-block;
         border-color: $ocre;
         margin-right: 3%;
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+            height: 108px;
+            border-width: 0 0 5px 0;
+        }
     }
     .golden {
         color         : #9e8629;
@@ -79,6 +94,12 @@
             font-size: 1.5rem;
         }
     }
+    .reacomodo{
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+            margin-top: -17%;
+            position : absolute;
+        }
+    }
 }
 .ubicacion {
     width   : 100%;
@@ -95,7 +116,7 @@ p.italico {
 .contacto {
     width         : 98%;
     margin        : 10px auto;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     font-family   : 'Aspira';
     display       : block;
     vertical-align: top;
@@ -174,6 +195,12 @@ p.italico {
         text-align: center;
         background: $ocre;
         height    : 50px;
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+            height: 56px;
+            width: 20%;
+            letter-spacing: 2px;
+            font-size: 2.5vw;
+        }
     }
     .label {
         background-color: #FFFFFF;

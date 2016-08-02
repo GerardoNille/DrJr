@@ -217,21 +217,40 @@ span.arrow-r {
 }
 .payments {
     text-align  : center;
-    margin-right: 70px;
+    display: inline-block;
+        margin-top: 3%;
+    margin-left: 4%;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
        font-size : 10pt;
        font-family: Aspira Regular;
    }
+@media screen and (max-width: $ipad_mediaquery - 1) {
+        text-align: center;
+        margin-right: 70px;
+        margin-left: 70px;
+        letter-spacing: 1px;
+    }
+
+}
+.logo_cc{
+    float: right;
+        margin-top: -18px;
+    margin-left: 210px;
    img {
     max-width : 100px;
     max-height: 50px;
-    float     : right;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
        max-width : 60px;
 
    }
+
 }
-}
+@media screen and (max-width: $ipad_mediaquery - 1) {
+            margin-top: 18px;
+            float : none;
+            margin-left : 0px;
+    }
+    }
 footer {
     display         : inline-block;
     width           : 100%;
@@ -303,4 +322,13 @@ height: 42px;
     @media screen and (max-width: $ipad_mediaquery - 1) {
         max-width : 100%;
     }
+}
+.background_header{
+    background-color: $ocre;
+    max-height: 206px;
+    display: block;
+    height: 206px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
