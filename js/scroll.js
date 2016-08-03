@@ -21,11 +21,11 @@ function check_if_in_view() {
             newone = el.clone(true),
                 el.before(newone);
 
-            var count = $('.prueba' + el.attr("id")).length;
+            var count = $('.scroll_trigger' + el.attr("id")).length;
 
             if (count > 1) {
 
-                $(".prueba" + el.attr("id") + ":last").remove();
+                $(".scroll_trigger" + el.attr("id") + ":last").remove();
             }
         }
     });

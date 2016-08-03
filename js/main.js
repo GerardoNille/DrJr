@@ -62,7 +62,7 @@ $(window).resize(function() {
 });
 
 window.onload = function() {
-    $animation_elements = $("*[class^='prueba']");
+    $animation_elements = $("*[class^='scroll_trigger']");
     $window.on('scroll', check_if_in_view);
     $window.on('scroll resize', check_if_in_view);
     $window.trigger('scroll');
