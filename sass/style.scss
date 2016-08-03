@@ -286,13 +286,13 @@ footer {
            font-weight: lighter;
        }
        @media screen and (max-width: $ipad_mediaquery - 1) {
-        font-size: 3vw;
+        font-size: 2.9vw;
         margin-left: 11%;
     }
    }
    .firma{
     @media screen and (max-width: $ipad_mediaquery - 1) {
-        font-size: 3.1vw;
+        font-size: 2.9vw;
         margin-left: 11%;
     }
    }
@@ -313,6 +313,7 @@ footer {
    @media screen and (max-width: $ipad_mediaquery - 1) {
         height : 110px;
         width : 15%;
+        margin-left : 9%;
     }
    svg {
     width   : 40%;

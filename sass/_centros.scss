@@ -4,6 +4,10 @@
     clear: both;
     .banner{
         display: flex;
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+            display : none;
+    }
+
         img{
             width: 100%;
         }
