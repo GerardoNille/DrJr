@@ -11,7 +11,7 @@
 	.imagen{
 		display: block;
 		margin-left: auto;
-		margin-right: auto;	
+		margin-right: auto;
 	}
 	.banner_titulo{
 		display: flex;
@@ -22,7 +22,7 @@
 			max-width: 715px;
 			float: left;
 			color : #FFFFFF;
-			background    : url('../images/Texturas/grey.png');
+			background    : url('../images/texturas/grey.png');
 			@media screen and (max-width: $ipad_mediaquery - 1) {
         		max-width : 100%;
     }
@@ -94,7 +94,7 @@
 	.bio_content{
 		display: flex;
 		.bio_main{
-			
+
 			padding-right: 44px;
 			padding-left: 70px;
 			max-width: 715px;
@@ -263,7 +263,7 @@
 		display: block;
 		max-width: 60%;
 		margin-left: auto;
-		margin-right: auto;	
+		margin-right: auto;
 	}
 	.banner_titulo{
 		.titulo_profesional{
@@ -271,7 +271,7 @@
 			padding-top: 2%;
     		padding-bottom: 2%;
 			color : #FFFFFF;
-			background    : url('../images/Texturas/grey.png');
+			background    : url('../images/texturas/grey.png');
 			.title{
 				    margin-left: 15%;
 				    margin-top: 25px;
@@ -394,6 +394,5 @@
 				.bio_right_fourth{
 					max-width: 100%;
 				}
-			
+
 		}
-	

@@ -13,6 +13,7 @@
 @import "custom_svg";
 @import "animacion";
 @import "biografia";
+@import "alianzas";
 /*
 HERO BANNER
 */
@@ -204,7 +205,7 @@ span.arrow-r {
         }
     }
 }
-#prueba {
+#procedimientos {
     position: relative;
     clear   : both;
     overflow: auto;
@@ -300,7 +301,7 @@ footer {
 }
 .logo_footer {
     position   : relative;
-    background : url("../images/texturas/marmol_small.png");
+    background : url("../images/Texturas/marmol_small.png");
  width      : 130px;
     margin-left: 70px;
     height     : 130px;

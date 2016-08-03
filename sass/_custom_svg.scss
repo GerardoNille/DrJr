@@ -1,4 +1,29 @@
 #trayectoria {
+  .title {
+    position: relative;
+      p {
+        margin: 0 5%;
+        position: absolute;
+          font-size  : 25pt;
+          display    : inline-block;
+          font-family: Caslon;
+          padding    : 10px 20px;
+          top: 50%;
+          @media screen and (min-width: 720px) {
+              font-size: $title_size;
+          }
+          &::before {
+              content   : '';
+              display   : block;
+              width     : 5px;
+              height    : 60%;
+              margin    : 10px 10px 0 0 ;
+              background: $ocre;
+              position  : absolute;
+              left      : 0;
+          }
+      }
+  }
     object.trayectoria_objeto {
         display: none;
     }
