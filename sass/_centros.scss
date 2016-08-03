@@ -5,7 +5,7 @@
     .banner {
         display: flex;
         @media screen and (max-width: $ipad_mediaquery - 1) {
-            display: none;
+            
         }
         img {
             width: 100%;
@@ -59,6 +59,9 @@
                 position: absolute;
                 cursor: pointer;
             }
+            @media screen and (max-width: $ipad_mediaquery - 1) {
+                display : none;
+            }
         }
         .arrow::after {
             content: '';
@@ -78,6 +81,9 @@
             line-height: 1;
             @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
                 font-size: 25pt;
+            }
+            @media screen and (max-width: $ipad_mediaquery - 1) {
+                font-size: 6vw;
             }
         }
         .descripcion {
@@ -157,6 +163,7 @@
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         height: 250px;
     }
+    
 }
 #centro1 {
     display: flex;
@@ -179,6 +186,14 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+        }
+        @media screen and (max-width: 543px) {
+            background: url(../images/centros/banner1_movil.png) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 296px;
         }
     }
     #neuropediatria {
@@ -306,6 +321,14 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        @media screen and (max-width: 543px) {
+            background: url(../images/centros/banner1_movil.png) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 296px;
+        }
     }
     #neuropediatria {
         font-family: Caslon;
@@ -413,6 +436,14 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+        }
+        @media screen and (max-width: 543px) {
+            background: url(../images/centros/banner1_movil.png) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 296px;
         }
     }
     #neuropediatria {
