@@ -12,6 +12,21 @@
     img {
         width: 100%;
     }
+    .hero_opinion {
+        font-size     : 20pt;
+        top           : 45%;
+        position      : absolute;
+        right         : 5%;
+        width         : 80%;
+        color         : white;
+        text-align    : right;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        @media screen and (min-width: 620px) {
+            top      : 50%;
+            font-size: 40pt;
+        }
+    }
     img.inicio_movil {
         display: block;
         @media screen and (min-width: 550px) {
