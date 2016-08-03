@@ -151,15 +151,16 @@ nav {
 }
 /*Button*/
 .btn {
-    padding       : 10px 40px 10px 30px;
-    background    : rgba(0, 0, 0, .5);
+    padding       : 15px 45px 15px 35px;
+    background    : rgba(0, 0, 0, .7);
     position      : absolute;
     right         : 10%;
     bottom        : 5%;
     color         : white;
     text-transform: uppercase;
     font-family   : Aspira;
-    font-size     : 12pt;
+    font-size: 10pt;
+    letter-spacing: 2px;
     border-left   : solid 5px $ocre;
 }
 span.arrow-r {

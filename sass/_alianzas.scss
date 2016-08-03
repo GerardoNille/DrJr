@@ -9,13 +9,23 @@
         margin        : 0;
     }
     .ribbon {
-        width: 30%;
+        width: 70%;
+        height: 35px;
+        @media screen and (min-width: 425px) {
+          width: 30%;
+          height: 77px;
+        }
     }
     .title {
-        width: 70%;
+        width       : 95%;
         padding-left: 5%;
+        margin:0 0 0 5%;
+        @media screen and (min-width: 425px){
+          width: 70%;
+          margin:0;
+        }
         p {
-          margin: 0;
+            margin     : 0;
             font-size  : 25pt;
             display    : inline-block;
             font-family: Caslon;
@@ -29,15 +39,15 @@
                 display   : block;
                 width     : 5px;
                 height    : 60%;
-                margin    : 10px 10px 0 0 ;
+                margin    : 10px 10px 0 0;
                 background: $ocre;
                 position  : absolute;
                 left      : 0;
             }
         }
     }
-    img{
-      display: block;
-      margin: 40px 10%;
+    img {
+        display: block;
+        margin : 40px 10%;
     }
 }
