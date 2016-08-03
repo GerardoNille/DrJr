@@ -205,6 +205,11 @@
              margin-top: 24px;
              font-size: 25pt;
          }
+         @media screen and (max-width: $ipad_mediaquery - 1) {
+        margin-left: 50%;
+    margin-top: 14%;
+    font-size: 7vw;
+    }
      }
      &::before{
         
@@ -217,6 +222,10 @@
          margin-left: 217px;
          margin-top: 28px;
      }
+     @media screen and (max-width: $ipad_mediaquery - 1) {
+        margin-left: 40%;
+        margin-top: 15%;
+    }
  }
 }
 #cefaleas{
@@ -240,6 +249,11 @@
          margin-top: 139px;
          font-size: 25pt;
      }
+     @media screen and (max-width: $ipad_mediaquery - 1) {
+               margin-left: 10%;
+            margin-top: 46%;
+            font-size: 7vw;
+    }
  }
  .flecha{
     position: absolute;
@@ -249,6 +263,10 @@
      margin-left: 472px;
      margin-top: 160px;
  }
+ @media screen and (max-width: $ipad_mediaquery - 1) {
+           margin-left: 52%;
+    margin-top: 50%;
+    }
 }
 }
 }
@@ -261,6 +279,15 @@
         position: absolute;
     margin-top: -5.5%;
     width: 24%;
+    }
+    .vascular_movil{
+        display: none;
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+        display: block;
+        position: absolute;
+        margin-top: -5.5%;
+        width: 24%;
+    }
     }
     img#banner{
         background: url(../images/centros/Banner2.png) no-repeat center center; 
@@ -302,6 +329,11 @@
          margin-top: 35px;
          font-size: 25pt;
      }
+     @media screen and (max-width: $ipad_mediaquery - 1) {
+        margin-left: 56%;
+    margin-top: 9%;
+    font-size: 7vw;
+    }
  }
  .flecha{
     position: absolute;
@@ -311,6 +343,10 @@
      margin-left: 256px;
      margin-top: 56px;
  }
+ @media screen and (max-width: $ipad_mediaquery - 1) {
+            margin-left: 43%;
+    margin-top: 13%;
+    }
 }
 
 }
@@ -335,6 +371,11 @@
          margin-top: 159px;
          font-size: 25pt;
      }
+     @media screen and (max-width: $ipad_mediaquery - 1) {
+            margin-left: 10%;
+    margin-top: 48%;
+    font-size: 7vw;
+    }
  }
  .flecha{
     position: absolute;
@@ -344,6 +385,10 @@
      margin-left: 554px;
      margin-top: 179px;
  }
+ @media screen and (max-width: $ipad_mediaquery - 1) {
+                margin-left: 51%;
+            margin-top: 52%;
+    }
 }
 
 }
@@ -440,6 +485,5 @@
 }
 #neuropediatria,#cefaleas{
     @media screen and (max-width: $ipad_mediaquery - 1) {
-        display: none !important;
     }
 }
