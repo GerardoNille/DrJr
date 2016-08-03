@@ -32,6 +32,9 @@ nav {
     left        : 10%;
     bottom      : 13%;
     word-spacing: 60px;
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        display : none;
+    }
     a {
         color          : #3e3d3f;
         text-decoration: none;
@@ -43,7 +46,7 @@ nav {
 .top{
     background-color: $ocre;
     @media screen and (max-width: $ipad_mediaquery - 1) {
-        display: none;
+        
     }
 }
 .header {
@@ -53,6 +56,10 @@ nav {
     max-height: 206px;
     margin: auto;
     background-color : $ocre;
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        max-height : 135px;
+        max-width: 100%;
+    }
     .brain {
 
         padding-bottom: 19%;
@@ -63,6 +70,9 @@ nav {
          max-width: 150px;
         max-height: 150px;
        }
+       @media screen and (max-width: $ipad_mediaquery - 1) {
+        max-width: 20%;
+    }
         object {
             width  : 50%;
             display: block;
@@ -84,6 +94,9 @@ nav {
         top: 0%;
         max-height: 104px;
        }
+       @media screen and (max-width: $ipad_mediaquery - 1) {
+        display : none;
+    }
     p {
         font-family   : Big Caslon Medium;
         font-weight   : 500;
@@ -148,6 +161,9 @@ nav {
     padding-bottom  : 0.5%;
     width           : 61%;
     background-color: #9e8629;
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        display : none;
+    }
 }
 /*Button*/
 .btn {

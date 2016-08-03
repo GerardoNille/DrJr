@@ -8,11 +8,17 @@
         height   : 150px;
         max-width: 618px;
     }
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        max-width: 80.1%;
+    }
     img#titulo {
         position: absolute;
         top     : 16%;
         left    : 11%;
         width   : 47%;
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+        width: 69%;
+    }
     }
     .name {
         position   : absolute;
