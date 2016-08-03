@@ -5,7 +5,16 @@
     .banner {
         display: flex;
         @media screen and (max-width: $ipad_mediaquery - 1) {
-            
+            height: 175px;
+            font-size: 6vw;
+            left: 8vw;
+            top: -1vh;
+        }
+        @media screen and (max-width: 543px) {
+           height: 175px;
+            font-size: 9vw;
+            left: 10vw;
+            top: -3vh;
         }
         img {
             width: 100%;
