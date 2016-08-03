@@ -1,32 +1,37 @@
 #alianzas {
-    width: 100%;
+    width    : 100%;
     max-width: 980px;
-    margin: auto;
+    margin   : 0;
     .ribbon,
     .title {
-        display: inline-block;
+        display       : inline-block;
         vertical-align: middle;
-        margin: 0;
+        margin        : 0;
     }
     .ribbon {
         width: 30%;
     }
     .title {
         width: 70%;
+        padding-left: 5%;
         p {
-            font-size: 25pt;
-            display: inline-block;
+            font-size  : 25pt;
+            display    : inline-block;
             font-family: Caslon;
-            padding: 10px 20px;
+            padding    : 10px 20px;
+            position   : relative;
             @media screen and (min-width: 720px) {
                 font-size: $title_size;
             }
-            &::before{
-              content: '';
-              display: block;
-              width: 5px;
-              height: 80%;
-              background: $ocre;
+            &::before {
+                content   : '';
+                display   : block;
+                width     : 5px;
+                height    : 60%;
+                margin    : 10px 10px 0 0 ;
+                background: $ocre;
+                position  : absolute;
+                left      : 0;
             }
         }
     }
