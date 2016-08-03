@@ -22,9 +22,12 @@
         text-align    : right;
         letter-spacing: 8px;
         text-transform: uppercase;
-        @media screen and (min-width: 620px) {
-            top      : 50%;
-            font-size: 40pt;
+        @media screen and (min-width: 550px) {
+            font-size: 5vw;
+        }
+        @media screen and (min-width: 1100px){
+          top      : 50%;
+          font-size: 40pt;
         }
     }
     img.inicio_movil {
