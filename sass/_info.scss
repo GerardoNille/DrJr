@@ -136,7 +136,10 @@
     }
     .proced {
         background: url("../images/texturas/marmol.png");
-        height    : 890px;
+            padding: 30px 0;
+            @media screen and (min-width: 620px){
+              padding: 0;
+            }
         .subtitle {
             font-family   : Aspira;
             text-transform: uppercase;

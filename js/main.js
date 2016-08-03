@@ -47,18 +47,28 @@ $(document).ready(function() {
     });
     $('.videos .title').click(function() {
         $('.videos_container').toggle();
-        $('.iframe_video').height($('.iframe_video').width() * .5625)
+        $('.iframe_video').height($('.iframe_video').width() * .5625);
     });
-    /*procedimientos*/
-    $('#experto .proced').height($('#procedimientos').height()*0.805)
+    if ($(window).width() >=620){
+      /*procedimientos*/
+      $('#experto .proced').height($('#procedimientos').height()*0.805);
+    }else {
+
+      $('#experto .proced').height("auto");
+    }
 });
 $(window).resize(function() {
     $('.iframe_video').height($('.iframe_video').width() * .5625)
     $('.videos').height($('.memorias img').height() * .7);
     $('.h_ribbon').height($('.memorias img').height() * .7);
     $('.col2-md').height($('.memorias').height() + $('.videos').height());
-    /*procedimientos*/
-    $('#experto .proced').height($('#procedimientos').height()*0.805)
+    if ($(window).width() >=620){
+      /*procedimientos*/
+      $('#experto .proced').height($('#procedimientos').height()*0.805);
+    }else {
+
+      $('#experto .proced').height("auto");
+    }
 });
 
 window.onload = function() {
