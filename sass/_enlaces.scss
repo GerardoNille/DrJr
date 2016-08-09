@@ -37,28 +37,35 @@
         }
     }
     .menciones {
-        position   : relative;
-        width      : 100%;
-        text-align : center;
-        border-left: solid 10px $ocre;
-        background : url('../images/texturas/marmol.png');
-        padding    : 10%;
-        height     : 100%;
-        box-sizing : border-box;
+        position           : relative;
+        width              : 100%;
+        text-align         : center;
+        border-left        : solid 10px $ocre;
+        background         : url("../images/Texturas/comillas_abrir.png") left top no-repeat,url("../images/Texturas/comillas_cerrar.png") right bottom no-repeat,url("../images/texturas/marmol.png");
+        background-position: 2% 37%, 93% 66%;
+        padding            : 10% 15%;
+        height             : 100%;
+        box-sizing         : border-box;
         .title p {
             text-align: left;
         }
         .description {
-            position : absolute;
-            top      : 50%;
-            left     : 50%;
-            transform: translate(-50%,-50%);
-            width    : 80%;
-            font-size: 3vw;
+            position   : absolute;
+            top        : 50%;
+            left       : 50%;
+            transform  : translate(-50%,-50%);
+            width      : 80%;
+            font-size  : 3vw;
+            text-align : left;
+            line-height: 30px;
             @media screen and (min-width: 1063px) {
-                font-size: 24pt;
+                font-size: 15pt;
             }
         }
+    }
+    .h_ribbon,
+    .videos {
+        border-top: solid 8px $ocre;
     }
     .h_ribbon {
         background       : url('../images/pattern.png');
@@ -238,13 +245,13 @@
         display : none;
         position: relative;
         .youtube_video {
-            width: 90%;
-            margin: 10px 5%;
+            width  : 90%;
+            margin : 10px 5%;
             float  : left;
             display: block;
-            @media screen and (min-width: 760px){
-              width  : 48%;
-              margin : 1%;
+            @media screen and (min-width: 760px) {
+                width : 48%;
+                margin: 1%;
             }
             iframe {
                 width         : 100%;

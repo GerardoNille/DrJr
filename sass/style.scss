@@ -46,7 +46,7 @@ nav {
 .top{
     background-color: $ocre;
     @media screen and (max-width: $ipad_mediaquery - 1) {
-        
+
     }
 }
 .header {
@@ -175,7 +175,7 @@ nav {
     color         : white;
     text-transform: uppercase;
     font-family   : Aspira;
-    font-size: 10pt;
+    font-size: 13pt;
     letter-spacing: 2px;
     border-left   : solid 5px $ocre;
 }

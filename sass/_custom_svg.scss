@@ -1,9 +1,12 @@
 #trayectoria {
+    background: url('../images/texturas/paper.png');
+    padding: 0 0 50px;
     img {
         max-width: 100%;
     }
     .title {
         position: relative;
+        margin: 0 0 50px;
         p {
             margin     : 0 5%;
             position   : absolute;

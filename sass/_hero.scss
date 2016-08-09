@@ -25,9 +25,9 @@
         @media screen and (min-width: 550px) {
             font-size: 5vw;
         }
-        @media screen and (min-width: 1100px){
-          top      : 50%;
-          font-size: 40pt;
+        @media screen and (min-width: 1100px) {
+            top      : 60%;
+            font-size: 36pt;
         }
     }
     img.inicio_movil {
@@ -61,8 +61,8 @@
             clip-path        : polygon(0 65%, 0% 100%, 62% 100%);
         }
         p {
-            bottom     : 1%;
-            left       : 3%;
+            bottom     : 5%;
+            left       : 5%;
             margin     : 0;
             position   : absolute;
             font-family: Caslon;
