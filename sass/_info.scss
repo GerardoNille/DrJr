@@ -151,9 +151,12 @@
             text-transform: uppercase;
             width         : 80%;
             margin        : auto;
-            font-size     : 3.5vw;
             letter-spacing: 5px;
+            font-size: 18pt;
             font-style    : italic;
+            @media screen and (min-width: 550px) {
+              font-size: 24pt;
+            }
             @media screen and (min-width: 880px) {
                 font-size: $subtitle_size;
             }
