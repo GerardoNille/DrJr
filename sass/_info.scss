@@ -1,7 +1,7 @@
 .info {
     overflow : hidden;
     float    : left;
-    position : absolute;
+    position : relative;
     height   : 209px;
     max-width: 894px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
