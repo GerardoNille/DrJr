@@ -139,9 +139,10 @@ nav {
          width: 15%;
        }
         }
-        i#fb_logo{
-            vertical-align: -6%;
-            margin-left: 40px;
+        .fb_logo{
+                width: 5vw;
+    vertical-align: -5%;
+    margin-left: 2vw;
             @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
             vertical-align: 6%;
             margin-left: 6px;
