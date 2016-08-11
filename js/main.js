@@ -2,18 +2,18 @@ var $window = $(window);
 
 function slide_Centros(centro, caller) {
     //$(caller).closest('#centro1').slideUp;
-    $(caller).toggleClass("faa-ScaleCentros animated faa-fast");
+    //$(caller).toggleClass("faa-ScaleCentros animated faa-fast");
     setTimeout(function() {
-        $(caller).toggleClass("faa-ScaleCentros animated faa-fast");
+       // $(caller).toggleClass("faa-ScaleCentros animated faa-fast");
         $(caller).parent().parent().slideToggle();
         if ($('#' + centro).is(':visible')) {
-            $("#" + centro).hide(1500);
+            $("#" + centro).hide();
             //$(".banner_servicio").removeClass("imagen_animacion");
         } else {
             //$(".banner_servicio").addClass("imagen_animacion");
             //slide_Check();
-            $(".centro_expandido").not(centro).slideUp("1500");
-            $("#" + centro).slideDown(1500);
+            $(".centro_expandido").not(centro).slideUp();
+            $("#" + centro).slideDown();
         }
     }, 750);
 }

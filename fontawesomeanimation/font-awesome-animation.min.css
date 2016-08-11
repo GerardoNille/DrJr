@@ -883,22 +883,22 @@
 .faa-ScaleCentros.animated,
 .faa-ScaleCentros.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-ScaleCentros {
-  -webkit-animation: ScaleCentros 2s linear 1;
-  animation: ScaleCentros 2s linear 1;
+  -webkit-animation: ScaleCentros 2s linear infinite;
+  animation: ScaleCentros 2s linear infinite;
 }
 
 .faa-ScaleCentros.animated.faa-fast,
 .faa-ScaleCentros.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-ScaleCentros.faa-fast {
-  -webkit-animation: ScaleCentros .75s linear 1;
-  animation: ScaleCentros .75s linear 1;
+  -webkit-animation: ScaleCentros .75s linear infinite;
+  animation: ScaleCentros .75s linear infinite;
 }
 
 .faa-ScaleCentros.animated.faa-slow,
 .faa-ScaleCentros.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-ScaleCentros.faa-slow {
-  -webkit-animation: ScaleCentros 3s linear 1;
-  animation: ScaleCentros 3s linear 1;
+  -webkit-animation: ScaleCentros 1.5s linear infinite;
+  animation: ScaleCentros 1.5s linear infinite;
 }
 
 /* SHAKE */
