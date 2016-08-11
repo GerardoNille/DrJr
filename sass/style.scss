@@ -32,6 +32,9 @@ nav {
     left        : 10%;
     bottom      : 13%;
     word-spacing: 60px;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+        display : none;
+       }
     @media screen and (max-width: $ipad_mediaquery - 1) {
         display : none;
     }
@@ -91,8 +94,7 @@ nav {
     width: 38%;
     padding-top: 1%;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-        top: 0%;
-        max-height: 104px;
+        display : none;
        }
        @media screen and (max-width: $ipad_mediaquery - 1) {
         display : none;
@@ -151,9 +153,18 @@ nav {
          display: none;
        }
     }
+    &::after{
+            content: '';
+    display: block;
+    height: 5px;
+    width: 50vw;
+    background: #9e8629;
+    margin-top: 15px;
+    margin-left: -138%;
+    }
 }
 .horizontal {
-    position        : absolute;
+    /*position        : absolute;
     left            : 7%;
     top             : 63.5%;
     padding-bottom  : 0.5%;
@@ -161,7 +172,7 @@ nav {
     background-color: #9e8629;
     @media screen and (max-width: $ipad_mediaquery - 1) {
         display : none;
-    }
+    }*/
 }
 /*Button*/
 .btn {
