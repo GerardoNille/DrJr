@@ -1,0 +1,46 @@
+.menu_responsivo{
+	display: none;
+	background    : url('../images/Texturas/marmol_small.png');
+	position: absolute;
+	width: 250px;
+    right: 0%;
+    top: 24%;
+    z-index: 1;
+    font-family: Aspira;
+    letter-spacing: 1px;
+    text-align: center;
+
+	ul{
+		list-style-type: none;
+
+		li{
+			padding-bottom: 20px;
+			padding-top: 20px;
+			a{
+			 text-decoration: none;
+			 color: $gris;
+			}
+		}
+	}
+}
+
+#lista_navbar li:nth-child(2) , #lista_navbar li:nth-child(4){
+	&::before{
+				content: '';
+				display: block;
+				height: 3px;
+    			width: 27px;
+				margin: auto;
+    			margin-bottom: 22px;
+				background: $ocre;
+	}
+	&::after{
+				content: '';
+				display: block;
+				height: 3px;
+    			width: 27px;
+				margin: auto;
+				margin-top: 22px;
+				background: $ocre;
+	}
+}
