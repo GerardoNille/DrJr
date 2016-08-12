@@ -96,6 +96,7 @@
     }
     .memorias_container {
         display: none;
+        overflow: auto;
         .logo,
         .ribbon,
         .title {
@@ -182,9 +183,6 @@
                 font-family : Caslon;
                 font-size   : 40pt;
                 margin-left : 60px;
-                border-width: 0 0 0 4px;
-                border-color: #9e8629;
-                border-style: solid;
                 padding-left: 25px;
                 position    : relative;
             }
@@ -255,6 +253,7 @@
         width   : 100%;
         display : none;
         position: relative;
+        overflow: auto;
         .youtube_video {
             width  : 90%;
             margin : 10px 5%;

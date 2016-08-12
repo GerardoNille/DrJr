@@ -43,8 +43,8 @@ $(document).ready(function() {
     $('.videos').height($('.memorias img').height() * .7);
     $('.h_ribbon').height($('.memorias img').height() * .7);
     $('.col2-md').height($('.memorias').height() + $('.videos').height());
-    $('.memorias .title').click(function() {
-        $('.memorias_container').toggle();
+    $('.memorias .title, .memorias_container .title').click(function() {
+        $('.memorias_container, #enlaces .row').toggle();
     });
     $('.videos .title').click(function() {
         $('.videos_container').toggle();
