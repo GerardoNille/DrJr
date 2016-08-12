@@ -22,16 +22,13 @@
 			max-width: 715px;
 			float: left;
 			color : #FFFFFF;
+      padding: 2%;
 			background    : url('../images/texturas/grey.png');
 			@media screen and (max-width: $ipad_mediaquery - 1) {
         		max-width : 100%;
     }
 			.title{
-				    margin-left: 15%;
-				    margin-top: 25px;
-				    border-width: 0px 0px 0px 4px;
-				    border-color: #9e8629;
-				    border-style: solid;
+				    border-left: solid 4px $ocre;
 				    padding-left: 25px;
 				    padding-right: 54px;
 				    line-height: 1.1;
@@ -39,6 +36,9 @@
 				    font-size: 16pt;
 				    word-spacing: 3px;
 				    letter-spacing: .7px;
+            position: relative;
+            width: 80%;
+            margin: 0 10%;
 				@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
 					padding-left: 16px;
 					padding-top: 0px;
@@ -54,6 +54,34 @@
 				}
 				@media screen and (max-width: $ipad_mediaquery - 1) {
 				}
+        &:hover {
+            &::after {
+                bottom: 20%;
+            }
+            &::before {
+                top: 20%;
+            }
+        }
+        &::after,
+        &::before {
+            content      : '';
+            display      : block;
+            position     : absolute;
+            background   : white;
+            width        : 4px;
+            height       : 60%;
+            border-radius: 3px;
+            left         : -10%;
+            transition   : ease 0.5s;
+        }
+        &::after {
+            bottom   : 0;
+            transform: rotate(-45deg);
+        }
+        &::before {
+            top      : 0;
+            transform: rotate(45deg);
+        }
 			}
 		}
 		.arrow{

@@ -17,11 +17,11 @@
         left    : 11%;
         width   : 47%;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-        width : 60%;
-    }
+            width: 60%;
+        }
         @media screen and (max-width: $ipad_mediaquery - 1) {
-        width: 69%;
-    }
+            width: 69%;
+        }
     }
     .name {
         position   : absolute;
@@ -50,39 +50,37 @@
 #experto {
     float     : none;
     position  : relative;
-
     background: url('../images/texturas/grey.png');
     @media screen and (min-width: 620px) {
-        float: right;
-        height    : 1080px;
+        float : right;
+        height: 1080px;
     }
-
 }
 #enfermedades {
     width         : 100%;
     text-align    : right;
     padding-bottom: 70px;
-    font-weight: 200;
-    line-height: 1.6;
+    font-weight   : 200;
+    line-height   : 1.6;
     @media screen and (min-width: 620px) {
         width: 45%;
     }
     img {
-        width: 100%;
+        width  : 100%;
         display: none;
-        @media screen and (min-width: 620px){
-          display: block;
+        @media screen and (min-width: 620px) {
+            display: block;
         }
     }
     p {
-        margin: 0 10% 0 0;
+        margin        : 0 10% 0 0;
         text-transform: uppercase;
         font-family   : Aspira;
         color         : white;
         font-size     : 10pt;
     }
     p.title {
-      margin:22px 10% 12px 0;
+        margin     : 22px 10% 12px 0;
         font-size  : $subtitle_size;
         font-weight: 700;
         font-style : italic;
@@ -112,62 +110,64 @@
         width: 55%;
     }
     .title {
-        text-align: right;
+        text-align : right;
         font-family: 'Caslon';
         font-size  : $title_size;
         color      : white;
         position   : relative;
-        display: inline-block;
-        padding: 12%;
-
-        @media screen and (min-width: 620px){
-          text-align : center;
-          display: block;
+        display    : inline-block;
+        padding    : 11.9%;
+        @media screen and (min-width: 620px) {
+            text-align: center;
+            display   : block;
         }
         img {
-          width: 40%;
-          margin: 0;
-          border-right: solid 5px $ocre;
-          vertical-align: middle;
-          @media screen and (min-width: 620px){
-            display: none;
-          }
+            width         : 40%;
+            margin        : 0;
+            border-right  : solid 5px $ocre;
+            vertical-align: middle;
+            @media screen and (min-width: 620px) {
+                display: none;
+            }
         }
         p {
-          padding    : 0 10px;
-          font-family: 'Caslon';
-          margin     : 0;
-          font-size  : $title_size;
-          position   : relative;
-          &::before {
-              content   : '';
-              position  : absolute;
-              height    : 65%;
-              width     : 5px;
-              background: $ocre;
-              left      : 15%;
-              top       : 50%;
-              transform : translateY(-50%);
-              transition: 1s;
-          }
+            padding    : 0 10px;
+            font-family: 'Caslon';
+            margin     : 0;
+            font-size  : $title_size;
+            position   : relative;
+            &::before {
+                content   : '';
+                position  : absolute;
+                height    : 65%;
+                width     : 5px;
+                background: $ocre;
+                left      : 15%;
+                top       : 50%;
+                transform : translateY(-50%);
+                transition: 1s;
+            }
         }
     }
     .proced {
         background: url("../images/texturas/marmol.png");
-            padding: 30px 0;
-            @media screen and (min-width: 620px){
-              padding: 0;
-            }
+        padding   : 30px 0;
+        position  : absolute;
+        bottom    : 0;
+        width: 100%;
+        @media screen and (min-width: 620px) {
+            padding: 0;
+        }
         .subtitle {
             font-family   : Aspira;
             text-transform: uppercase;
             width         : 80%;
             margin        : auto;
             letter-spacing: 5px;
-            font-size: 18pt;
+            font-size     : 18pt;
             font-style    : italic;
             @media screen and (min-width: 550px) {
-              font-size: 24pt;
+                font-size: 24pt;
             }
             @media screen and (min-width: 880px) {
                 font-size: $subtitle_size;
@@ -188,7 +188,7 @@
         .logo {
             width  : 64px;
             display: block;
-            margin : auto;
+            margin : 7% auto;
             fill   : $ocre;
         }
     }
@@ -209,8 +209,8 @@
         overflow      : auto;
         display       : block;
         position      : relative;
-        margin: 35px 0;
-        font-size: 22pt;
+        margin        : 35px 0;
+        font-size     : 22pt;
         &::after {
             content   : '';
             display   : none;
@@ -220,23 +220,21 @@
             width     : 90%;
             height    : 2px;
             position  : absolute;
-            @media screen and (min-width: 760px){
-              display: block;
+            @media screen and (min-width: 760px) {
+                display: block;
             }
         }
-        img{
-
-        }
+        img {}
         p {
             float  : left;
             width  : 50%;
             padding: 5% 10% 5% 5%;
             margin : 0;
-            &:nth-child(2){
-              display: none;
-              @media screen and (min-width: 760px){
-                display: block;
-              }
+            &:nth-child(2) {
+                display: none;
+                @media screen and (min-width: 760px) {
+                    display: block;
+                }
             }
         }
         p.marker {
