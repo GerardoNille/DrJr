@@ -20,10 +20,21 @@
     }
     .title p {
         padding    : 0 10px;
-        border-left: solid 5px $ocre;
         font-family: 'Caslon';
         margin     : 0;
         font-size  : $title_size;
+        position   : relative;
+        &::before {
+            content   : '';
+            position  : absolute;
+            height    : 65%;
+            width     : 5px;
+            background: $ocre;
+            left      : -10px;
+            top       : 50%;
+            transform : translateY(-50%);
+            transition: 1s;
+        }
     }
     .memorias,
     .videos {
