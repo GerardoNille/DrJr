@@ -27,7 +27,7 @@
             color: white;
             position: absolute;
             /* display: inline-block; */
-            
+
             border-left: solid 5px #9e8629;
             padding: 1px 30px;
             font-size: 50pt;
@@ -94,7 +94,7 @@
             @media screen and (max-width: $ipad_mediaquery - 1) {
                 font-size: 6vw;
             }
-            
+
         }
         .descripcion {
             font-family: Aspira Regular;
@@ -173,7 +173,7 @@
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         height: 250px;
     }
-    
+
 }
 #centro1 {
     display: flex;
@@ -211,7 +211,7 @@
         font-size: 30pt;
         display: flex;
         /* top: 10%; */
-        
+
         p {
             position: absolute;
             margin-left: 383px;
@@ -253,7 +253,7 @@
         font-size: 30pt;
         display: flex;
         /* top: 10%; */
-        
+
         p {
             position: absolute;
             margin-left: 433px;
@@ -295,11 +295,12 @@
     display: flex;
     width: 100%;
     line-height: .9;
+    position: relative;
     .vascular {
         display: block;
         position: absolute;
-        margin-top: -4.1vw;
-        width: 49vh;
+        bottom: 0;
+        width: 30%;
         @media screen and (max-width: $ipad_mediaquery - 1) {
             display: none;
         }
@@ -349,7 +350,7 @@
         font-size: 30pt;
         display: flex;
         /* top: 10%; */
-        
+
         p {
             position: absolute;
             margin-left: 450px;
@@ -391,7 +392,7 @@
         font-size: 30pt;
         display: flex;
         /* top: 10%; */
-        
+
         p {
             position: absolute;
             margin-left: 550px;
@@ -465,7 +466,7 @@
         font-size: 30pt;
         display: flex;
         /* top: 10%; */
-        
+
         p {
             position: absolute;
             margin-left: 425px;
@@ -507,7 +508,7 @@
         font-size: 30pt;
         display: flex;
         /* top: 10%; */
-        
+
         p {
             position: absolute;
             margin-left: 475px;
@@ -545,13 +546,13 @@
                 background: url('../images/centros/Flecha_D.png') no-repeat;
                 width : 3.5vw;
                 /* Width of new image */
-                
+
                 height: 236px;
                 /* Height of new image */
-                
+
                 padding-left: 180px;
                 /* Equal to width of new image */
-                
+
                 margin-left: 50vw;
                 margin-top: 39vh;
             }
