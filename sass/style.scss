@@ -14,6 +14,8 @@
 @import "animacion";
 @import "biografia";
 @import "alianzas";
+@import "hamburguer";
+@import "sidebar";
 /*
 HERO BANNER
 */
@@ -30,7 +32,7 @@ body {
 nav {
     position    : absolute;
     left        : 10%;
-    bottom      : 13%;
+    bottom      : 2.5vw;
     word-spacing: 60px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         display : none;
@@ -42,7 +44,7 @@ nav {
         color          : #3e3d3f;
         text-decoration: none;
         font-family    : Aspira;
-        font-size      : .8rem;
+        font-size      : 1.16vw;
         letter-spacing : 2px;
     }
 }
@@ -94,7 +96,9 @@ nav {
     width: 38%;
     padding-top: 1%;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-        display : none;
+        left : 76%;
+        top: 0%;
+        width: 26%;
        }
        @media screen and (max-width: $ipad_mediaquery - 1) {
         display : none;
@@ -110,13 +114,16 @@ nav {
         padding-top   : 3px;
         position      : relative;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-         padding-top : 0px;
+         padding-top : 2.5vw;
        }
     }
     p#number{
         .font_change{
             font-family: Aspira;
             font-weight: 100;
+            @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+         display : none;
+       }
         }
         &::after{
             content: '';
@@ -156,11 +163,15 @@ nav {
     &::after{
             content: '';
     display: block;
-    height: 5px;
+    height: 3px;
     width: 50vw;
     background: #9e8629;
     margin-top: 15px;
     margin-left: -138%;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+         width : 56vw;
+         margin-left: -250%;
+       }
     }
 }
 .horizontal {
@@ -372,4 +383,45 @@ footer {
     position: absolute;
     width: 100%;
     z-index: -1;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+            max-height : 150px;
+        }
+}
+
+.border-menu {
+    display: none;
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+        display : block;
+        position: relative;
+  padding-left: 1.25em;
+    }
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        display : block;
+        position: relative;
+  padding-left: 1.25em;
+    }
+  
+}
+.border-menu:before {
+    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+        content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double #000;
+  border-bottom: 0.125em solid #000;
+    }
+     @media screen and (max-width: $ipad_mediaquery - 1){
+        content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double #000;
+  border-bottom: 0.125em solid #000;
+    }
+  
 }

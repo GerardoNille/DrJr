@@ -31,6 +31,7 @@ function slide_section(section) {
     $("#" + section).slideToggle();
 }
 /*Variables*/
+
 $(document).ready(function() {
     init_map();
     $(".tira").each(function() {
@@ -56,6 +57,9 @@ $(document).ready(function() {
 
       $('#experto .proced').height("auto");
     }
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+        $(this).toggleClass('open');
+    });
 });
 $(window).resize(function() {
     $('.iframe_video').height($('.iframe_video').width() * .5625)

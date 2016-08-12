@@ -141,6 +141,7 @@
 			@media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
 				padding-right: 30px;
 				margin-top: 50px;
+				margin-left: -40px;
 			}
 			@media screen and (max-width: $ipad_mediaquery - 1) {
 			}
