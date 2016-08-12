@@ -113,11 +113,12 @@
     }
     .title {
         text-align: right;
-        font-family: Caslon;
+        font-family: 'Caslon';
         font-size  : $title_size;
         color      : white;
         position   : relative;
         display: inline-block;
+        padding: 12%;
 
         @media screen and (min-width: 620px){
           text-align : center;
@@ -133,14 +134,22 @@
           }
         }
         p {
-            display    : inline-block;
-            border-left: solid 5px $ocre;
-            vertical-align: middle;
-            font-size: 10vw;
-            padding    : 1px 10px;
-            @media screen and (min-width: 620px){
-              font-size: 50pt;
-            }
+          padding    : 0 10px;
+          font-family: 'Caslon';
+          margin     : 0;
+          font-size  : $title_size;
+          position   : relative;
+          &::before {
+              content   : '';
+              position  : absolute;
+              height    : 65%;
+              width     : 5px;
+              background: $ocre;
+              left      : 15%;
+              top       : 50%;
+              transform : translateY(-50%);
+              transition: 1s;
+          }
         }
     }
     .proced {

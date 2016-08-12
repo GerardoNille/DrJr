@@ -152,7 +152,7 @@ nav {
                 width: 5vw;
     vertical-align: -5%;
     margin-left: 2vw;
-            
+
         }
     }
     .english_text{
@@ -190,8 +190,8 @@ nav {
     padding       : 15px 45px 15px 35px;
     background    : rgba(0, 0, 0, .7);
     position      : absolute;
-    right         : 10%;
-    bottom        : 5%;
+    right         : 6%;
+    bottom        : 10%;
     color         : white;
     text-transform: uppercase;
     font-family   : Aspira;
@@ -400,7 +400,7 @@ footer {
         position: relative;
   padding-left: 1.25em;
     }
-  
+
 }
 .border-menu:before {
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
@@ -423,5 +423,5 @@ footer {
   border-top: 0.375em double #000;
   border-bottom: 0.125em solid #000;
     }
-  
+
 }
