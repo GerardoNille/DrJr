@@ -298,11 +298,15 @@
     .vascular {
         display: block;
         position: absolute;
-        margin-top: -5.5%;
-        width: 24%;
+        margin-top: -4.1vw;
+        width: 49vh;
         @media screen and (max-width: $ipad_mediaquery - 1) {
             display: none;
         }
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                margin-top : -5%;
+                width : 20%;
+            }
     }
     .vascular_movil {
         display: none;

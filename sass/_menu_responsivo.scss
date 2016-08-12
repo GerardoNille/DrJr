@@ -1,4 +1,7 @@
 .menu_responsivo{
+	@media screen and (max-width: $max_ipad_mediaquery + 1){
+				display : none;
+			}
 	display: none;
 	background    : url('../images/Texturas/marmol_small.png');
 	position: absolute;

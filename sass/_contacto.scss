@@ -17,6 +17,10 @@
             padding: 0px 30px;
             font-size: 7vw;
             letter-spacing: 2px;
+            @media screen and (max-width: $ipad_mediaquery - 1) {
+                bottom : 64%;
+                border-left-width: 0px;
+    }
         }
     }
 }
@@ -96,7 +100,11 @@
     }
     .reacomodo{
         @media screen and (max-width: $ipad_mediaquery - 1) {
-            margin-top: -17%;
+            margin-top: -24vw;
+            position : absolute;
+        }
+        @media screen and (max-width: 400px) {
+            margin-top: -43vw;
             position : absolute;
         }
     }
@@ -185,6 +193,9 @@ p.italico {
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
             width: 73%;
         }
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+                width : 72%;
+    }
     }
     button {
         cursor    : pointer;
