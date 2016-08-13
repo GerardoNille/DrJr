@@ -9,7 +9,7 @@
         p {
             left          : 10%;
             bottom        : 10%;
-            font-family   : Big Caslon Medium;
+            font-family   : Caslon;
             color         : white;
             position      : absolute;
             /* display: inline-block; */
@@ -38,7 +38,7 @@
         margin-right: 0;
         font-size   : 1.2rem;
     }@media screen and (max-width: $ipad_mediaquery - 1) {
-            line-height: 1.7;   
+            line-height: 1.7;
         }
     p,i{
     margin: 10px 3%;
@@ -83,7 +83,7 @@
     }
     .golden {
         color         : #9e8629;
-        font-family   : Big Caslon Medium;
+        font-family   : Caslon;
         font-size     : 2.1rem;
         letter-spacing: 3px;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {

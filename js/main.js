@@ -40,9 +40,6 @@ $(document).ready(function() {
             // $(".tira").toggleClass("linea_anterior");
         });
     });
-    $('.videos').height($('.memorias img').height() * .7);
-    $('.h_ribbon').height($('.memorias img').height() * .7);
-    $('.col2-md').height($('.memorias').height() + $('.videos').height());
     $('.memorias .title, .memorias_container .title').click(function() {
         $('.memorias_container, #enlaces .row').toggle();
     });
@@ -77,6 +74,10 @@ $(window).resize(function() {
 });
 
 window.onload = function() {
+
+  $('.videos').height($('.memorias img').height() * .7);
+  $('.h_ribbon').height($('.memorias img').height() * .7);
+  $('.col2-md').height($('.memorias').height() + $('.videos').height());
     $animation_elements = $("*[class^='scroll_trigger']");
     $window.on('scroll', check_if_in_view);
     $window.on('scroll resize', check_if_in_view);

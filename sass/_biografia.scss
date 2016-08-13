@@ -1,3 +1,6 @@
+#biografia{
+      display: none;
+}
 .biografia{
       @media screen and (max-width: $ipad_mediaquery - 1) {
         display : none;

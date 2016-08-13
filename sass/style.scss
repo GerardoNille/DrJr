@@ -35,10 +35,10 @@ nav {
     bottom      : 2.5vw;
     word-spacing: 60px;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-        display : none;
-       }
+        display: none;
+    }
     @media screen and (max-width: $ipad_mediaquery - 1) {
-        display : none;
+        display: none;
     }
     a {
         color          : #3e3d3f;
@@ -48,63 +48,59 @@ nav {
         letter-spacing : 2px;
     }
 }
-.top{
+.top {
     background-color: $ocre;
-    @media screen and (max-width: $ipad_mediaquery - 1) {
-
-    }
+    @media screen and (max-width: $ipad_mediaquery - 1) {}
 }
 .header {
-    display : flex;
-    overflow: hidden;
-    max-width: 1100px;
-    max-height: 206px;
-    margin: auto;
-    background-color : $ocre;
+    display         : flex;
+    overflow        : hidden;
+    max-width       : 1100px;
+    max-height      : 206px;
+    margin          : auto;
+    background-color: $ocre;
     @media screen and (max-width: $ipad_mediaquery - 1) {
-        max-height : 135px;
-        max-width: 100%;
+        max-height: 135px;
+        max-width : 100%;
     }
     .brain {
-
         padding-bottom: 19%;
         background    : url('../images/Texturas/grey_small.png');
         float         : left;
-        max-width: 206px;
+        max-width     : 206px;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-         max-width: 150px;
-        max-height: 150px;
-       }
-       @media screen and (max-width: $ipad_mediaquery - 1) {
-        max-width: 20%;
-    }
+            max-width : 150px;
+            max-height: 150px;
+        }
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+            max-width: 20%;
+        }
         object {
             width  : 50%;
             display: block;
-            margin : auto;
-            margin-top: 18%;
+            margin : 18% auto auto;
         }
     }
 }
 .phone {
-    position: absolute;
-    left: 63%;
-    top: 16%;
+    position        : absolute;
+    left            : 63%;
+    top             : 16%;
     background-color: #9e8629;
-    max-width: 360px;
-    max-height: 103;
-    width: 38%;
-    padding-top: 3%;
+    max-width       : 360px;
+    max-height      : 103;
+    width           : 38%;
+    padding-top     : 3%;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         left : 76%;
-        top: 0%;
+        top  : 0;
         width: 26%;
-       }
-       @media screen and (max-width: $ipad_mediaquery - 1) {
-        display : none;
+    }
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        display: none;
     }
     p {
-        font-family   : Big Caslon Medium;
+        font-family   : Caslon;
         font-weight   : 500;
         font-size     : 0.8rem;
         padding-right : 25px;
@@ -114,64 +110,66 @@ nav {
         padding-top   : 3px;
         position      : relative;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-         padding-top : 2.5vw;
-       }
+            padding-top: 2.5vw;
+        }
     }
-    p#number{
-        .font_change{
+    p#number {
+        .font_change {
             font-family: Aspira;
             font-weight: 100;
             @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-         display : none;
-       }
+                display: none;
+            }
         }
-        &::after{
-            content: '';
-            display: block;
-            height: 2px;
-            width: 13%;
+        &::after {
+            content   : '';
+            display   : block;
+            height    : 2px;
+            width     : 13%;
             background: #FFFFFF;
             margin-top: 15px;
             @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-         width : 29%;
-       }
+                width: 29%;
+            }
         }
     }
     p#english {
         font-family: Aspira;
         font-weight: 200;
-        .bandera{
-            width: 8%;
-            margin-left: 10px;
+        .bandera {
+            width         : 8%;
+            margin-left   : 10px;
             vertical-align: -10%;
             @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-         width: 15%;
-       }
+                width: 15%;
+            }
         }
-        .fb_logo{
-                width: 5vw;
-    vertical-align: -5%;
-    margin-left: 2vw;
-
+        .fb_logo {
+            width         : 5vw;
+            vertical-align: -5%;
+            margin-left   : 2vw;
+            -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+            -moz-filter: brightness(0) invert(1);
         }
     }
-    .english_text{
+    .english_text {
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-         display: none;
-       }
+            display: none;
+        }
     }
-    &::after{
-            content: '';
-    display: block;
-    height: 3px;
-    width: 50vw;
-    background: #9e8629;
-    margin-top: 15px;
-    margin-left: -138%;
-    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-         width : 56vw;
-         margin-left: -250%;
-       }
+    &::after {
+        content    : '';
+        display    : block;
+        height     : 3px;
+        width      : 50vw;
+        background : #9e8629;
+        margin-top : 15px;
+        margin-left: -138%;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+            width      : 56vw;
+            margin-left: -250%;
+        }
     }
 }
 .horizontal {
@@ -195,7 +193,7 @@ nav {
     color         : white;
     text-transform: uppercase;
     font-family   : Aspira;
-    font-size: 13pt;
+    font-size     : 13pt;
     letter-spacing: 2px;
     border-left   : solid 5px $ocre;
 }
@@ -246,182 +244,173 @@ span.arrow-r {
     position: relative;
     clear   : both;
     overflow: auto;
-    .btn{
-      bottom: 0.5%;
-      @media screen and (min-width: 620px){
-        bottom: 5%;
-      }
+    .btn {
+        bottom: 0.5%;
+        @media screen and (min-width: 620px) {
+            bottom: 5%;
+        }
     }
 }
 .payments {
-    text-align  : center;
-    display: inline-block;
-        margin-top: 3%;
+    text-align : center;
+    display    : inline-block;
+    margin-top : 3%;
     margin-left: 4%;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-       font-size : 10pt;
-       font-family: Aspira Regular;
-   }
-@media screen and (max-width: $ipad_mediaquery - 1) {
-        text-align: center;
-        margin-right: 70px;
-        margin-left: 70px;
+        font-size  : 10pt;
+        font-family: Aspira Regular;
+    }
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        text-align    : center;
+        margin-right  : 70px;
+        margin-left   : 70px;
         letter-spacing: 1px;
     }
-
 }
-.logo_cc{
-    float: right;
-        margin-top: -18px;
+.logo_cc {
+    float      : right;
+    margin-top : -18px;
     margin-left: 210px;
-   img {
-    max-width : 100px;
-    max-height: 50px;
-    @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-       max-width : 60px;
-
-   }
-
+    img {
+        max-width : 100px;
+        max-height: 50px;
+        @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+            max-width: 60px;
+        }
+    }
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        margin-top : 18px;
+        float      : none;
+        margin-left: 0;
+    }
 }
-@media screen and (max-width: $ipad_mediaquery - 1) {
-            margin-top: 18px;
-            float : none;
-            margin-left : 0px;
-    }
-    }
 footer {
     display         : inline-block;
     width           : 100%;
     background-color: $ocre;
     .copyright {
-        font-family: Big Caslon Medium;
-        color      : #ffffff;
-        font-size  : 1.5rem;
-        font-weight: 100;
-        position   : absolute;
-        left       : 20%;
-        margin-top : 50px;
+        font-family   : Caslon;
+        color         : #ffffff;
+        font-size     : 1.5rem;
+        font-weight   : 100;
+        position      : absolute;
+        left          : 20%;
+        margin-top    : 50px;
         letter-spacing: 1.7px;
         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-
-           margin-left: 30px;
-           font-size: 14pt;
-           font-weight: 100;
-           position: absolute;
-           left: 26%;
-           margin-top: 33px;
-       }
-       @media screen and (max-width: $ipad_mediaquery - 1) {
-        margin-top : 22px;
+            margin-left: 30px;
+            font-size  : 14pt;
+            font-weight: 100;
+            position   : absolute;
+            left       : 26%;
+            margin-top : 33px;
+        }
+        @media screen and (max-width: $ipad_mediaquery - 1) {
+            margin-top: 22px;
+        }
+        .font_change {
+            font-family   : 'Aspira Light';
+            font-size     : 12pt;
+            letter-spacing: 2px;
+            @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
+                font-family: 'Aspira';
+                font-size  : 10pt;
+                font-weight: lighter;
+            }
+            @media screen and (max-width: $ipad_mediaquery - 1) {
+                font-size  : 2.9vw;
+                margin-left: 11%;
+            }
+        }
+        .firma {
+            @media screen and (max-width: $ipad_mediaquery - 1) {
+                font-size  : 2.9vw;
+                margin-left: 11%;
+            }
+        }
     }
-       .font_change{
-        font-family: 'Aspira Light';
-    font-size: 12pt;
-    letter-spacing: 2px;
-         @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-           font-family : 'Aspira';
-           font-size: 10pt;
-           font-weight: lighter;
-       }
-       @media screen and (max-width: $ipad_mediaquery - 1) {
-        font-size: 2.9vw;
-        margin-left: 11%;
-    }
-   }
-   .firma{
-    @media screen and (max-width: $ipad_mediaquery - 1) {
-        font-size: 2.9vw;
-        margin-left: 11%;
-    }
-   }
-}
 }
 .logo_footer {
     position   : relative;
     background : url("../images/Texturas/marmol_small.png");
- width      : 130px;
+    width      : 130px;
     margin-left: 70px;
     height     : 130px;
     text-align : center;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-       width: 112px;
-       margin-left: 70px;
-       height: 105px;
-   }
-   @media screen and (max-width: $ipad_mediaquery - 1) {
-        height : 110px;
-        width : 15%;
-        margin-left : 9%;
+        width      : 112px;
+        margin-left: 70px;
+        height     : 105px;
     }
-   svg {
-    width   : 40%;
-    height  : auto;
-    margin  : auto;
-    fill    : $ocre;
-    position: relative;
-    top     : 30%;
-    @media screen and (min-width: 550px){
-
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        height     : 110px;
+        width      : 15%;
+        margin-left: 9%;
     }
-}
+    svg {
+        width   : 40%;
+        height  : auto;
+        margin  : auto;
+        fill    : $ocre;
+        position: relative;
+        top     : 30%;
+        @media screen and (min-width: 550px) {}
+    }
 }
 .wrapper {
     max-width: $max_mediaquery;
     margin   : auto;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-        max-width : $ipad_mediaquery;
+        max-width: $ipad_mediaquery;
     }
     @media screen and (max-width: $ipad_mediaquery - 1) {
-        max-width : 100%;
+        max-width: 100%;
     }
 }
-.background_header{
+.background_header {
     background-color: $ocre;
-    max-height: 206px;
-    display: block;
-    height: 206px;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
+    max-height      : 206px;
+    display         : block;
+    height          : 206px;
+    position        : absolute;
+    width           : 100%;
+    z-index         : -1;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-            max-height : 150px;
-        }
+        max-height: 150px;
+    }
 }
-
 .border-menu {
     display: none;
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-        display : block;
-        position: relative;
-  padding-left: 1.25em;
+        display     : block;
+        position    : relative;
+        padding-left: 1.25em;
     }
     @media screen and (max-width: $ipad_mediaquery - 1) {
-        display : block;
-        position: relative;
-  padding-left: 1.25em;
+        display     : block;
+        position    : relative;
+        padding-left: 1.25em;
     }
-
 }
 .border-menu:before {
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
-        content: "";
-  position: absolute;
-  top: 0.25em;
-  left: 0;
-  width: 1em;
-  height: 0.125em;
-  border-top: 0.375em double #000;
-  border-bottom: 0.125em solid #000;
+        content      : "";
+        position     : absolute;
+        top          : 0.25em;
+        left         : 0;
+        width        : 1em;
+        height       : 0.125em;
+        border-top   : 0.375em double #000;
+        border-bottom: 0.125em solid #000;
     }
-     @media screen and (max-width: $ipad_mediaquery - 1){
-        content: "";
-  position: absolute;
-  top: 0.25em;
-  left: 0;
-  width: 1em;
-  height: 0.125em;
-  border-top: 0.375em double #000;
-  border-bottom: 0.125em solid #000;
+    @media screen and (max-width: $ipad_mediaquery - 1) {
+        content      : "";
+        position     : absolute;
+        top          : 0.25em;
+        left         : 0;
+        width        : 1em;
+        height       : 0.125em;
+        border-top   : 0.375em double #000;
+        border-bottom: 0.125em solid #000;
     }
-
 }

@@ -20,7 +20,7 @@
     }
     .title p {
         padding    : 0 10px;
-        font-family: 'Caslon';
+        font-family: Caslon;
         margin     : 0;
         font-size  : $title_size;
         position   : relative;
@@ -39,12 +39,14 @@
     .memorias,
     .videos {
         position: relative;
+        line-height: 0;
         .title p {
             position : absolute;
             top      : 50%;
             left     : 50%;
             transform: translate(-50%,-50%);
             cursor   : pointer;
+            line-height: 70px;
         }
     }
     .menciones {
@@ -65,7 +67,7 @@
             top        : 50%;
             left       : 50%;
             transform  : translate(-50%,-50%);
-            width      : 80%;
+            width      : 65%;
             font-size  : 3vw;
             text-align : left;
             line-height: 30px;
@@ -147,7 +149,7 @@
             }
         }
         .title {
-            margin  : 10px 0;
+            margin  : 3% 0;
             width   : 60%;
             float   : left;
             position: relative;
