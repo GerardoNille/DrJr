@@ -21,6 +21,9 @@
                 bottom : 64%;
                 border-left-width: 0px;
     }
+    @media screen and (min-width: $max_mediaquery + 100){
+        font-size : 50pt;
+    }
         }
     }
 }

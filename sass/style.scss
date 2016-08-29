@@ -34,6 +34,9 @@ nav {
     left        : 10%;
     bottom      : 2.5vw;
     word-spacing: 60px;
+    @media screen and (min-width: $max_mediaquery + 100){
+        bottom : 14%;
+    }
     @media screen and (min-width: $ipad_mediaquery) and (max-width: $max_ipad_mediaquery) {
         display: none;
     }
@@ -46,6 +49,9 @@ nav {
         font-family    : Aspira;
         font-size      : 1.16vw;
         letter-spacing : 2px;
+        @media screen and (min-width: $max_mediaquery + 100){
+        font-size : 12pt;
+    }
     }
 }
 .top {
@@ -145,12 +151,17 @@ nav {
             }
         }
         .fb_logo {
-            width         : 5vw;
+            width         : 17%;
             vertical-align: -5%;
-            margin-left   : 2vw;
+            margin-left   : 12%;
             -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
             -moz-filter: brightness(0) invert(1);
+            @media screen and (max-width: $max_mediaquery - 1) {
+                width         : 5vw;
+                vertical-align: -5%;
+                margin-left   : 2vw;
+            }
         }
     }
     .english_text {

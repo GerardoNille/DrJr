@@ -67,6 +67,9 @@
                 width: 2%;
                 position: absolute;
                 cursor: pointer;
+                @media screen and (min-width: $max_mediaquery + 1000){
+        width : 1%;
+    }
             }
             @media screen and (max-width: $ipad_mediaquery - 1) {
                 display : none;
