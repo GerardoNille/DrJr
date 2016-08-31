@@ -50,10 +50,4 @@ $(document).ready(function() {
 		}
 		return false;
 	});
-	//Datepicker
-	var typeDate = document.getElementById("contact-date").type;
-	if (typeDate!="date"){
-			$fecha=$('#contact-date');
-			$fecha.datepicker();
-		}
 });
